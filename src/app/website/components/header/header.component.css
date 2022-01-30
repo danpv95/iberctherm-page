@@ -1,0 +1,48 @@
+.container-header {
+  width: 100%;
+  height: auto;
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  align-items: center;
+  /*align-content: center;*/
+
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(255, 174, 0, 1) 11.2%,
+    rgba(255, 0, 0, 1) 100.2%
+  );
+}
+
+.button-session {
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(255, 207, 84, 1) 11.2%,
+    rgba(255, 158, 27, 1) 91.1%
+  );
+}
+
+button {
+  font-size: large;
+}
+
+.button:hover mat-menu.autores{
+  display: block;
+}
+
+.banner img {
+  width: 100%;
+  border-radius: 0 0 0 20%;
+}
+
+@media screen and (max-width: 720px) {
+  .container-header {
+    flex-direction: column;
+  }
+  
+  .button-session {
+    margin: 3%;
+  }
+}

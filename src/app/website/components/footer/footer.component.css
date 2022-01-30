@@ -1,0 +1,36 @@
+.container-footer {
+  width: 100%;
+  
+  color: white;
+  background-image: linear-gradient( 109.6deg, rgba(11,132,145,1)  11.2%, rgba(0,0,0,1) 91.1% );  
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-footer > a > img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-footer a {
+  width: 5%;
+  height: 5%;
+  margin: 1%;
+}
+
+@media screen and (max-width: 720px) {
+  .container-footer {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .container-footer a {
+    width: 10%;
+    height: 10%;
+  }
+}

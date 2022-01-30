@@ -1,0 +1,40 @@
+<div class="container-header">
+  <img routerLink="home" src="assets/resource/logo_congreso.png" />
+
+  <div class="menu">
+    <button mat-button routerLink="home">Inicio</button>
+
+    <button mat-button [matMenuTriggerFor]="autores">Autores</button>
+    <mat-menu #autores="matMenu">
+      <button mat-menu-item routerLink="autores">Para expositores</button>
+      <button mat-menu-item routerLink="autores">Para evaluadores</button>
+      <button mat-menu-item routerLink="autores">pagos
+      </button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="eventos">Evento</button>
+    <mat-menu #eventos="matMenu">
+      <button mat-menu-item routerLink="evento">Cronograma</button>
+      <button mat-menu-item routerLink="evento">Expositores</button>
+      <button mat-menu-item routerLink="evento">Descubriendo la Perla</button>
+    </mat-menu>
+
+    <button mat-button [matMenuTriggerFor]="pagos">Comercial</button>
+    <mat-menu #pagos="matMenu">
+      <button mat-menu-item routerLink="pagos">
+        Inscripción para empresas
+      </button>
+      <button mat-menu-item routerLink="pagos">Salon virtual</button>
+    </mat-menu>
+  </div>
+
+  <!--Los botones del Mat-toolbar-->
+
+  <button class="button-session" mat-raised-button routerLink="ingreso">
+    Inicio de sesión 🔐
+  </button>
+</div>
+
+<div class="banner">
+  <img src="assets/resource/banner.jpg" />
+</div>

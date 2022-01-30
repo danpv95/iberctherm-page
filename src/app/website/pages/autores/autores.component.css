@@ -1,0 +1,71 @@
+.contenedor {
+  width: 100%;
+  float: left;
+  border: 0.5px;
+  border-style: initial;
+  margin-left: -1%;
+  text-align: center;
+}
+
+.autores {
+  text-align: center;
+  width: 39%;
+  margin: 4%;
+  height: 20%;
+  float: left;
+}
+
+.autores img {
+  width: 55%;
+  height: 20%;
+  margin: 2%;
+}
+
+.autores mat-card-content {
+  text-align: justify;
+}
+
+.contenedor button {
+  color: aliceblue;
+  background-color: #fc9f49;
+}
+
+.pagos {
+  text-align: center;
+  width: 39%;
+  margin: 4%;
+  height: 20%;
+  float: left;
+}
+
+.pagos img {
+  width: 55%;
+  height: 20%;
+  margin: 2%;
+}
+
+.pagos mat-card-content {
+  text-align: justify;
+}
+
+.evaluadores {
+  width: 80%;
+  height: 50%;
+  margin: 6%;
+}
+.evaluadores img {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 4%;
+  margin-left: 10%;
+  margin-top: -5%;
+}
+.evaluadores p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 720px) {
+.autores{
+  width: 80%;
+}
+}

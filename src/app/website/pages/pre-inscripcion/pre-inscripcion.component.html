@@ -1,0 +1,244 @@
+<div class="container">
+  <h1 style="text-align: center; margin-top: 5%">
+    Formulario de Pre Inscripción
+  </h1>
+
+  <div class="contenedor">
+    <div class="titulos">
+      <h2>Tipo de documento</h2>
+    </div>
+
+    <div class="row" style="text-align: center">
+      <!-- Input de Documento-->
+
+      <div class="col-xs-6">
+        <mat-form-field appearance="fill">
+          <mat-label>Tipo de documento</mat-label>
+          <mat-select>
+            <mat-option
+              *ngFor="let identificacion of identificacion"
+              [value]="identificacion.value"
+            >
+              {{ identificacion.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="col-xs-6">
+        <h2></h2>
+        <mat-form-field
+          class="example-full-width"
+          appearance="fill"
+          style="margin-top: -9%"
+        >
+          <mat-label>Numero de identificación</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <div class="titulos">
+      <h2>Denominación</h2>
+    </div>
+
+    <div class="row" style="text-align: center">
+      <!-- Input de Documento-->
+
+      <div class="col-xs-6">
+        <mat-form-field appearance="fill">
+          <mat-label>Denominación</mat-label>
+          <mat-select>
+            <mat-option
+              *ngFor="let denominacion of denominacion"
+              [value]="denominacion.value"
+            >
+              {{ denominacion.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <div class="titulos">
+      <h2>Datos personales</h2>
+    </div>
+
+    <div class="row" style="text-align: center">
+      <!-- Datos personales-->
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Nombre</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Apellido</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <div class="titulos">
+      <h2>En calidad de que te inscribiras</h2>
+    </div>
+
+    <div class="row" style="text-align: center">
+      <!-- Input de en calidad de que te inscribiras -->
+
+      <div class="col-xs-6">
+        <mat-form-field appearance="fill">
+          <mat-label>Inscripción</mat-label>
+          <mat-select>
+            <mat-option
+              *ngFor="let inscripcion of inscripcion"
+              [value]="inscripcion.value"
+            >
+              {{ inscripcion.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <div class="titulos">
+      <h2>¿Como participaras?</h2>
+    </div>
+
+    <div class="row" style="text-align: center">
+      <!-- Input de  como participaras-->
+
+      <div class="col-xs-6">
+        <mat-form-field appearance="fill">
+          <mat-label>Participar</mat-label>
+          <mat-select>
+            <mat-option
+              *ngFor="let participar of participar"
+              [value]="participar.value"
+            >
+              {{ participar.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <div class="titulos">
+      <h2>de que institucion vienes</h2>
+    </div>
+
+    <div class="row" style="text-align: center">
+      <!-- Input de Documento-->
+
+      <div class="col-xs-6">
+        <mat-form-field appearance="fill">
+          <mat-label>Institucion</mat-label>
+          <mat-select>
+            <mat-option
+              *ngFor="let Institucion of Institucion"
+              [value]="Institucion.value"
+            >
+              {{ Institucion.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <div class="titulos">
+      <h2>Si no encuentra su institucion por favor escriba el nombre</h2>
+    </div>
+
+    <div class="row" style="text-align: center">
+      <!-- Input de Documento-->
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Institución</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Ciudad</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Pais</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <div class="titulos">
+      <h2>¿Como podemos contactarte?</h2>
+    </div>
+
+    <div class="row" style="text-align: center">
+      <!-- Input de Documento-->
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Celular</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Telefono fijo</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <div class="titulos">
+      <h2>Envia tu resumen</h2>
+    </div>
+
+    <div class="row" style="text-align: center">
+      <!-- Input de Documento-->
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Resumen</mat-label>
+          <input matInput style="width: 376%; height: 376%" />
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-bottom: 10%">
+    <button mat-raised-button>Enviar</button>
+  </div>
+</div>
