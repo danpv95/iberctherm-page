@@ -2,36 +2,39 @@
   <img routerLink="home" src="assets/resource/logo_congreso.png" />
 
   <div class="menu">
-    <button mat-button routerLink="home">Inicio</button>
+    <button mat-button routerLink="home"> {{'inicio' | translate}}</button>
+    <!--Se trata de hacer el translate-->
+    <select #langSelect (change) = "camnbiarLang(langSelect.value)">
+      <option *ngFor="let lang of langs" [value]="lang">{{lang}}</option>
+    </select>
+ <!--Se trata de hacer el translate-->
 
-    <button mat-button [matMenuTriggerFor]="autores">Autores</button>
+    <button mat-button [matMenuTriggerFor]="autores"> {{'autores' | translate}} </button>
     <mat-menu #autores="matMenu">
       <button mat-menu-item routerLink="autores">Para expositores</button>
       <button mat-menu-item routerLink="autores">Para evaluadores</button>
-      <button mat-menu-item routerLink="autores">pagos
-      </button>
     </mat-menu>
 
-    <button mat-button [matMenuTriggerFor]="eventos">Evento</button>
+    <button mat-button [matMenuTriggerFor]="eventos"> {{'Evento' | translate}}</button>
     <mat-menu #eventos="matMenu">
-      <button mat-menu-item routerLink="evento">Cronograma</button>
+      <button mat-menu-item routerLink="evento">{{'Cronograma' | translate}} </button>
       <button mat-menu-item routerLink="evento">Expositores</button>
       <button mat-menu-item routerLink="evento">Descubriendo la Perla</button>
     </mat-menu>
 
-    <button mat-button [matMenuTriggerFor]="pagos">Comercial</button>
+    <button mat-button [matMenuTriggerFor]="pagos">{{'Comercial' | translate}} </button>
     <mat-menu #pagos="matMenu">
       <button mat-menu-item routerLink="pagos">
-        Inscripción para empresas
+        {{'Inscripcion_empresas' | translate}}
       </button>
-      <button mat-menu-item routerLink="pagos">Salon virtual</button>
+      <button mat-menu-item routerLink="pagos"> {{'Salon_virtual' | translate}} </button>
     </mat-menu>
   </div>
 
   <!--Los botones del Mat-toolbar-->
 
   <button class="button-session" mat-raised-button routerLink="ingreso">
-    Inicio de sesión 🔐
+    {{'Inicio_sesion' | translate}} 🔐
   </button>
 </div>
 

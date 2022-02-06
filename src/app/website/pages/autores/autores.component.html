@@ -2,131 +2,266 @@
 
 <div class="container">
   <div class="contenedor">
-    <div>
-      <h1>Para expositores</h1>
+    <div style="margin-top: 2%;">
+      <h1>¿Quienes pueden participar?</h1>
     </div>
-
-    <mat-card class="autores">
-      <mat-card-title>Profesionales 🎓</mat-card-title>
-      <img mat-card-image src="assets/images/comite.jpg" />
-      <mat-card-content>
+   
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolorum,
-          necessitatibus eveniet corrupti aliquam minus recusandae, ut quisquam
-          aut temporibus nesciunt? Voluptatem iusto laborum tempore minus
-          repellat accusantium quo voluptatibus veniam amet asperiores
-          aspernatur dicta nulla, perferendis officia illum temporibus
-          perspiciatis est quod impedit rem laudantium beatae in nobis! Id
-          veniam suscipit quisquam saepe eos amet dolore eaque assumenda quae,
-          numquam asperiores officiis at repellendus. Quos deleniti quaerat
-          velit doloribus voluptate cum temporibus sunt repellendus tenetur,
-          veritatis ratione, reprehenderit eaque, veniam alias consectetur.
-          Impedit molestias vitae incidunt! Cupiditate voluptas, id,
-          repudiandae, voluptatibus eaque fuga magnam praesentium dolorem ab
-          quod obcaecati.
+         Pueden Participar estudiantes y profesionales de todas las areas, que esten 
+         interesados en la termografia infarroja.
         </p>
-      </mat-card-content>
-      <button mat-raised-button [routerLink]="['/inscripcion']">
-        Pre inscripción
-      </button>
-    </mat-card>
 
-    <mat-card class="autores">
-      <mat-card-title>Estudiantes 📚</mat-card-title>
-      <img mat-card-image src="assets/images/comite.jpg" />
-      <mat-card-content>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolorum,
-          necessitatibus eveniet corrupti aliquam minus recusandae, ut quisquam
-          aut temporibus nesciunt? Voluptatem iusto laborum tempore minus
-          repellat accusantium quo voluptatibus veniam amet asperiores
-          aspernatur dicta nulla, perferendis officia illum temporibus
-          perspiciatis est quod impedit rem laudantium beatae in nobis! Id
-          veniam suscipit quisquam saepe eos amet dolore eaque assumenda quae,
-          numquam asperiores officiis at repellendus. Quos deleniti quaerat
-          velit doloribus voluptate cum temporibus sunt repellendus tenetur,
-          veritatis ratione, reprehenderit eaque, veniam alias consectetur.
-          Impedit molestias vitae incidunt! Cupiditate voluptas, id,
-          repudiandae, voluptatibus eaque fuga magnam praesentium dolorem ab
-          quod obcaecati.
-        </p>
-      </mat-card-content>
-      <button mat-raised-button [routerLink]="['/inscripcion']">
-        Pre inscripción
-      </button>
-    </mat-card>
-  </div>
-
-  <!--Contenedor de nota de los organizadores-->
-  <div class="contenedor">
-    <div class="row center-xs">
-      <div class="col-12">
-        <div class="box">
-          <h1>Para evaluadores</h1>
+        <div style="margin-top: 2%;">
+          <h1>Inscribite a la conferencia: </h1>
         </div>
-      </div>
+        <p>
+            Realiza la pre inscripcion.
+        </p>
+
+    
+
+  </div>
+
+</div>
+
+<div class="container">
+
+  <div class="contenedor">
+    <div class="titulos">
+      <h2>Tipo de documento</h2>
     </div>
 
-    <div>
-      <div class="evaluadores">
-        <img
-          src="https://sites.google.com/site/remberalasalas/_/rsrc/1472775095011/evolucion-de-la-evaluacion/Imagen1c.png"
-        />
+    <div class="row" style="text-align: center">
+      <!-- Input de Documento-->
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolorum,
-          necessitatibus eveniet corrupti aliquam minus recusandae, ut quisquam
-          aut temporibus nesciunt? Voluptatem iusto laborum tempore minus
-          repellat accusantium quo voluptatibus veniam amet asperiores
-          aspernatur dicta nulla, perferendis officia illum temporibus
-          perspiciatis est quod impedit rem laudantium beatae in nobis! Id
-          veniam suscipit quisquam saepe eos amet dolore eaque assumenda quae,
-          numquam asperiores officiis at repellendus. Quos deleniti quaerat
-          velit doloribus voluptate cum temporibus sunt repellendus tenetur,
-          veritatis ratione, reprehenderit eaque, veniam alias consectetur.
-          Impedit molestias vitae incidunt! Cupiditate voluptas, id,
-          repudiandae, voluptatibus eaque fuga magnam praesentium dolorem ab
-          quod obcaecati.
-        </p>
+      <div class="col-xs-4">
+        <mat-form-field appearance="fill">
+          <mat-label>Tipo de documento</mat-label>
+          <mat-select>
+            <mat-option
+              *ngFor="let identificacion of identificacion"
+              [value]="identificacion.value"
+            >
+              {{ identificacion.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="col-4">
+        <h2></h2>
+        <mat-form-field
+          class="example-full-width"
+          appearance="fill"
+          style="margin-top: -9%"
+        >
+          <mat-label>Numero de identificación</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+    </div>
+  
+
+  <div class="contenedor">
+    <div class="titulos">
+      <h2>Denominación</h2>
+    </div>
+
+    <div class="row" style="text-align: center">
+      <!-- Input de Documento-->
+
+      <div class="col-6">
+        <mat-form-field appearance="fill">
+          <mat-label>Denominación</mat-label>
+          <mat-select>
+            <mat-option
+              *ngFor="let denominacion of denominacion"
+              [value]="denominacion.value"
+            >
+              {{ denominacion.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
       </div>
     </div>
   </div>
 
   <div class="contenedor">
-    <div>
-      <h1>Pagos 💲</h1>
+    <div class="titulos">
+      <h2>Datos personales</h2>
     </div>
-    <mat-card class="pagos">
-      <mat-card-title>Bancolombia</mat-card-title>
-      <img
-        mat-card-image
-        src="https://www.forcepoint.com/sites/default/files/case_study_logos/grupo-bancolombia.png"
-        style="margin-bottom: 7%"
-      />
-      <mat-card-content>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolorum,
-          necessitatibus eveniet corrupti aliquam minus recusandae, ut quisquam
-          aut temporibu consgignar al numero de cuenta 12344553 y enviar el
-          comprobante de pago al correo: mdnd@utp.edu.co
-        </p>
-      </mat-card-content>
-    </mat-card>
 
-    <mat-card class="pagos">
-      <mat-card-title>Davivienda</mat-card-title>
-      <img
-        mat-card-image
-        src="https://losmolinos.com.co/wp-content/uploads/2020/10/DVIVIENDA.jpg"
-      />
-      <mat-card-content>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolorum,
-          necessitatibus eveniet corrupti aliquam minus recusandae, ut quisquam
-          aut temporibu consgignar al numero de cuenta 12344553 y enviar el
-          comprobante de pago al correo: mdnd@utp.edu.co
-        </p>
-      </mat-card-content>
-    </mat-card>
+    <div class="row" style="text-align: center">
+      <!-- Datos personales-->
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Nombre</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Apellido</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <div class="titulos">
+      <h2>En calidad de que te inscribiras</h2>
+    </div>
+
+    <div class="row" style="text-align: center">
+      <!-- Input de en calidad de que te inscribiras -->
+
+      <div class="col-xs-6">
+        <mat-form-field appearance="fill">
+          <mat-label>Inscripción</mat-label>
+          <mat-select>
+            <mat-option
+              *ngFor="let inscripcion of inscripcion"
+              [value]="inscripcion.value"
+            >
+              {{ inscripcion.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <div class="titulos">
+      <h2>¿Como participaras?</h2>
+    </div>
+
+    <div class="row" style="text-align: center">
+      <!-- Input de  como participaras-->
+
+      <div class="col-xs-6">
+        <mat-form-field appearance="fill">
+          <mat-label>Participar</mat-label>
+          <mat-select>
+            <mat-option
+              *ngFor="let participar of participar"
+              [value]="participar.value"
+            >
+              {{ participar.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <div class="titulos">
+      <h2>de que institucion vienes</h2>
+    </div>
+
+    <div class="row" style="text-align: center">
+      <!-- Input de Documento-->
+
+      <div class="col-xs-6">
+        <mat-form-field appearance="fill">
+          <mat-label>Institucion</mat-label>
+          <mat-select>
+            <mat-option
+              *ngFor="let Institucion of Institucion"
+              [value]="Institucion.value"
+            >
+              {{ Institucion.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <div class="titulos">
+      <h2>Si no encuentra su institucion por favor escriba el nombre</h2>
+    </div>
+
+    <div class="row" style="text-align: center">
+      <!-- Input de Documento-->
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Institución</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Ciudad</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Pais</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <div class="titulos">
+      <h2>¿Como podemos contactarte?</h2>
+    </div>
+
+    <div class="row" style="text-align: center">
+      <!-- Input de Documento-->
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Celular</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Telefono fijo</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <div class="titulos">
+      <h2>Envia tu resumen</h2>
+    </div>
+
+    <div class="row" style="text-align: center">
+      <!-- Input de Documento-->
+
+      <div class="col-xs-6">
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Resumen</mat-label>
+          <input matInput style="width: 376%; height: 376%" />
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center; margin-bottom: 10%">
+    <button mat-raised-button>Enviar</button>
   </div>
 </div>

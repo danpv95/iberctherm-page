@@ -1,33 +1,13 @@
 <div class="container">
   <!--Contenedor del evento-->
-    <h1>Evento</h1>
+    <h1>{{'evento' | translate}} </h1>
     <p>
-      Desde nuestros grupos de investigación GIMM (Grupo de investigación en
-      propiedades magnéticas y magneto) y GEF (Grupo de Electrofisiología)
-      adscritos a la Faculta de Ciencias Básicas de la Universidad Tecnológica
-      de Pereira, tenemos el placer de darles la bienvenida e invitarles a la
-      CONFERENCIA IBEROAMERICANA DE TERMOGRAFÍA INFRARROJA que se llevará a cabo
-      del 12 al 15 de octubre de 2022, con el acompañamiento de un comité
-      organizador internacional. Una conferencia influyente para los
-      profesionales, estudiantes y aficionados, brindándoles una oportunidad
-      para adquirir nuevos conocimientos, así como intercambiar experiencias y
-      difundir información científica en relación a la termografía infrarroja en
-      Colombia y en Iberoamérica.
+      {{'home_saludo' | translate}}
     </p>
   <!--Contenedor de nota de los organizadores-->
-    <h1>Nota de los organizadores</h1>
+    <h1>{{'nota_organizadores' | translate}}</h1>
     <p>
-      La termografía infrarroja y su versatilidad permite ser aplicada en
-      diferentes áreas como son: las ciencias básicas, ciencias de la salud,
-      ingeniería, industrias, entre otras. Favoreciendo la asistencia al evento
-      de profesionales, estudiantes y aficionados, haciendo posible la
-      adaptación de esta técnica en distintas áreas. Un evento iberoamericano
-      que concede la fomentación de desarrollos tecnológicos y científicos de
-      los grupos de investigación, individual y construcción de redes de
-      conocimiento. El evento denominado Conferencia Iberoamericana de
-      termografía Infrarroja, se realizará de forma presencial - semipresencial
-      o (explicación) en las instalaciones de la UTP entre el 12 al 15 de
-      octubre de 2022.
+      {{'home_saludo2' | translate}}
     </p>
 
   <!--Contenedor de los logos del congreso-->
@@ -47,14 +27,14 @@
   <!--Contenedor del comite organizador-->
 
   <div class="container-comite">
-    <h1>Comite organizador Nacional</h1>
+    <h1>{{'comite_organizador' | translate}}</h1>
     <!-- ngFor del comite organizador-->
     <div class="col-xs-12">
       <div class="card">
         <mat-card *ngFor="let organizador of organizadores">
           <mat-card-header>
             <mat-card-title>{{ organizador.name }}</mat-card-title>
-            <mat-card-subtitle>Comite Organizador Nacional</mat-card-subtitle>
+            <mat-card-subtitle>{{'comite_organizador' | translate}}</mat-card-subtitle>
           </mat-card-header>
           <div class="card-img">
             <img
@@ -64,9 +44,9 @@
           </div>
           <mat-card-content>
             <h3>
-              <strong>Institución: </strong> {{ organizador.institucion }}
+              <strong>{{'Institucion' | translate}} </strong> {{ organizador.institucion }}
             </h3>
-            <h3><strong>Contacto: </strong> {{ organizador.contacto }}</h3>
+            <h3><strong>{{'contacto' | translate}} </strong> {{ organizador.contacto }}</h3>
             <h4>{{ organizador.descripcion }}</h4>
           </mat-card-content>
         </mat-card>
@@ -75,7 +55,7 @@
   </div>
 
   <div class="container-comite">
-    <h1>Comite Organizador Internacional</h1>
+    <h1>{{'comite_organizador_internacional' | translate}}</h1>
     <!-- ngFor del comite organizador-->
     <div class="col-xs-12">
       <div class="card">
@@ -83,7 +63,7 @@
           <mat-card-header>
             <mat-card-title>{{ organizador.name }}</mat-card-title>
             <mat-card-subtitle
-              >Comite organizador Internacional</mat-card-subtitle
+              >{{'comite_organizador_internacional' | translate}}</mat-card-subtitle
             >
           </mat-card-header>
 
@@ -96,9 +76,9 @@
 
           <mat-card-content>
             <h3>
-              <strong>Institución: </strong> {{ organizador.institucion }}
+              <strong>{{'Institucion' | translate}} </strong> {{ organizador.institucion }}
             </h3>
-            <h3><strong>Contacto: </strong> {{ organizador.contacto }}</h3>
+            <h3><strong>{{'contacto' | translate}} </strong> {{ organizador.contacto }}</h3>
             <h4>{{ organizador.descripcion }}</h4>
           </mat-card-content>
         </mat-card>
@@ -107,7 +87,7 @@
   </div>
 
   <div class="container-topic">
-    <h1>Tematicas</h1>
+    <h1>{{'tematicas' | translate}}</h1>
     <img src="assets/images/tema.PNG" style="height: 70%; width: 55%" />
   </div>
 </div>

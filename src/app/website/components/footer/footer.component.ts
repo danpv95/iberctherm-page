@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
@@ -6,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent implements OnInit {
-  constructor() {}
+  constructor(
+    private translate: TranslateService
 
-  ngOnInit(): void {}
+
+  ) {
+    this.translate.setDefaultLang('es');
+  }
+
+  ngOnInit(): void {
+    // this.traducir.localeEvent.subscribe((locale) => this.translate.use(locale));
+  }
 }

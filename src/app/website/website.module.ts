@@ -18,6 +18,15 @@ import { EventosComponent } from './pages/eventos/eventos.component';
 import { LayoutComponent } from './components/layout/layout.component';
 
 import { MaterialsModule } from './../materials/materials.module';
+0
+import {HttpClientModule, HttpClient} from '@angular/common/http';
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
+
+export function cargarTraductorJson(http: HttpClient){
+  return new TranslateHttpLoader(http,"../assets/i18n/",".json")
+};
 
 @NgModule({
   declarations: [
@@ -32,6 +41,13 @@ import { MaterialsModule } from './../materials/materials.module';
     RegistroComponent,
     PreInscripcionComponent,
   ],
-  imports: [CommonModule, WebsiteRoutingModule, SharedModule],
+  imports: [CommonModule, WebsiteRoutingModule, SharedModule,
+    TranslateModule.forRoot({
+      loader:{
+        provide: TranslateLoader,
+        useFactory: (cargarTraductorJson),
+        deps: [HttpClient]
+      }
+    })],
 })
 export class WebsiteModule {}

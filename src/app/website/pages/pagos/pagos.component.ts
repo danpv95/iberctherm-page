@@ -1,13 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { inscripcion } from 'src/app/core/models/modelos.component';
-
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-pagos',
   templateUrl: './pagos.component.html',
   styleUrls: ['./pagos.component.css'],
 })
 export class PagosComponent implements OnInit {
-  constructor() {}
+  constructor(
+    private translate: TranslateService
+  ) {
+    this.translate.setDefaultLang('es');
+  }
   identificacion: inscripcion[] = [
     { value: 'C.C', viewValue: 'C.C' },
     { value: 'T.I', viewValue: 'T.I' },
