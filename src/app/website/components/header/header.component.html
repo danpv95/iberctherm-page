@@ -1,40 +1,43 @@
 <div class="container-header">
   <img routerLink="home" src="assets/resource/logo_congreso.png" />
 
-  <div class="menu">
-    <button mat-button routerLink="home"> {{'inicio' | translate}}</button>
-    <!--Se trata de hacer el translate-->
-    <select #langSelect (change) = "camnbiarLang(langSelect.value)">
-      <option *ngFor="let lang of langs" [value]="lang">{{lang}}</option>
-    </select>
- <!--Se trata de hacer el translate-->
-
-    <button mat-button [matMenuTriggerFor]="autores"> {{'autores' | translate}} </button>
-    <mat-menu #autores="matMenu">
-      <button mat-menu-item routerLink="autores">Para expositores</button>
-      <button mat-menu-item routerLink="autores">Para evaluadores</button>
-    </mat-menu>
-
-    <button mat-button [matMenuTriggerFor]="eventos"> {{'Evento' | translate}}</button>
-    <mat-menu #eventos="matMenu">
-      <button mat-menu-item routerLink="evento">{{'Cronograma' | translate}} </button>
-      <button mat-menu-item routerLink="evento">Expositores</button>
-      <button mat-menu-item routerLink="evento">Descubriendo la Perla</button>
-    </mat-menu>
-
-    <button mat-button [matMenuTriggerFor]="pagos">{{'Comercial' | translate}} </button>
-    <mat-menu #pagos="matMenu">
-      <button mat-menu-item routerLink="pagos">
-        {{'Inscripcion_empresas' | translate}}
+  <div class="container-menu">
+    <span class="dropdown">
+      <button class="dropbtn" routerLink="home">
+        {{ "inicio" | translate }}
       </button>
-      <button mat-menu-item routerLink="pagos"> {{'Salon_virtual' | translate}} </button>
-    </mat-menu>
+    </span>
+    <span class="dropdown">
+      <button class="dropbtn">{{ "Evento" | translate }}</button>
+      <div class="dropdown-content">
+        <a routerLink="evento"> {{ "Cronograma" | translate }}</a>
+        <a routerLink="evento">Expositores</a>
+        <a routerLink="evento">Descubriendo la Perla</a>
+      </div>
+    </span>
+    <span class="dropdown"
+      ><button class="dropbtn">{{ "Comercial" | translate }}</button>
+      <div class="dropdown-content">
+        <a routerLink="pagos">{{ "Inscripcion_empresas" | translate }}</a>
+        <span class="flag-icon flag-icon-gr"></span>
+        <a routerLink="pagos">{{ "Salon_virtual" | translate }}</a>
+      </div></span
+    >
+
+    <!--Se trata de hacer el translate-->
+    <select
+      class="button-translate"
+      style="margin-left: 10px"
+      #langSelect
+      (change)="camnbiarLang(langSelect.value)"
+    >
+      <option *ngFor="let lang of langs" [value]="lang">{{ lang }}</option>
+    </select>
+    <!--Se trata de hacer el translate-->
   </div>
 
-  <!--Los botones del Mat-toolbar-->
-
-  <button class="button-session" mat-raised-button routerLink="ingreso">
-    {{'Inicio_sesion' | translate}} 🔐
+  <button class="button-session" routerLink="ingreso">
+    {{ "Inicio_sesion" | translate }} 🔐
   </button>
 </div>
 
