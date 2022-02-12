@@ -8,15 +8,14 @@
       <fa-icon [icon]="faBars"></fa-icon>
     </label>
     <ul>
-      <li><button routerLiink="home">{{ "inicio" | translate }}</button></li>
-      <!--TRANSLATE BUTTON-->
-      <select class="dropbtn" #langSelect (change)="camnbiarLang(langSelect.value)">
-        <option *ngFor="let lang of langs" [value]="lang">{{ lang }}</option>
-      </select>
-      <li><button routerLiink="evento">{{ "Evento" | translate }}</button></li>
-      <li><button routerLiink="evento">{{ "Comercial" | translate }}</button></li>
-      <li><button routerLiink="pagos"> {{ "Inicio_sesion" | translate }}</button></li>
-      <li><button routerLiink="ingreso">Idiomas</button></li>
+      <li><a href="home">{{ "inicio" | translate }}</a></li>
+      <li><a href="evento">{{ "Evento" | translate }}</a></li>
+      <li><a href="comercial">{{ "Comercial" | translate }}</a></li>
+      <li><a href="pagos"> {{ "Inicio_sesion" | translate }}</a></li>
+      <li><select class="translate" #langSelect (change)="camnbiarLang(langSelect.value)">
+          <option *ngFor="let lang of langs" [value]="lang">{{ lang }}</option>
+        </select>
+      </li>
     </ul>
   </nav>
 </div>

@@ -40,7 +40,8 @@ nav ul {
 nav ul li {
   margin: 0 5px;
 }
-nav ul li button {
+nav ul li a, 
+nav ul li select {
   color: #f2f2f2;
   background-color: #DE480B;
   text-decoration: none;
@@ -49,10 +50,13 @@ nav ul li button {
   padding: 8px 15px;
   border-radius: 5px;
   letter-spacing: 1px;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
+  border: transparent;
 }
-nav ul li button.active,
-nav ul li button:hover {
+
+nav ul li a.active,
+nav ul li a:hover,
+nav ul li select:hover {
   color: #111;
   background: #fff;
 }
@@ -111,62 +115,11 @@ input[type="checkbox"] {
     margin-left: -20px;
     justify-content: center;
   }
-  nav ul li button.active,
-  nav ul li button:hover {
+  nav ul li a.active,
+  nav ul li a:hover {
     background: none;
     color: #ff6d00;
   }
-}
-
-/************************/
-/* Dropdown Button */
-.dropbtn {
-  color: black;
-  font-weight: bolder;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  height: 50px;
-  background-color: #ffab00;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #ff8f00;
 }
 
 .banner img {
