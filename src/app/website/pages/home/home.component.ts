@@ -9,7 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class HomeComponent implements OnInit {
   constructor(
-    private translate: TranslateService
+    public translate: TranslateService
   ) {
     this.translate.setDefaultLang('es');
   }
@@ -56,13 +56,15 @@ export class HomeComponent implements OnInit {
     { value: 'Asistente', viewValue: 'Asistente' },
   ];
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.translate.use('es');
+  }
 
   organizadores: any[] = [
     {
       name: 'Milton Medina',
       image: 'profeMilton.jpg',
-      descripcion:`${this.translate.instant("profe_1")}`,
+      descripcion:this.translate.instant('profe1'),
       institucion: 'Universidad Tecnologica de Pereira',
       contacto: 'mmedina@utp.edu.co',
     },

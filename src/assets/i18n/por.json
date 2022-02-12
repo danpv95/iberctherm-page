@@ -9,7 +9,6 @@
   "contacto": "Contato: ",
   "comite_organizador_internacional": "Comitê Organizador Internacional",
   "tematicas": "Temas",
-  "profe_1": "Ph.D. Em Física, Pesquisador Júnior de Minciencias, professor da Universidade Tecnológica de Pereira, diretor do Grupo de Pesquisa em Eletrofisiologia reconhecido na categoria b, codiretor do Grupo de Pesquisa em Propriedades Magnéticas e Magneto-ópticas de novos materiais (GIMM) reconhecido na categoria b.",
   "inicio": "Começo",
   "autores": "Autores",
   "Evento": "Evento",
@@ -32,5 +31,6 @@
   "Celular": "Celular",
   "telefono": "Telefone fixo",
   "email": "E-mail",
-  "enviar": "Mandar"
+  "enviar": "Mandar",
+  "profe1": "Ph.D. Em Física, Pesquisador Júnior de Minciencias, professor da Universidade Tecnológica de Pereira, diretor do Grupo de Pesquisa em Eletrofisiologia reconhecido na categoria b, codiretor do Grupo de Pesquisa em Propriedades Magnéticas e Magneto-ópticas de novos materiais (GIMM) reconhecido na categoria b."
 }

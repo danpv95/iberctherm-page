@@ -1,40 +1,42 @@
 <div class="container">
   <!--Contenedor del evento-->
-    <h1>{{'evento' | translate}} </h1>
-    <p>
-      {{'home_saludo' | translate}}
-    </p>
+  <h1>{{ "evento" | translate }}</h1>
+  <p>
+    {{ "home_saludo" | translate }}
+  </p>
   <!--Contenedor de nota de los organizadores-->
-    <h1>{{'nota_organizadores' | translate}}</h1>
-    <p>
-      {{'home_saludo2' | translate}}
-    </p>
+  <h1>{{ "nota_organizadores" | translate }}</h1>
+  <p>
+    {{ "home_saludo2" | translate }}
+  </p>
 
   <!--Contenedor de los logos del congreso-->
   <div class="container-logos">
-        <a href="https://www.utp.edu.co/" target="_blank">
-          <img class="logo" src="assets/resource/Logo_U.T.P.png" />
-        </a>
-        <a href="https://gimm-gef.co/gimm" target="_blank">
-          <img class="logo" src="assets/resource/gimm.png" />
-        </a>
-        <a href="https://gimm-gef.co/gef" target="_blank">
-          <img class="logo" src="assets/resource/logo_gef.png" />
-        </a>
-        <img class="logo" src="assets/resource/logo_congreso.png" />
+    <a href="https://www.utp.edu.co/" target="_blank">
+      <img class="logo" src="assets/resource/Logo_U.T.P.png" />
+    </a>
+    <a href="https://gimm-gef.co/gimm" target="_blank">
+      <img class="logo" src="assets/resource/gimm.png" />
+    </a>
+    <a href="https://gimm-gef.co/gef" target="_blank">
+      <img class="logo" src="assets/resource/logo_gef.png" />
+    </a>
+    <img class="logo" src="assets/resource/logo_congreso.png" />
   </div>
 
   <!--Contenedor del comite organizador-->
 
   <div class="container-comite">
-    <h1>{{'comite_organizador' | translate}}</h1>
+    <h1>{{ "comite_organizador" | translate }}</h1>
     <!-- ngFor del comite organizador-->
     <div class="col-xs-12">
       <div class="card">
         <mat-card *ngFor="let organizador of organizadores">
           <mat-card-header>
             <mat-card-title>{{ organizador.name }}</mat-card-title>
-            <mat-card-subtitle>{{'comite_organizador' | translate}}</mat-card-subtitle>
+            <mat-card-subtitle>{{
+              "comite_organizador" | translate
+            }}</mat-card-subtitle>
           </mat-card-header>
           <div class="card-img">
             <img
@@ -44,9 +46,13 @@
           </div>
           <mat-card-content>
             <h3>
-              <strong>{{'Institucion' | translate}} </strong> {{ organizador.institucion }}
+              <strong>{{ "Institucion" | translate }} </strong>
+              {{ organizador.institucion }}
             </h3>
-            <h3><strong>{{'contacto' | translate}} </strong> {{ organizador.contacto }}</h3>
+            <h3>
+              <strong>{{ "contacto" | translate }} </strong>
+              {{ organizador.contacto }}
+            </h3>
             <h4>{{ organizador.descripcion }}</h4>
           </mat-card-content>
         </mat-card>
@@ -55,16 +61,16 @@
   </div>
 
   <div class="container-comite">
-    <h1>{{'comite_organizador_internacional' | translate}}</h1>
+    <h1>{{ "comite_organizador_internacional" | translate }}</h1>
     <!-- ngFor del comite organizador-->
     <div class="col-xs-12">
       <div class="card">
         <mat-card *ngFor="let organizador of Internacional">
           <mat-card-header>
             <mat-card-title>{{ organizador.name }}</mat-card-title>
-            <mat-card-subtitle
-              >{{'comite_organizador_internacional' | translate}}</mat-card-subtitle
-            >
+            <mat-card-subtitle>{{
+              "comite_organizador_internacional" | translate
+            }}</mat-card-subtitle>
           </mat-card-header>
 
           <div class="card-img">
@@ -76,9 +82,13 @@
 
           <mat-card-content>
             <h3>
-              <strong>{{'Institucion' | translate}} </strong> {{ organizador.institucion }}
+              <strong>{{ "Institucion" | translate }} </strong>
+              {{ organizador.institucion }}
             </h3>
-            <h3><strong>{{'contacto' | translate}} </strong> {{ organizador.contacto }}</h3>
+            <h3>
+              <strong>{{ "contacto" | translate }} </strong>
+              {{ organizador.contacto }}
+            </h3>
             <h4>{{ organizador.descripcion }}</h4>
           </mat-card-content>
         </mat-card>
@@ -87,144 +97,149 @@
   </div>
 
   <div class="container-topic">
-    <h1>{{'tematicas' | translate}}</h1>
+    <h1>{{ "tematicas" | translate }}</h1>
     <img src="assets/images/tema.PNG" style="height: 70%; width: 55%" />
   </div>
 
   <section class="portafolio">
     <div class="contenedor">
-        <h2 class="titulo">Portafolio</h2>
-        <div class="galeria-port">
-            <div class="imagen-port">
-                <img src="./img/pexels-julia-m-cameron-4144294.jpg" alt="">
-                <div class="hover-galeria">
-                    <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="">
-                    <p>Nuestro trabajo</p>
-                </div>
-            </div>
-            <div class="imagen-port">
-                <img src="./img/pexels-fauxels-3184454.jpg" alt="">
-                <div class="hover-galeria">
-                    <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="">
-                    <p>Nuestro trabajo</p>
-                </div>
-            </div>
-            <div class="imagen-port">
-                <img src="./img/pexels-oleg-magni-2058128.jpg" alt="">
-                <div class="hover-galeria">
-                    <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="">
-                    <p>Nuestro trabajo</p>
-                </div>
-            </div>
-            <div class="imagen-port">
-                <img src="./img/pexels-olia-danilevich-4974914.jpg" alt="">
-                <div class="hover-galeria">
-                    <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="">
-                    <p>Nuestro trabajo</p>
-                </div>
-            </div>
-            <div class="imagen-port">
-                <img src="./img/pexels-vlada-karpovich-4050315.jpg" alt="">
-                <div class="hover-galeria">
-                    <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="">
-                    <p>Nuestro trabajo</p>
-                </div>
-            </div>
-            <div class="imagen-port">
-                <img src="./img/pexels-vlada-karpovich-4050318.jpg" alt="">
-                <div class="hover-galeria">
-                    <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="">
-                    <p>Nuestro trabajo</p>
-                </div>
-            </div>
-            <div class="imagen-port">
-                <img src="./img/pexels-vlada-karpovich-4050415.jpg" alt="">
-                <div class="hover-galeria">
-                    <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="">
-                    <p>Nuestro trabajo</p>
-                </div>
-            </div>
-            <div class="imagen-port">
-                <img src="./img/pexels-oleg-magni-2764678.jpg" alt="">
-                <div class="hover-galeria">
-                    <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="">
-                    <p>Nuestro trabajo</p>
-                </div>
-            </div>
+      <h2 class="titulo">Portafolio</h2>
+      <div class="galeria-port">
+        <div class="imagen-port">
+          <img src="./img/pexels-julia-m-cameron-4144294.jpg" alt="" />
+          <div class="hover-galeria">
+            <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="" />
+            <p>Nuestro trabajo</p>
+          </div>
         </div>
+        <div class="imagen-port">
+          <img src="./img/pexels-fauxels-3184454.jpg" alt="" />
+          <div class="hover-galeria">
+            <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="" />
+            <p>Nuestro trabajo</p>
+          </div>
+        </div>
+        <div class="imagen-port">
+          <img src="./img/pexels-oleg-magni-2058128.jpg" alt="" />
+          <div class="hover-galeria">
+            <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="" />
+            <p>Nuestro trabajo</p>
+          </div>
+        </div>
+        <div class="imagen-port">
+          <img src="./img/pexels-olia-danilevich-4974914.jpg" alt="" />
+          <div class="hover-galeria">
+            <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="" />
+            <p>Nuestro trabajo</p>
+          </div>
+        </div>
+        <div class="imagen-port">
+          <img src="./img/pexels-vlada-karpovich-4050315.jpg" alt="" />
+          <div class="hover-galeria">
+            <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="" />
+            <p>Nuestro trabajo</p>
+          </div>
+        </div>
+        <div class="imagen-port">
+          <img src="./img/pexels-vlada-karpovich-4050318.jpg" alt="" />
+          <div class="hover-galeria">
+            <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="" />
+            <p>Nuestro trabajo</p>
+          </div>
+        </div>
+        <div class="imagen-port">
+          <img src="./img/pexels-vlada-karpovich-4050415.jpg" alt="" />
+          <div class="hover-galeria">
+            <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="" />
+            <p>Nuestro trabajo</p>
+          </div>
+        </div>
+        <div class="imagen-port">
+          <img src="./img/pexels-oleg-magni-2764678.jpg" alt="" />
+          <div class="hover-galeria">
+            <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="" />
+            <p>Nuestro trabajo</p>
+          </div>
+        </div>
+      </div>
     </div>
-    
-</section>
-
+  </section>
 </div>
 
 <div class="container">
   <div class="contenedor">
-    <div style="margin-top: 2%;">
+    <div style="margin-top: 2%">
       <h1>¿Quienes pueden participar?</h1>
     </div>
-   
-        <p>
-         Pueden Participar estudiantes y profesionales de todas las areas, que esten 
-         interesados en la termografia infarroja.
-        </p>
 
-        <div style="margin-top: 2%;">
-          <h1>Inscribite a la conferencia: </h1>
-        </div>
-        <p>
-            Realiza la pre inscripcion.
-        </p>
+    <p>
+      Pueden Participar estudiantes y profesionales de todas las areas, que
+      esten interesados en la termografia infarroja.
+    </p>
 
-    
-
+    <div style="margin-top: 2%">
+      <h1>Inscribite a la conferencia:</h1>
+    </div>
+    <p>Realiza la pre inscripcion.</p>
   </div>
-
 </div>
 <!--Inicio formulario -->
-<div class="card-body ">
+<div class="card-body">
   <!--Se agrega el formulario reactivo-->
   <form [formGroup]="form" (ngSubmit)="save($event)">
-
     <div class="row" style="text-align: center">
       <!-- Input de Documento-->
       <h2>Datos personales</h2>
-      <div class="row" style="margin-left:20%;">
+      <div class="row" style="margin-left: 20%">
         <div class="col-5">
-             <!--Nombre-->
-             <mat-form-field class="example-full-width" appearance="fill" type="text" FormControlName="nombre">
-              <input matInput placeholder="Nombre">
-            </mat-form-field>
-  
-            <!--Apellido-->
-            <mat-form-field class="example-full-width" appearance="fill" type="text" FormControlName="Apellido" style="margin-left: 2%;">
-              <input matInput placeholder="Apellido">
-            </mat-form-field>
-                           
-            <!--tipo de cedula-->
-            <mat-form-field appearance="fill">
-              <mat-label>Tipo de documento</mat-label>
-              <mat-select>
-                <mat-option *ngFor="let identificacion of identificacion" [value]="identificacion.value" >
-                  {{ identificacion.viewValue }}
-                </mat-option>
-              </mat-select>
-            </mat-form-field>
+          <!--Nombre-->
+          <mat-form-field
+            class="example-full-width"
+            appearance="fill"
+            type="text"
+            FormControlName="nombre"
+          >
+            <input matInput placeholder="Nombre" />
+          </mat-form-field>
 
-            <!--numero de cedula-->
-            <mat-form-field class="example-full-width" appearance="fill" style="margin-left: 2%;">
+          <!--Apellido-->
+          <mat-form-field
+            class="example-full-width"
+            appearance="fill"
+            type="text"
+            FormControlName="Apellido"
+            style="margin-left: 2%"
+          >
+            <input matInput placeholder="Apellido" />
+          </mat-form-field>
+
+          <!--tipo de cedula-->
+          <mat-form-field appearance="fill">
+            <mat-label>Tipo de documento</mat-label>
+            <mat-select>
+              <mat-option
+                *ngFor="let identificacion of identificacion"
+                [value]="identificacion.value"
+              >
+                {{ identificacion.viewValue }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <!--numero de cedula-->
+          <mat-form-field
+            class="example-full-width"
+            appearance="fill"
+            style="margin-left: 2%"
+          >
             <mat-label>Numero de identificación</mat-label>
             <input matInput />
           </mat-form-field>
         </div>
       </div>
-<div>  
-  <button type="submit" >enviar</button>
-
-</div>
-    
+      <div>
+        <button type="submit">enviar</button>
+      </div>
     </div>
-
   </form>
-
 </div>
