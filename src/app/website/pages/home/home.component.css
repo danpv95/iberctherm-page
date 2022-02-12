@@ -4,6 +4,10 @@
   align-content: space-around;
 }
 
+.banner img {
+  width: 100%;
+  border-radius: 0 0 0 20%;
+}
 .container h1 {
   font-size: 40px;
   font-weight: bolder;
