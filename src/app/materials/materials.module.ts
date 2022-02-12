@@ -11,6 +11,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 //import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
@@ -26,6 +27,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatInputModule,
     MatListModule,
     MatSelectModule,
+    FontAwesomeModule,
   ],
   exports: [
     MatToolbarModule,
@@ -37,6 +39,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatInputModule,
     MatListModule,
     MatSelectModule,
+    FontAwesomeModule,
   ],
 })
 export class MaterialsModule {}

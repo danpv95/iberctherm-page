@@ -1,12 +1,32 @@
-<div class="container-header">
-  <img routerLink="home" src="assets/resource/logo_congreso.png" />
+<div class="container-header-2">
+  <nav>
+    <label class="logo">DagaCompany</label>
+    <input type="checkbox" id="click">
+    <label for="click" class="menu-btn">
+      <fa-icon [icon]="faBars"></fa-icon>
+    </label>
+    <ul>
+      <li><a href="home">{{ "inicio" | translate }}</a></li>
+      <li><a href="evento">{{ "Evento" | translate }}</a></li>
+      <li><a href="evento">{{ "Comercial" | translate }}</a></li>
+      <li><a href="pagos"> {{ "Inicio_sesion" | translate }}</a></li>
+      <li><a href="ingreso">Idiomas</a></li>
+    </ul>
+  </nav>
+</div>
 
+
+
+<div class="container-header">
   <div class="container-menu">
+    <!--LOGO PAGE-->
+    <img routerLink="home" src="assets/resource/logo_congreso.png" />
+    <!--<nav>-->
+    <!--BUTTON HOME-->
     <span class="dropdown">
-      <button class="dropbtn" routerLink="home">
-        {{ "inicio" | translate }}
-      </button>
+      <button class="dropbtn" routerLink="home"> {{ "inicio" | translate }} </button>
     </span>
+    <!--DROPDOWN EVENT-->
     <span class="dropdown">
       <button class="dropbtn">{{ "Evento" | translate }}</button>
       <div class="dropdown-content">
@@ -15,30 +35,28 @@
         <a routerLink="evento">Descubriendo la Perla</a>
       </div>
     </span>
-    <span class="dropdown"
-      ><button class="dropbtn">{{ "Comercial" | translate }}</button>
+    <!--DROPDOWN MALL-->
+    <span class="dropdown">
+      <button class="dropbtn">{{ "Comercial" | translate }}</button>
       <div class="dropdown-content">
         <a routerLink="pagos">{{ "Inscripcion_empresas" | translate }}</a>
-        <span class="flag-icon flag-icon-gr"></span>
         <a routerLink="pagos">{{ "Salon_virtual" | translate }}</a>
-      </div></span
-    >
-
-    <!--Se trata de hacer el translate-->
-    <select
-      class="button-translate"
-      style="margin-left: 10px"
-      #langSelect
-      (change)="camnbiarLang(langSelect.value)"
-    >
+      </div>
+    </span>
+    <!--TRANSLATE BUTTON-->
+    <select class="dropbtn" #langSelect (change)="camnbiarLang(langSelect.value)">
       <option *ngFor="let lang of langs" [value]="lang">{{ lang }}</option>
     </select>
-    <!--Se trata de hacer el translate-->
+    <!--TRANSLATE BUTTON-->
+    <span>
+      <button class="dropbtn" routerLink="ingreso"> {{ "Inicio_sesion" | translate }}
+        <fa-icon [icon]="faSignInAlt"></fa-icon>
+      </button>
+    </span>
+    <!--</nav>-->
   </div>
 
-  <button class="button-session" routerLink="ingreso">
-    {{ "Inicio_sesion" | translate }} 🔐
-  </button>
+
 </div>
 
 <div class="banner">
