@@ -12,7 +12,7 @@
   justify-content: space-between;
 }
 
-
+/***/
 .container-header-2 {
   width: 100%;
   background-color: #DE480B; 
@@ -40,8 +40,9 @@ nav ul {
 nav ul li {
   margin: 0 5px;
 }
-nav ul li a {
+nav ul li button {
   color: #f2f2f2;
+  background-color: #DE480B;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
@@ -50,8 +51,8 @@ nav ul li a {
   letter-spacing: 1px;
   transition: all 0.3s ease;
 }
-nav ul li a.active,
-nav ul li a:hover {
+nav ul li button.active,
+nav ul li button:hover {
   color: #111;
   background: #fff;
 }
@@ -99,19 +100,19 @@ input[type="checkbox"] {
     justify-content: center;
     margin: 40px 0;
   }
-  nav ul li a {
+  nav ul li button {
     width: 100%;
     margin-left: -100%;
     display: block;
     font-size: 20px;
     transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-  #click:checked ~ ul li a {
+  #click:checked ~ ul li button {
     margin-left: -20px;
     justify-content: center;
   }
-  nav ul li a.active,
-  nav ul li a:hover {
+  nav ul li button.active,
+  nav ul li button:hover {
     background: none;
     color: #ff6d00;
   }
