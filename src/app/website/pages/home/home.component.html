@@ -4,14 +4,14 @@
 
 <div class="container">
   <!--Contenedor del evento-->
-  <h1>{{ "evento" | translate }}</h1>
+  <h1>{{ 'evento' | translate }}</h1>
   <p>
-    {{ "home_saludo" | translate }}
+    {{ 'home_saludo' | translate }}
   </p>
   <!--Contenedor de nota de los organizadores-->
-  <h1>{{ "nota_organizadores" | translate }}</h1>
+  <h1>{{ 'nota_organizadores' | translate }}</h1>
   <p>
-    {{ "home_saludo2" | translate }}
+    {{ 'home_saludo2' | translate }}
   </p>
 
   <!--Contenedor de los logos del congreso-->
@@ -33,45 +33,35 @@
   <div class="container-comite">
     <h1>{{ "comite_organizador" | translate }}</h1>
     <!-- ngFor del comite organizador-->
-    <div class="col-xs-12">
-      <div class="card">
-        <mat-card *ngFor="let organizador of organizadores">
-          <mat-card-header>
-            <mat-card-title>{{ organizador.name }}</mat-card-title>
-            <mat-card-subtitle>{{
-              "comite_organizador" | translate
-              }}</mat-card-subtitle>
-          </mat-card-header>
-          <div class="card-img">
-            <img mat-card-image src="{{ 'assets/images/' + organizador.image }}" />
-          </div>
-          <mat-card-content>
-            <h3>
-              <strong>{{ "Institucion" | translate }} </strong>
-              {{ organizador.institucion }}
-            </h3>
-            <h3>
-              <strong>{{ "contacto" | translate }} </strong>
-              {{ organizador.contacto }}
-            </h3>
-            <h4>{{ organizador.descripcion }}</h4>
-          </mat-card-content>
-        </mat-card>
-      </div>
+
+    <div class="card">
+      <mat-card *ngFor="let organizador of organizadores">
+        <mat-card-header>
+          <mat-card-title>{{ organizador.name }}</mat-card-title>
+          <mat-card-subtitle>{{ 'comite_organizador' | translate }}</mat-card-subtitle>
+        </mat-card-header>
+
+        <div class="card-img">
+          <img mat-card-image src="{{ 'assets/images/' + organizador.image }}" />
+        </div>
+
+        <mat-card-content>
+          <h3> <strong>{{ 'Institucion' | translate }} </strong> {{ organizador.institucion }} </h3>
+          <h3> <strong>{{ 'contacto' | translate }} </strong> {{ organizador.contacto }} </h3>
+          <h4>{{ organizador.descripcion | translate }}</h4>
+        </mat-card-content>
+      </mat-card>
     </div>
   </div>
 
   <div class="container-comite">
     <h1>{{ "comite_organizador_internacional" | translate }}</h1>
     <!-- ngFor del comite organizador-->
-    <div class="col-xs-12">
       <div class="card">
-        <mat-card *ngFor="let organizador of Internacional">
+        <mat-card *ngFor="let organizador of internacional">
           <mat-card-header>
             <mat-card-title>{{ organizador.name }}</mat-card-title>
-            <mat-card-subtitle>{{
-              "comite_organizador_internacional" | translate
-              }}</mat-card-subtitle>
+            <mat-card-subtitle>{{ 'comite_organizador_internacional' | translate }}</mat-card-subtitle>
           </mat-card-header>
 
           <div class="card-img">
@@ -79,25 +69,14 @@
           </div>
 
           <mat-card-content>
-            <h3>
-              <strong>{{ "Institucion" | translate }} </strong>
-              {{ organizador.institucion }}
-            </h3>
-            <h3>
-              <strong>{{ "contacto" | translate }} </strong>
-              {{ organizador.contacto }}
-            </h3>
-            <h4>{{ organizador.descripcion }}</h4>
+            <h3> <strong>{{ 'Institucion' | translate }} </strong> {{ organizador.institucion }} </h3>
+            <h3> <strong>{{ 'contacto' | translate }} </strong> {{ organizador.contacto }} </h3>
+            <h4>{{ organizador.descripcion | translate}}</h4>
           </mat-card-content>
         </mat-card>
       </div>
     </div>
-  </div>
 
-  <div class="container-topic">
-    <h1>{{ "tematicas" | translate }}</h1>
-    <img src="assets/images/tema.PNG" style="height: 70%; width: 55%" />
-  </div>
 
   <section class="portafolio">
     <div class="contenedor">
@@ -172,18 +151,16 @@
 
     <p>
       Pueden Participar estudiantes y profesionales de todas las areas, que
-      esten interesados en aprender sobre la termografia infarroja. o Hacer  difusion 
+      esten interesados en aprender sobre la termografia infarroja. o Hacer difusion
       de los diferentes proyectos de termografia infrarroja. Este evento es de caracter gratuito
       tanto para estudiantes como para profesionales. es una gran oportunidad para aprender y conocer
       una tecnica que esta revolucionando el mundo en todas sus areas, desde el deporte, medicina, mecanica
       entre otras. Unete a nuestro evento animate a participar.
-
-
     </p>
-    
+
   </div>
 
   <div style="text-align: center; margin-bottom: 10%;">
-    <button routerLink="/registro" mat-raised-button color="warn" >Registrate al evento</button>
+    <button routerLink="/registro" mat-raised-button color="warn">Registrate al evento</button>
   </div>
 </div>

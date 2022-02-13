@@ -1,0 +1,17 @@
+.container-event {
+  width: 100%;
+}
+
+.box {
+  margin: 10px 50px;
+}
+
+p {
+  text-align: justify;
+}
+
+/*Cronograma*/
+.container-event .box .container-cronograma figure {
+  height: 50vh;
+  background-color: aqua;
+}
