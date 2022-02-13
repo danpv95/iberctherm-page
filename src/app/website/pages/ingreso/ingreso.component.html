@@ -1,42 +1,27 @@
-<div class="conta">
-
-  <div style="text-align: center">
-
-    <div class="row">
-
-<div class="col-12">
+<div class="container-login">
   <mat-card style="background-color: aliceblue;" class="card">
-    <form [formGroup]="formIngreso" (ngSubmit)="save($event)">   
+    <form [formGroup]="formIngreso" (ngSubmit)="save($event)">
       <div>
         <h1>Inicio de Sesion</h1>
       </div>
-        <div>
-          <mat-form-field class="example-full-width" appearance="fill">
-            <mat-label>Usuario</mat-label>
-            <input matInput type="text" [formControl]="nameField" class="form-control" />
-          </mat-form-field>
-        </div>
+      <div>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Usuario</mat-label>
+          <input matInput type="text" [formControl]="nameField" class="form-control" />
+        </mat-form-field>
+      </div>
 
-        <div>
-            <mat-form-field class="example-full-width" appearance="fill">
-              <mat-label>Contraseña</mat-label>
-              <input matInput type="password" [formControl]="passwordField" class="form-control"/> 
-            </mat-form-field>
-        </div>
+      <div>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Contraseña</mat-label>
+          <input matInput type="password" [formControl]="passwordField" class="form-control" />
+        </mat-form-field>
+      </div>
 
-        <div>
-          <button type="submit" mat-raised-button color="warn" >Ingresar</button>
-          <button mat-raised-button [routerLink]="['/registro']"> Registrarte</button>
-        </div>
+      <div>
+        <button type="submit" mat-raised-button color="warn">Ingresar</button>
+        <button mat-raised-button [routerLink]="['/registro']"> Registrarte</button>
+      </div>
     </form>
-
   </mat-card>
-</div>
-
-<div class="col-6">
-  <!-- <img src="assets/images/termo.jpg" style="margin-top: 20%;"> -->
-
-</div>
-    </div>  
-  </div>
 </div>

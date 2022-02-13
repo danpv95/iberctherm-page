@@ -1,15 +1,19 @@
 .card {
   width:max-content;
   height:max-content;
-  margin-top: 5%;
-  margin-left: 40%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.conta {
-  background-image: url("src\assets\images\fondo1.jpg");
+.container-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-   /* Full height */
-   height: 80vh;
+  background-image: url("src\assets\images\fondo1.jpg");
+   height: 90vh;
 
    /* Center and scale the image nicely */
    background-position: center;
