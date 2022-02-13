@@ -178,72 +178,19 @@
 
     <p>
       Pueden Participar estudiantes y profesionales de todas las areas, que
-      esten interesados en la termografia infarroja.
-    </p>
+      esten interesados en aprender sobre la termografia infarroja. o Hacer  difusion 
+      de los diferentes proyectos de termografia infrarroja. Este evento es de caracter gratuito
+      tanto para estudiantes como para profesionales. es una gran oportunidad para aprender y conocer
+      una tecnica que esta revolucionando el mundo en todas sus areas, desde el deporte, medicina, mecanica
+      entre otras. Unete a nuestro evento animate a participar.
 
-    <div style="margin-top: 2%">
-      <h1>Inscribite a la conferencia:</h1>
-    </div>
-    <p>Realiza la pre inscripcion.</p>
+
+    </p>
+    
+  </div>
+
+  <div style="text-align: center; margin-bottom: 10%;">
+    <button routerLink="/registro" mat-raised-button color="warn" >Registrate al evento</button>
   </div>
 </div>
-<!--Inicio formulario -->
-<div class="card-body">
-  <!--Se agrega el formulario reactivo-->
-  <form [formGroup]="form" (ngSubmit)="save($event)">
-    <div class="row" style="text-align: center">
-      <!-- Input de Documento-->
-      <h2>Datos personales</h2>
-      <div class="row" style="margin-left: 20%">
-        <div class="col-5">
-          <!--Nombre-->
-          <mat-form-field
-            class="example-full-width"
-            appearance="fill"
-            type="text"
-            FormControlName="nombre"
-          >
-            <input matInput placeholder="Nombre" />
-          </mat-form-field>
 
-          <!--Apellido-->
-          <mat-form-field
-            class="example-full-width"
-            appearance="fill"
-            type="text"
-            FormControlName="Apellido"
-            style="margin-left: 2%"
-          >
-            <input matInput placeholder="Apellido" />
-          </mat-form-field>
-
-          <!--tipo de cedula-->
-          <mat-form-field appearance="fill">
-            <mat-label>Tipo de documento</mat-label>
-            <mat-select>
-              <mat-option
-                *ngFor="let identificacion of identificacion"
-                [value]="identificacion.value"
-              >
-                {{ identificacion.viewValue }}
-              </mat-option>
-            </mat-select>
-          </mat-form-field>
-
-          <!--numero de cedula-->
-          <mat-form-field
-            class="example-full-width"
-            appearance="fill"
-            style="margin-left: 2%"
-          >
-            <mat-label>Numero de identificación</mat-label>
-            <input matInput />
-          </mat-form-field>
-        </div>
-      </div>
-      <div>
-        <button type="submit">enviar</button>
-      </div>
-    </div>
-  </form>
-</div>
