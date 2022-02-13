@@ -1,6 +1,8 @@
 .card {
   width:max-content;
   height:max-content;
+  margin-top: 5%;
+  margin-left: 40%;
 }
 
 .conta {
@@ -8,5 +10,9 @@
   width:100%;
   float: left;
   height:500px;
-  background-image: url("src\assets\images\fondo1.jpg");
+  /* opacity:0.4;
+  filter:alpha(opacity=30); For IE8 and earlier */
+  /* background-color: rgba(0, 0, 0, 0.925); */
+  background-image: url("src\assets\images\termo.jpg");
+  
 }
