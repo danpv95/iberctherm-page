@@ -12,12 +12,6 @@
   justify-content: space-between;
 }
 
-/***/
-.container-header-2 {
-  width: 100%;
-  background-color: #DE480B; 
-}
-
 nav {
   display: flex;
   height: 80px;
@@ -27,24 +21,17 @@ nav {
   padding: 0 50px 0 100px;
 }
 
-nav .logo {
-  color: #fff;
-  font-size: 35px;
-  font-weight: 600;
-}
-nav ul {
+.logo{
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  list-style: none;
 }
-nav ul li {
-  margin: 0 5px;
-}
-nav ul li a, 
-nav ul li select {
+
+.translate,
+.translate option{
   color: #f2f2f2;
   background-color: #DE480B;
-  text-decoration: none;
   font-size: 18px;
   font-weight: 500;
   padding: 8px 15px;
@@ -54,7 +41,27 @@ nav ul li select {
   border: transparent;
 }
 
-nav ul li a.active,
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #f2f2f2;
+  background-color: #DE480B;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+}
+
+.translate,
 nav ul li a:hover,
 nav ul li select:hover {
   color: #111;
@@ -70,13 +77,12 @@ input[type="checkbox"] {
   display: none;
 }
 
-
+/*RESPONSIVE*/
 @media screen and (max-width: 1000px) {
   nav {
     padding: 0 40px 0 50px;
   }
 }
-
 @media screen and (max-width: 920px) {
   nav {
     padding: auto;
@@ -119,21 +125,5 @@ input[type="checkbox"] {
   nav ul li a:hover {
     background: none;
     color: #ff6d00;
-  }
-}
-
-.banner img {
-  width: 100%;
-  border-radius: 0 0 0 20%;
-}
-
-@media screen and (max-width: 720px) {
-  .container-header .container-menu {
-    flex-direction: column;
-    padding: 0px;
-  }
-
-  .button-session {
-    margin: 3%;
   }
 }

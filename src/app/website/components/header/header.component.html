@@ -1,21 +1,21 @@
-<div class="container-header-2">
+<div class="container-header">
   <nav>
     <!--LOGO PAGE-->
-    <img routerLink="home" src="assets/resource/logo_congreso.png" />
-    <label class="logo">DagaCompany</label>
+    <span class="logo">
+      <img routerLink="home" src="assets/resource/logo_congreso.png" />
+      <select class="translate" #langSelect (change)="camnbiarLang(langSelect.value)">
+        <option *ngFor="let lang of langs" [value]="lang">{{ lang }}</option>
+      </select>
+    </span>
     <input type="checkbox" id="click">
     <label for="click" class="menu-btn">
       <fa-icon [icon]="faBars"></fa-icon>
     </label>
     <ul>
-      <li><a href="home">{{ "inicio" | translate }}</a></li>
-      <li><a href="evento">{{ "Evento" | translate }}</a></li>
-      <li><a href="comercial">{{ "Comercial" | translate }}</a></li>
-      <li><a href="pagos"> {{ "Inicio_sesion" | translate }}</a></li>
-      <li><select class="translate" #langSelect (change)="camnbiarLang(langSelect.value)">
-          <option *ngFor="let lang of langs" [value]="lang">{{ lang }}</option>
-        </select>
-      </li>
+      <li><a class="active"  routerLink="home">{{ "inicio" | translate }}</a></li>
+      <li><a routerLink="evento">{{ "Evento" | translate }}</a></li>
+      <li><a routerLink="pagos">{{ "Comercial" | translate }}</a></li>
+      <li><a routerLink="ingreso"> {{ "Inicio_sesion" | translate }}</a></li>
     </ul>
   </nav>
 </div>
