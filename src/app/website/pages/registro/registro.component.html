@@ -1,7 +1,13 @@
 <body>
   <div class="container" style="width: 50%">
-    <h1 style="text-align: center; margin-top: 5%">Formulario de registro</h1>
+    <h1 style="text-align: center; margin-top: 5%">Inscripción al evento</h1>
+<p style="text-align: justify;">Para realizar la Inscripción al evento es necesario que llenes la siguiente informacion, con la
+  cual podremos contactarte. Si vas a participar en modalidad de Ponente tu inscripcion solo sera efectiva
+  apenas se envie el resumen, del trabajo a presentar. El resumen es necesario enviarlo al correo mmedina@utp.edu.co
+  Al final del formulario se encuentra un acceso directo al drive, en donde podras descargar el formato de resumen para el evento
 
+
+</p>
     <div class="contenedor">
       <form [formGroup]="formRegister" (ngSubmit)="save($event)">
         <mat-form-field
@@ -38,6 +44,32 @@
             [formControl]="cedulaField"
             class="form-control"
           />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill"  style="margin-top: -9%;">
+          <mat-label>¿Eres estudiante o profesional? </mat-label>
+          <mat-select   [formControl]="asistenciaField" class="form-control">
+            <mat-option
+              *ngFor="let inscripcion of inscripcion"
+              [value]="inscripcion.value"
+            
+            >
+              {{ inscripcion.viewValue }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+
+        <mat-form-field appearance="fill"  style="margin-top: -9%;">
+          <mat-label>¿Como vas a participar?</mat-label>
+          <mat-select  [formControl]="participacionField" class="form-control">
+            <mat-option
+              *ngFor="let participar of participar"
+              [value]="participar.value"
+            >
+              {{ participar.viewValue }}
+            </mat-option>
+          </mat-select>
         </mat-form-field>
 
         <mat-form-field
@@ -87,20 +119,6 @@
         <mat-form-field
           class="example-full-width"
           appearance="fill"
-          style="margin-top: -9%;"
-        >
-          <mat-label>Nombre de Usuario </mat-label>
-          <input
-            matInput
-            type="text"
-            [formControl]="nombreUsuarioField"
-            class="form-control"
-          />
-        </mat-form-field>
-
-        <mat-form-field
-          class="example-full-width"
-          appearance="fill"
           style="margin-top: -9%"
         >
           <mat-label>Contraseña </mat-label>
@@ -126,10 +144,22 @@
           />
         </mat-form-field>
 
-        <button type="submit" mat-raised-button color="warn" >enviar</button>
+        <button type="submit" mat-raised-button color="warn" >enviar Inscripción</button>
         <!--FIN Formulario reactivo-->
       </form>
+      <div style="margin-top: 5%; margin-bottom: 5%;">
+        <h1>Formato de Resumen</h1>
+        <p style="text-align: justify;">Para enviar el resumen es necesario tener en cuenta el formato basico del evento
+          el cual podras encontrarlo dando click en el siguiente enlace <a href="https://drive.google.com/drive/folders/1dUYnTOuHL4_YBNuURVt5lAldCQfvdUYs?usp=sharing"  target="_blank">formato de resumen</a>
+          el enlace te redireccionara a un drive en donde podras descargar el formato. Muchos exitos y 
+          es un placer tenerte en cuenta para nuestro evento. 
+          Att: equipo de trabajo de la primera conferencia Iberoamericana de termografia infrarroja
+        </p>
 
+      </div>
+
+
+      
       <div class="row" style="text-align: center"></div>
     </div>
   </div>
