@@ -7,6 +7,7 @@ import { NotificationService } from 'src/app/core/notification/notification.serv
   templateUrl: './registro.component.html',
   styleUrls: ['./registro.component.css']
 })
+
 export class RegistroComponent implements OnInit {
 
   constructor(
