@@ -40,13 +40,10 @@
             <mat-card-title>{{ organizador.name }}</mat-card-title>
             <mat-card-subtitle>{{
               "comite_organizador" | translate
-            }}</mat-card-subtitle>
+              }}</mat-card-subtitle>
           </mat-card-header>
           <div class="card-img">
-            <img
-              mat-card-image
-              src="{{ 'assets/images/' + organizador.image }}"
-            />
+            <img mat-card-image src="{{ 'assets/images/' + organizador.image }}" />
           </div>
           <mat-card-content>
             <h3>
@@ -74,14 +71,11 @@
             <mat-card-title>{{ organizador.name }}</mat-card-title>
             <mat-card-subtitle>{{
               "comite_organizador_internacional" | translate
-            }}</mat-card-subtitle>
+              }}</mat-card-subtitle>
           </mat-card-header>
 
           <div class="card-img">
-            <img
-              mat-card-image
-              src="{{ 'assets/images/' + organizador.image }}"
-            />
+            <img mat-card-image src="{{ 'assets/images/' + organizador.image }}" />
           </div>
 
           <mat-card-content>
@@ -193,4 +187,3 @@
     <button routerLink="/registro" mat-raised-button color="warn" >Registrate al evento</button>
   </div>
 </div>
-

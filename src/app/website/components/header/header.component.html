@@ -3,7 +3,7 @@
     <!--LOGO PAGE-->
     <span class="logo">
       <img routerLink="home" src="assets/resource/logo_congreso.png" />
-      <select class="translate" #langSelect (change)="camnbiarLang(langSelect.value)">
+      <select class="active" #langSelect (change)="camnbiarLang(langSelect.value)">
         <option *ngFor="let lang of langs" [value]="lang">{{ lang }}</option>
       </select>
     </span>
@@ -12,10 +12,13 @@
       <fa-icon [icon]="faBars"></fa-icon>
     </label>
     <ul>
-      <li><a class="active" routerLink="home">{{ "inicio" | translate }}</a></li>
+      <li><a routerLink="home">{{ "inicio" | translate }}</a></li>
       <li><a routerLink="evento">{{ "Evento" | translate }}</a></li>
       <li><a routerLink="pagos">{{ "Comercial" | translate }}</a></li>
-      <li><a routerLink="ingreso"> {{ "Inicio_sesion" | translate }}</a></li>
+      <li><a class="active" routerLink="ingreso"> {{ "Inicio_sesion" | translate }} <fa-icon [icon]="faSignInAlt">
+          </fa-icon>
+        </a>
+      </li>
     </ul>
   </nav>
 </div>
