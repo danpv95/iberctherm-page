@@ -146,21 +146,16 @@
 <div class="container">
   <div class="contenedor">
     <div style="margin-top: 2%">
-      <h1>¿Quienes pueden participar?</h1>
+      <h1>   {{ 'quienes_participar' | translate }} </h1>
     </div>
 
     <p>
-      Pueden Participar estudiantes y profesionales de todas las areas, que
-      esten interesados en aprender sobre la termografia infarroja. o Hacer difusion
-      de los diferentes proyectos de termografia infrarroja. Este evento es de caracter gratuito
-      tanto para estudiantes como para profesionales. es una gran oportunidad para aprender y conocer
-      una tecnica que esta revolucionando el mundo en todas sus areas, desde el deporte, medicina, mecanica
-      entre otras. Unete a nuestro evento animate a participar.
+      {{ 'participar' | translate }}
     </p>
 
   </div>
 
   <div style="text-align: center; margin-bottom: 10%;">
-    <button routerLink="/registro" mat-raised-button color="warn">Registrate al evento</button>
+    <button routerLink="/registro" mat-raised-button color="warn"> {{ 'registro' | translate }} </button>
   </div>
 </div>
