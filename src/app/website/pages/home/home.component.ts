@@ -8,46 +8,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  // Se crea el formulario reactivo
-  form = new FormGroup({
-    tipo_documento: new FormControl(),
-    documento: new FormControl(),
-    denominacion: new FormControl(),
-    nombre: new FormControl(),
-    apellido: new FormControl(),
-    inscripcion: new FormControl(''),
-    institucion: new FormControl(''),
-    ciudad: new FormControl(''),
-    pais: new FormControl(''),
-    celular: new FormControl(),
-    felefono: new FormControl(),
-    resumen: new FormControl(''),
-  });
 
-  identificacion: inscripcion[] = [
-    { value: 'C.C', viewValue: 'C.C' },
-    { value: 'T.I', viewValue: 'T.I' },
-  ];
-  denominacion: inscripcion[] = [
-    { value: 'Señora', viewValue: 'Señora' },
-    { value: 'Señorita', viewValue: 'Señorita' },
-    { value: 'Señor', viewValue: 'Señor' },
-  ];
 
-  inscripcion: inscripcion[] = [
-    { value: 'Estudiante', viewValue: 'Estudiante' },
-    { value: 'Profesional', viewValue: 'Profesional' },
-  ];
-
-  participar: inscripcion[] = [
-    { value: 'Ponente', viewValue: 'Ponente' },
-    { value: 'Asistente', viewValue: 'Asistente' },
-  ];
-
-  Institucion: inscripcion[] = [
-    { value: 'Ponente', viewValue: 'Ponente' },
-    { value: 'Asistente', viewValue: 'Asistente' },
-  ];
 
   // tslint:disable-next-line: member-ordering
   organizadores: any[] = [
@@ -161,8 +123,5 @@ export class HomeComponent implements OnInit {
     this.translate.use('es');
   }
 
-  // tslint:disable-next-line: typedef
-  save($event: any) {
-    console.log(this.form.value);
-  }
+ 
 }
