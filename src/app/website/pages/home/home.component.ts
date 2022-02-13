@@ -5,31 +5,24 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor(
-    public translate: TranslateService
-  ) {
-    this.translate.setDefaultLang('es');
-  }
-
-
- //Se crea el formulario reactivo
- form = new FormGroup({
-  tipo_documento: new FormControl(),
-  documento: new FormControl(),
-  denominacion:new FormControl(),
-  nombre:new FormControl(),
-  apellido:new FormControl(),
-  inscripcion:new FormControl(""),
-  institucion:new FormControl(""),
-  ciudad:new FormControl(""),
-  pais:new FormControl(""),
-  celular:new FormControl(),
-  felefono:new FormControl(),
-  resumen:new FormControl("")
-});
+  // Se crea el formulario reactivo
+  form = new FormGroup({
+    tipo_documento: new FormControl(),
+    documento: new FormControl(),
+    denominacion: new FormControl(),
+    nombre: new FormControl(),
+    apellido: new FormControl(),
+    inscripcion: new FormControl(''),
+    institucion: new FormControl(''),
+    ciudad: new FormControl(''),
+    pais: new FormControl(''),
+    celular: new FormControl(),
+    felefono: new FormControl(),
+    resumen: new FormControl(''),
+  });
 
   identificacion: inscripcion[] = [
     { value: 'C.C', viewValue: 'C.C' },
@@ -56,105 +49,86 @@ export class HomeComponent implements OnInit {
     { value: 'Asistente', viewValue: 'Asistente' },
   ];
 
-  ngOnInit(): void {
-    this.translate.use('es');
-  }
-
+  // tslint:disable-next-line: member-ordering
   organizadores: any[] = [
     {
       name: 'Milton Medina',
       image: 'profeMilton.jpg',
-      descripcion:this.translate.instant('profe1'),
+      descripcion: this.translate.instant('profe0'),
       institucion: 'Universidad Tecnologica de Pereira',
       contacto: 'mmedina@utp.edu.co',
     },
     {
       name: 'Jenniffer Bustamante',
       image: 'profe_jennifer.png',
-      descripcion:
-        'Estudiante de Doctorado en Ciencias, Magister en Ingeniería Eléctrica, docente de la Universidad Tecnológica de Pereira, integrante del grupo de Investigación en Electrofisiología reconocido en categoría b.',
+      descripcion: this.translate.instant('profe1'),
       institucion: 'Universidad Tecnologica de Pereira',
       contacto: 'jbustamante@utp.edu.co ',
     },
     {
       name: 'Manuel Pinzón Candelario',
       image: 'profeManuel.jpg',
-      descripcion:
-        ' Magíster en Economía, Magíster en Ingeniería, Especializado en Gerencia Ambiental, Especialista en Gerencia y Gestión Cultural, Ingeniero en metalurgia, docente del Servicio Nacional de Aprendizaje SENA.',
-      institucion: 'Servicio Nacional de Aprendizaje SENA',
+      descripcion: this.translate.instant('profe2'),
+       institucion: 'Servicio Nacional de Aprendizaje SENA',
       contacto: 'candelario@utp.edu.co ',
     },
     {
       name: 'Jaime Andrés Pérez Taborda',
       image: 'JaimePerez.jpg',
-      descripcion:
-        ' El Dr. Jaime Andrés Pérez Taborda recibió el título de Ingeniero Físico (Hons.) de la Universidad Tecnológica de Pereira, Colombia, y el título de máster en radiación de sincrotrón y aceleradores de partículas de la Universidad Autónoma de Barcelona, así como su doctorado (Cum laude) del Instituto de Microelectrónica de Madrid, Universidad Complutense de Madrid...',
+      descripcion: this.translate.instant('profe3'),
       institucion: 'Universidad Nacional de Colombia',
       contacto: 'http://jaimeandres.co/',
     },
     {
       name: 'Alba Graciela Avila Bernal',
       image: 'albaprofe.jpg',
-      descripcion:
-        '  Doctora en filosofía de la Universidad de Cambridge, profesora asociada al departamento de Ingeniería Eléctrica y Electrónica de la Universidad de los Andes, Magíster en Ingeniería Eléctrica, profesional en Física y en Ingeniería Eléctrica.',
+      descripcion: this.translate.instant('profe4'),
       institucion: 'Universidad de los Andes',
       contacto: 'a-avila [at] uniandes.edu.co',
     },
     {
       name: 'Luis Norberto Benítez Vásquez',
       image: 'usuario.jpg',
-      descripcion:
-        ' Doctor en ciencias de la Escuela Politécnica Federal de Lausanne, Magíster en Química y profesional en Química de la Universidad del Valle, Investigador asociado de Minciencias.',
+      descripcion: this.translate.instant('profe5'),
       institucion: 'Servicio Nacional de Aprendizaje SENA',
       contacto: 'jaime ',
     },
     {
       name: 'Humberto Loaiza Correa:',
       image: 'HumbertoLoaiza.png',
-      descripcion:
-        ' Doctor en Robótica y Visión Artificial, Université d´Evry, Francia, Magíster en Automática e Ingeniero Electricista de la Universidad del Valle, integrante del grupo de investigación en Percepción y Sistemas Inteligentes, PSI e Investigador Senior de Minciencias.',
+      descripcion: this.translate.instant('profe6'),
       institucion: 'Universidad del Valle',
       contacto: 'humberto.loaiza@correounivalle.edu.co',
     },
     {
       name: 'Andrés David Restrepo Girón:',
       image: 'AndresRestrepo.png',
-      descripcion:
-        ' Doctor en Ingeniería, Magíster en Automática, e Ingeniero Electrónico de la Universidad del Valle, Integrante del grupo de investigación en Percepción y Sistemas Inteligentes, PSI e Investigador Senior de Minciencias.',
+      descripcion: this.translate.instant('profe7'),
       institucion: 'Universidad del Valle',
       contacto: 'andres.david.restrepo@correounivalle.edu.co',
-    },
-    {
-      name: '',
-      image: '',
-      descripcion: '',
-      institucion: '',
-      contacto: '',
-    },
+    }
   ];
 
-  Internacional: any[] = [
+  // tslint:disable-next-line: member-ordering
+  internacional: any[] = [
     {
       name: 'Aura Conci',
       image: 'aura.jpg',
-      descripcion:
-        ' Doctora, Magíster y profesional de Ingeniería Civil de la Universidad Católica de Río de Janeiro, docente de ciencias de la computación en la Universidade Federal Fluminense-UFF.',
+      descripcion: this.translate.instant('profe8'),
       institucion: 'Campus da Praia Vermelha',
       contacto: 'aconci@ic.uff.br',
     },
     {
       name: 'Ruben Dorantes Rodríguez',
       image: 'ruben.jpg',
-      descripcion:
-        'Doctor en Energética y Transferencia de Calor en el Instituto Nacional de Ciencias Aplicadas de Lyon, Especializado en Estudios a Profundidad en Energética en la Universidad de Niza, Licenciado en Física de la Universidad Nacional Autónoma de México.',
+      descripcion: this.translate.instant('profe9'),
       institucion: 'Universidad Tecnologica de Pereira',
       contacto: 'Universidad Autónoma Metropolitana ',
     },
     {
       name: 'Joaquim Gabriel Magalhães Mendes',
       image: 'joaquim.jpg',
-      descripcion:
-        ' Doctor en Electrónica Industrial por la Universidad de Minho, Magíster en Automatización Industrial y Gestión de Procesos, Ingeniero Mecánico de la Universidad de Oporto, integrante del grupo de Automatización, Instrumentación y Control.',
+      descripcion: this.translate.instant('profe10'),
       institucion: 'Universidade do Porto',
       contacto: 'jgabriel@fe.up.pt',
     },
@@ -179,8 +153,16 @@ export class HomeComponent implements OnInit {
     },
   ];
 
-  save($event:any){
-    console.log(this.form.value);
+  constructor(public translate: TranslateService) {
+    this.translate.setDefaultLang('es');
+  }
 
+  ngOnInit(): void {
+    this.translate.use('es');
+  }
+
+  // tslint:disable-next-line: typedef
+  save($event: any) {
+    console.log(this.form.value);
   }
 }

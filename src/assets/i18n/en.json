@@ -32,5 +32,16 @@
   "telefono": "Landline",
   "email": "Email",
   "enviar": "Send",
-  "profe1": "Ph.D. In Physics, Junior Researcher of Minciencias, professor at the Technological University of Pereira, director of the Electrophysiology Research Group recognized in category b, co-director of the Research Group on Magnetic and Magneto-optical properties of new materials (GIMM) recognized in category b."
+  "profe0": "Ph.D. In Physics, Junior Researcher of Minciencias, professor at the Technological University of Pereira, director of the Electrophysiology Research Group recognized in category b, co-director of the Research Group on Magnetic and Magneto-optical properties of new materials (GIMM) recognized in category b.",
+  
+  "profe1": "Estudiante de Doctorado en Ciencias, Magister en Ingeniería Eléctrica, docente de la Universidad Tecnológica de Pereira, integrante del grupo de Investigación en Electrofisiología reconocido en categoría b.",
+  "profe2": "Magíster en Economía, Magíster en Ingeniería, Especializado en Gerencia Ambiental, Especialista en Gerencia y Gestión Cultural, Ingeniero en metalurgia, docente del Servicio Nacional de Aprendizaje SENA.",
+  "profe3": "El Dr. Jaime Andrés Pérez Taborda recibió el título de Ingeniero Físico (Hons.) de la Universidad Tecnológica de Pereira, Colombia, y el título de máster en radiación de sincrotrón y aceleradores de partículas de la Universidad Autónoma de Barcelona, así como su doctorado (Cum laude) del Instituto de Microelectrónica de Madrid, Universidad Complutense de Madrid.",
+  "profe4": "Doctora en filosofía de la Universidad de Cambridge, profesora asociada al departamento de Ingeniería Eléctrica y Electrónica de la Universidad de los Andes, Magíster en Ingeniería Eléctrica, profesional en Física y en Ingeniería Eléctrica.",
+  "profe5": "Doctor en ciencias de la Escuela Politécnica Federal de Lausanne, Magíster en Química y profesional en Química de la Universidad del Valle, Investigador asociado de Minciencias.",
+  "profe6": "Doctor en Robótica y Visión Artificial, Université d´Evry, Francia, Magíster en Automática e Ingeniero Electricista de la Universidad del Valle, integrante del grupo de investigación en Percepción y Sistemas Inteligentes, PSI e Investigador Senior de Minciencias.",
+  "profe7": "Doctor en Ingeniería, Magíster en Automática, e Ingeniero Electrónico de la Universidad del Valle, Integrante del grupo de investigación en Percepción y Sistemas Inteligentes, PSI e Investigador Senior de Minciencias.",
+  "profe8": "Doctora, Magíster y profesional de Ingeniería Civil de la Universidad Católica de Río de Janeiro, docente de ciencias de la computación en la Universidade Federal Fluminense-UFF.",
+  "profe9": "Doctor en Energética y Transferencia de Calor en el Instituto Nacional de Ciencias Aplicadas de Lyon, Especializado en Estudios a Profundidad en Energética en la Universidad de Niza, Licenciado en Física de la Universidad Nacional Autónoma de México.",
+  "profe10": "Doctor en Electrónica Industrial por la Universidad de Minho, Magíster en Automatización Industrial y Gestión de Procesos, Ingeniero Mecánico de la Universidad de Oporto, integrante del grupo de Automatización, Instrumentación y Control."
 }
