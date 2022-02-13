@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { inscripcion } from 'src/app/core/models/modelos.component';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -8,10 +9,28 @@ import { inscripcion } from 'src/app/core/models/modelos.component';
 })
 export class HomeComponent implements OnInit {
   constructor(
-    private translate: TranslateService
+    public translate: TranslateService
   ) {
     this.translate.setDefaultLang('es');
   }
+
+
+ //Se crea el formulario reactivo
+ form = new FormGroup({
+  tipo_documento: new FormControl(),
+  documento: new FormControl(),
+  denominacion:new FormControl(),
+  nombre:new FormControl(),
+  apellido:new FormControl(),
+  inscripcion:new FormControl(""),
+  institucion:new FormControl(""),
+  ciudad:new FormControl(""),
+  pais:new FormControl(""),
+  celular:new FormControl(),
+  felefono:new FormControl(),
+  resumen:new FormControl("")
+});
+
   identificacion: inscripcion[] = [
     { value: 'C.C', viewValue: 'C.C' },
     { value: 'T.I', viewValue: 'T.I' },
@@ -37,13 +56,15 @@ export class HomeComponent implements OnInit {
     { value: 'Asistente', viewValue: 'Asistente' },
   ];
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.translate.use('es');
+  }
 
   organizadores: any[] = [
     {
       name: 'Milton Medina',
       image: 'profeMilton.jpg',
-      descripcion:`${this.translate.instant("profe_1")}`,
+      descripcion:this.translate.instant('profe1'),
       institucion: 'Universidad Tecnologica de Pereira',
       contacto: 'mmedina@utp.edu.co',
     },
@@ -157,4 +178,9 @@ export class HomeComponent implements OnInit {
       image: 'termografia.jpg',
     },
   ];
+
+  save($event:any){
+    console.log(this.form.value);
+
+  }
 }

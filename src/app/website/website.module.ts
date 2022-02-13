@@ -16,6 +16,7 @@ import { AutoresComponent } from './pages/autores/autores.component';
 import { PagosComponent } from './pages/pagos/pagos.component';
 import { EventosComponent } from './pages/eventos/eventos.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { MaterialsModule } from './../materials/materials.module';
 0
@@ -48,6 +49,8 @@ export function cargarTraductorJson(http: HttpClient){
         useFactory: (cargarTraductorJson),
         deps: [HttpClient]
       }
-    })],
+    }),
+    ReactiveFormsModule
+  ],
 })
 export class WebsiteModule {}

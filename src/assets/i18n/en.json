@@ -9,7 +9,6 @@
   "contacto": "Contact: ",
   "comite_organizador_internacional": "International Organizing Committee",
   "tematicas": "Themes",
-  "profe_1": "Ph.D. In Physics, Junior Researcher of Minciencias, professor at the Technological University of Pereira, director of the Electrophysiology Research Group recognized in category b, co-director of the Research Group on Magnetic and Magneto-optical properties of new materials (GIMM) recognized in category b.",
   "inicio": "Home",
   "autores": "Authors",
   "Evento": "Event",
@@ -32,5 +31,6 @@
   "Celular": "Cell phone",
   "telefono": "Landline",
   "email": "Email",
-  "enviar": "Send"
+  "enviar": "Send",
+  "profe1": "Ph.D. In Physics, Junior Researcher of Minciencias, professor at the Technological University of Pereira, director of the Electrophysiology Research Group recognized in category b, co-director of the Research Group on Magnetic and Magneto-optical properties of new materials (GIMM) recognized in category b."
 }
