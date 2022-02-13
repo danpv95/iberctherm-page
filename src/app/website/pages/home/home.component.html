@@ -40,13 +40,10 @@
             <mat-card-title>{{ organizador.name }}</mat-card-title>
             <mat-card-subtitle>{{
               "comite_organizador" | translate
-            }}</mat-card-subtitle>
+              }}</mat-card-subtitle>
           </mat-card-header>
           <div class="card-img">
-            <img
-              mat-card-image
-              src="{{ 'assets/images/' + organizador.image }}"
-            />
+            <img mat-card-image src="{{ 'assets/images/' + organizador.image }}" />
           </div>
           <mat-card-content>
             <h3>
@@ -74,14 +71,11 @@
             <mat-card-title>{{ organizador.name }}</mat-card-title>
             <mat-card-subtitle>{{
               "comite_organizador_internacional" | translate
-            }}</mat-card-subtitle>
+              }}</mat-card-subtitle>
           </mat-card-header>
 
           <div class="card-img">
-            <img
-              mat-card-image
-              src="{{ 'assets/images/' + organizador.image }}"
-            />
+            <img mat-card-image src="{{ 'assets/images/' + organizador.image }}" />
           </div>
 
           <mat-card-content>
@@ -187,6 +181,7 @@
     <p>Realiza la pre inscripcion.</p>
   </div>
 </div>
+
 <!--Inicio formulario -->
 <div class="card-body">
   <!--Se agrega el formulario reactivo-->
@@ -197,23 +192,13 @@
       <div class="row" style="margin-left: 20%">
         <div class="col-5">
           <!--Nombre-->
-          <mat-form-field
-            class="example-full-width"
-            appearance="fill"
-            type="text"
-            FormControlName="nombre"
-          >
+          <mat-form-field class="example-full-width" appearance="fill" type="text" FormControlName="nombre">
             <input matInput placeholder="Nombre" />
           </mat-form-field>
 
           <!--Apellido-->
-          <mat-form-field
-            class="example-full-width"
-            appearance="fill"
-            type="text"
-            FormControlName="Apellido"
-            style="margin-left: 2%"
-          >
+          <mat-form-field class="example-full-width" appearance="fill" type="text" FormControlName="Apellido"
+            style="margin-left: 2%">
             <input matInput placeholder="Apellido" />
           </mat-form-field>
 
@@ -221,21 +206,14 @@
           <mat-form-field appearance="fill">
             <mat-label>Tipo de documento</mat-label>
             <mat-select>
-              <mat-option
-                *ngFor="let identificacion of identificacion"
-                [value]="identificacion.value"
-              >
+              <mat-option *ngFor="let identificacion of identificacion" [value]="identificacion.value">
                 {{ identificacion.viewValue }}
               </mat-option>
             </mat-select>
           </mat-form-field>
 
           <!--numero de cedula-->
-          <mat-form-field
-            class="example-full-width"
-            appearance="fill"
-            style="margin-left: 2%"
-          >
+          <mat-form-field class="example-full-width" appearance="fill" style="margin-left: 2%">
             <mat-label>Numero de identificación</mat-label>
             <input matInput />
           </mat-form-field>

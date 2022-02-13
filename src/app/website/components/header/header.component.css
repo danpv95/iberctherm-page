@@ -3,22 +3,13 @@
   background-color: #ffab00;
 }
 
-.container-header .container-menu {
-  padding-left: 20px;
-  padding-right: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
 nav {
   display: flex;
   height: 80px;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 50px 0 100px;
+  padding: 0 50px 0 50px;
 }
 
 .logo {
@@ -28,8 +19,7 @@ nav {
   flex-wrap: wrap;
 }
 
-.translate,
-.translate option {
+.active {
   color: #f2f2f2;
   background-color: #de480b;
   font-size: 18px;
@@ -61,14 +51,15 @@ nav ul li a {
   transition: all 0.4s ease;
 }
 
-.translate,
+.active,
+nav ul li a.active,
 nav ul li a:hover,
 nav ul li select:hover {
   color: #111;
   background: #fff;
 }
 nav .menu-btn fa-icon {
-  color: #fff;
+  color: #1b1b1b;
   font-size: 22px;
   cursor: pointer;
   display: none;
@@ -83,7 +74,7 @@ input[type="checkbox"] {
     padding: 0 40px 0 50px;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 940px) {
   nav {
     padding: auto;
   }
@@ -105,6 +96,7 @@ input[type="checkbox"] {
   #click:checked ~ ul {
     left: 0;
   }
+
   nav ul li {
     width: 100%;
     justify-content: center;
@@ -126,4 +118,5 @@ input[type="checkbox"] {
     background: none;
     color: #ff6d00;
   }
+ 
 }
