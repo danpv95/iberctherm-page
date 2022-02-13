@@ -1,12 +1,12 @@
 .card {
-  width: 50%;
-  text-align: center;
-  margin-top: 20%;
-  margin-left: 25%;
-
-  background-color: #0d636eb6;
+  width:max-content;
+  height:max-content;
 }
 
-.fondo {
-  background-image: url("src\assets\images\termografia.jpg");
+.conta {
+  margin-top:auto;
+  width:100%;
+  float: left;
+  height:500px;
+  background-image: url("src\assets\images\fondo1.jpg");
 }
