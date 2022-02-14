@@ -1,4 +1,7 @@
 <div>
+  <h1>hgjgkl</h1> 
+  <button mat-raised-button (click)="logout()">  {{ 'LogOut' | translate }}</button>
+  <button mat-raised-button (click)="userLogged()">  {{ 'Info Usuario' | translate }}</button>
   <div *ngIf="products.length > 0; else noProducts">
     <ul>
       <li *ngFor="let p of products">
