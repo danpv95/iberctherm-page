@@ -1,13 +1,13 @@
+.banner img {
+  width: 100%;
+}
+
 .container {
   width: 98%;
   height: 100%;
   align-content: space-around;
 }
 
-.banner img {
-  width: 100%;
-  border-radius: 0 0 0 20%;
-}
 .container h1 {
   font-size: 40px;
   font-weight: bolder;
@@ -121,12 +121,10 @@
   top: 25px;
 }
 
-
-
 /* Galeria */
 
-.portafolio {
-  background: #f2f2f2;
+.topics {
+  width: auto;
 }
 
 .galeria-port {
