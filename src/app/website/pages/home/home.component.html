@@ -3,16 +3,13 @@
 </div>
 
 <div class="container">
+
   <!--Contenedor del evento-->
   <h1>{{ 'evento' | translate }}</h1>
-  <p>
-    {{ 'home_saludo' | translate }}
-  </p>
+  <p> {{ 'home_saludo' | translate }} </p>
   <!--Contenedor de nota de los organizadores-->
   <h1>{{ 'nota_organizadores' | translate }}</h1>
-  <p>
-    {{ 'home_saludo2' | translate }}
-  </p>
+  <p> {{ 'home_saludo2' | translate }} </p>
 
   <!--Contenedor de los logos del congreso-->
   <div class="container-logos">
@@ -57,87 +54,71 @@
   <div class="container-comite">
     <h1>{{ "comite_organizador_internacional" | translate }}</h1>
     <!-- ngFor del comite organizador-->
-      <div class="card">
-        <mat-card *ngFor="let organizador of internacional">
-          <mat-card-header>
-            <mat-card-title>{{ organizador.name }}</mat-card-title>
-            <mat-card-subtitle>{{ 'comite_organizador_internacional' | translate }}</mat-card-subtitle>
-          </mat-card-header>
+    <div class="card">
+      <mat-card *ngFor="let organizador of internacional">
+        <mat-card-header>
+          <mat-card-title>{{ organizador.name }}</mat-card-title>
+          <mat-card-subtitle>{{ 'comite_organizador_internacional' | translate }}</mat-card-subtitle>
+        </mat-card-header>
 
-          <div class="card-img">
-            <img mat-card-image src="{{ 'assets/images/' + organizador.image }}" />
-          </div>
+        <div class="card-img">
+          <img mat-card-image src="{{ 'assets/images/' + organizador.image }}" />
+        </div>
 
-          <mat-card-content>
-            <h3> <strong>{{ 'Institucion' | translate }} </strong> {{ organizador.institucion }} </h3>
-            <h3> <strong>{{ 'contacto' | translate }} </strong> {{ organizador.contacto }} </h3>
-            <h4>{{ organizador.descripcion | translate}}</h4>
-          </mat-card-content>
-        </mat-card>
-      </div>
+        <mat-card-content>
+          <h3> <strong>{{ 'Institucion' | translate }} </strong> {{ organizador.institucion }} </h3>
+          <h3> <strong>{{ 'contacto' | translate }} </strong> {{ organizador.contacto }} </h3>
+          <h4>{{ organizador.descripcion | translate}}</h4>
+        </mat-card-content>
+      </mat-card>
     </div>
+  </div>
 
 
-  <section class="portafolio">
+  <section class="topics">
+  
     <div class="contenedor">
-      <h2 class="titulo">Portafolio</h2>
+      <h1 class="titulo">Topicos</h1>
+  
       <div class="galeria-port">
         <div class="imagen-port">
-          <img src="./img/pexels-julia-m-cameron-4144294.jpg" alt="" />
+          <h2 for="">Topico 1</h2>
           <div class="hover-galeria">
-            <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="" />
-            <p>Nuestro trabajo</p>
+            <p>Investigaciones enfocadas a la aplicación de la radiación infrarroja en ciencias humanas y sociales.
+            </p>
           </div>
         </div>
         <div class="imagen-port">
-          <img src="./img/pexels-fauxels-3184454.jpg" alt="" />
+          <h2 for="">Topico 2</h2>
           <div class="hover-galeria">
-            <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="" />
-            <p>Nuestro trabajo</p>
+            <p> Investigaciones relacionadas al uso de la radiación infrarroja en Ciencia e Ingeniería de Materiales.</p>
           </div>
         </div>
         <div class="imagen-port">
-          <img src="./img/pexels-oleg-magni-2058128.jpg" alt="" />
+          <h2 for="">Topico 3</h2>
           <div class="hover-galeria">
-            <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="" />
-            <p>Nuestro trabajo</p>
+            <p>Investigaciones afines a las ciencias naturales (Biología, Física, Química, Matemáticas) y a las ciencias
+              de la salud.</p>
           </div>
         </div>
         <div class="imagen-port">
-          <img src="./img/pexels-olia-danilevich-4974914.jpg" alt="" />
+          <h2 for="">Topico 4</h2>
           <div class="hover-galeria">
-            <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="" />
-            <p>Nuestro trabajo</p>
+            <p>Evolución y tendencias actuales de la investigación usando termografía infrarroja, adquisición y
+              procesamiento de imágenes termográficas, procesos de calibración y caracterización de sensores infrarrojos,
+              aplicación de la termografía en procesos industriales, agroindustriales y comerciales, industria 4.0.</p>
           </div>
         </div>
         <div class="imagen-port">
-          <img src="./img/pexels-vlada-karpovich-4050315.jpg" alt="" />
+          <h2 for="">Topico 5</h2>
           <div class="hover-galeria">
-            <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="" />
-            <p>Nuestro trabajo</p>
+            <p>Investigaciones relacionadas con las ciencias de la computación, procesamiento y postprocesamiento de
+              imágenes termográficas, big data (minería de datos, inteligencia artificial, etc).Investigaciones
+              relacionadas con las ciencias de la computación, procesamiento y postprocesamiento de imágenes
+              termográficas, big data (minería de datos, inteligencia artificial, etc).</p>
           </div>
         </div>
-        <div class="imagen-port">
-          <img src="./img/pexels-vlada-karpovich-4050318.jpg" alt="" />
-          <div class="hover-galeria">
-            <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="" />
-            <p>Nuestro trabajo</p>
-          </div>
-        </div>
-        <div class="imagen-port">
-          <img src="./img/pexels-vlada-karpovich-4050415.jpg" alt="" />
-          <div class="hover-galeria">
-            <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="" />
-            <p>Nuestro trabajo</p>
-          </div>
-        </div>
-        <div class="imagen-port">
-          <img src="./img/pexels-oleg-magni-2764678.jpg" alt="" />
-          <div class="hover-galeria">
-            <img src="./img/026dfa9e31f5546a37609cd8763b4dba.svg" alt="" />
-            <p>Nuestro trabajo</p>
-          </div>
-        </div>
+  
       </div>
     </div>
   </section>
@@ -146,7 +127,7 @@
 <div class="container">
   <div class="contenedor">
     <div style="margin-top: 2%">
-      <h1>   {{ 'quienes_participar' | translate }} </h1>
+      <h1> {{ 'quienes_participar' | translate }} </h1>
     </div>
 
     <p>

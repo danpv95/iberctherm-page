@@ -1,6 +1,6 @@
 .card {
-  width:max-content;
-  height:max-content;
+  width: max-content;
+  height: max-content;
 
   display: flex;
   align-items: center;
@@ -13,11 +13,10 @@
   justify-content: center;
 
   background-image: url("src\assets\images\fondo1.jpg");
-   height: 90vh;
+  height: 90vh;
 
-   /* Center and scale the image nicely */
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
