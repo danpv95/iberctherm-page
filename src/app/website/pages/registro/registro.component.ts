@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { inscripcion } from 'src/app/core/models/modelos.component';
 import { NotificationService } from 'src/app/core/notification/notification.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-registro',
@@ -11,38 +12,31 @@ import { NotificationService } from 'src/app/core/notification/notification.serv
 
 export class RegistroComponent implements OnInit {
 
-  constructor(private notification: NotificationService) {}
-   identificacion: inscripcion[] = [
-    { value: 'C.C', viewValue: 'C.C' },
-    { value: 'T.I', viewValue: 'T.I' },
-  ];
-  denominacion: inscripcion[] = [
-    { value: 'Señora', viewValue: 'Señora' },
-    { value: 'Señorita', viewValue: 'Señorita' },
-    { value: 'Señor', viewValue: 'Señor' },
-  ];
+  constructor(private notification: NotificationService,
+    private translate: TranslateService) {
+      this.translate.setDefaultLang('es');
+    }
+
+
+   
 
   inscripcion: inscripcion[] = [
-    { value: 'Estudiante', viewValue: 'Estudiante' },
-    { value: 'Profesional', viewValue: 'Profesional' },
+    { value:this.translate.instant('estudiante'), viewValue: this.translate.instant('estudiante') },
+    { value: this.translate.instant('profesional'), viewValue: this.translate.instant('profesional') },
   ];
 
   participar: inscripcion[] = [
-    { value: 'Ponente', viewValue: 'Ponente' },
-    { value: 'Asistente', viewValue: 'Asistente' },
+    { value: this.translate.instant('ponente'), viewValue:  this.translate.instant('ponente') },
+    { value:  this.translate.instant('asistente'), viewValue: this.translate.instant('asistente')},
   ];
 
-  Institucion: inscripcion[] = [
-    { value: 'Ponente', viewValue: 'Ponente' },
-    { value: 'Asistente', viewValue: 'Asistente' },
-  ];
 
      //Formulario reactivo que permite almacenar la informacion: 
   formRegister = new FormGroup({
     name: new FormControl("", [Validators.required]),
     lastName: new FormControl("", [Validators.required]),
-    asistencia:new FormControl("Estudiante"),
-    participacion:new FormControl("Ponente"),
+    asistencia:new FormControl(""),
+    participacion:new FormControl(""),
     email: new FormControl("", [Validators.required,Validators.email ]),
     phone: new FormControl("", [Validators.required]),
     city: new FormControl("", [Validators.required]),

@@ -47,5 +47,39 @@
 
   "participar":"Students and professionals from all areas who are interested in learning about infrared thermography, or disseminating their research projects in which they implement the infrared thermography technique, can participate. This event is free for both students and professionals. It is a great opportunity to learn and get to know a technique that is revolutionizing the world in all its areas, from sports, medicine, mechanics, among others. Join our event, encourage yourself to participate!",
   "registro":"Register to the event",
-  "quienes_participar":"Who can participate?"
+  "quienes_participar":"Who can participate?",
+
+
+  "inscripcion_evento":"Event Registration",
+  "pasos_inscripcion":"To register for the event you need to fill in the following information, with which we can contact you. If you are going to participate in the Speaker mode, your registration will only be effective when you send the summary of the work to be presented during the event. The abstract must be sent to the email mmedina@utp.edu.co. At the end of the form there is a direct access to the drive, where you can download the summary format for the event. If you have any questions about the registration process, contact us by email mmedina@utp.edu.co",
+  "formato":"To send the summary it is necessary to take into account the basic format of the event, which you can find by clicking on the following link. The link will redirect you to a drive where you can download the format for the event. Many successes in your participation and it is a pleasure to have you in mind for our event. Att: work team of the first Ibero-American conference on infrared thermography",
+  "link_formato":"abstract format",
+  "nombre":"Name",
+  "apellido":"Last name",
+  "cedula":"Identification card",
+  "estudiante_profesional":"Are you a student or professional?",
+  "email_register":"Email",
+  "tel":"Telephone",
+  "ciudad_register":"Town",
+  "contraseña":"Password",
+  "confirmar_contraseña":"Confirm Password ",
+  "enviar_register":"Submit Registration",
+  "formato_resumen":"Abstract Format",
+  "como_participar":" How are you going to participate?",
+
+
+  "estudiante":"Estudiante",
+  "profesional":"Professional",
+  "ponente":"Ponente",
+  "asistente":"Attendee",
+
+
+  "inicio_sesion":"Login",
+  "usuario":"User",
+  "Contraseña":"Password",
+  "Ingresar":"Get into",
+  "Registrarte":"sign up"
+
+
+
 }

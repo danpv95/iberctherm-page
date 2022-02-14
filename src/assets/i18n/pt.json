@@ -49,5 +49,37 @@
 
   "participar":"Podem participar estudantes e profissionais de todas as áreas que tenham interesse em aprender sobre termografia infravermelha, ou divulgar seus projetos de pesquisa em que implementem a técnica de termografia infravermelha. Este evento é gratuito para estudantes e profissionais. É uma ótima oportunidade para aprender e conhecer uma técnica que está revolucionando o mundo em todas as suas áreas, desde esportes, medicina, mecânica, entre outras. Participe do nosso evento, incentive-se a participar!",
   "registro":"Register to the event",
-  "quienes_participar":"Quem pode participar?"
+  "quienes_participar":"Quem pode participar?",
+
+
+
+  "inscripcion_evento":"Registro do evento",
+  "pasos_inscripcion":"Para se inscrever no evento é necessário preencher os seguintes dados, com os quais poderemos contactá-lo. Se você vai participar na modalidade Palestrante, sua inscrição só será efetivada quando você enviar o resumo do trabalho a ser apresentado durante o evento. O resumo deve ser enviado para o e-mail mmedina@utp.edu.co. No final do formulário há um acesso direto ao drive, onde você pode baixar o formato de resumo do evento. Se você tiver alguma dúvida sobre o processo de registro, entre em contato conosco pelo e-mail mmedina@utp.edu.co",
+  "formato":"Para enviar o resumo é necessário levar em consideração o formato básico do evento, que você pode encontrar clicando no link a seguir. O link irá redirecioná-lo para um drive onde você pode baixar o formato do evento. Muitos sucessos em sua participação e é um prazer tê-lo em mente para o nosso evento. Att: equipe de trabalho da primeira conferência ibero-americana de termografia infravermelha",
+  "link_formato":"formato abstrato",
+  "nombre":"Nome",
+  "apellido":"Sobrenome",
+  "cedula":"Cartão de identificação",
+  "estudiante_profesional":"Você é estudante ou profissional?",
+  "email_register":"Correio eletrônico",
+  "tel":"Telefone",
+  "ciudad_register":"Cidade",
+  "contraseña":"Senha",
+  "confirmar_contraseña":"Confirmar senha",
+  "enviar_register":"Enviar registro",
+  "formato_resumen":"Formato abstrato",
+  "como_participar":" Como você vai participar?",
+
+  "estudiante":"Aluna",
+  "profesional":"Profissional",
+  "ponente":"Alto falante",
+  "asistente":"Participante",
+
+
+  "inicio_sesion":"Conecte-Se",
+  "usuario":"Do utilizador",
+  "Contraseña":"Senha",
+  "Ingresar":"Entrar",
+  "Registrarte":"inscrever-se"
+
 }

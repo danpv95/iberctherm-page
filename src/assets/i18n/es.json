@@ -47,5 +47,39 @@
 
   "participar":"Pueden Participar estudiantes y profesionales de todas las áreas, que estén interesados en aprender sobre la termografía infrarroja, o hacer difusión de sus proyectos de investigación en los cuales implementan la técnica de termografía infrarroja. Este evento es de carácter gratuito  tanto para estudiantes como para profesionales. es una gran oportunidad para aprender y conocer una técnica que está revolucionando el mundo en todas sus áreas, desde el deporte, medicina, mecánica entre otras. Únete a nuestro evento, ¡anímate a participar!.",
   "registro":"Registrarse al evento",
-  "quienes_participar":"¿Quienes pueden participar?"
+  "quienes_participar":"¿Quienes pueden participar?",
+
+
+  "inscripcion_evento":"Inscripción al evento",
+  "pasos_inscripcion":"Para realizar la Inscripción al evento es necesario que llenes la siguiente información, con la cual podremos contactarte. Si vas a participar en modalidad de Ponente tu inscripción solo será efectiva cuando envíes el resumen, del trabajo a presentar durante el evento. El resumen es necesario enviarlo al correo mmedina@utp.edu.co. Al final del formulario se encuentra un acceso directo al drive, en donde podrás descargar el formato de resumen para el evento. Si tienes alguna pregunta sobre el proceso de inscripción, contáctate con nosotros por medio del correo electrónico mmedina@utp.edu.co",
+  "formato":"Para enviar el resumen es necesario tener en cuenta el formato básico del evento, el cual podrás encontrarlo dando click en el siguiente enlace. El enlace te redireccionara a un drive en donde podrás descargar el formato para el evento. Muchos éxitos en tu participación y es un placer tenerte en cuenta para nuestro evento.  Att: equipo de trabajo de la primera conferencia Iberoamericana de termografía infrarroja",
+  "link_formato":"Formato de resumen",
+  "nombre":"Nombre",
+  "apellido":"Apellido",
+  "cedula":"Cedula",
+  "estudiante_profesional":"¿Eres estudiante o profesional?",
+  "como_participar":" ¿Como vas a participar?",
+  "email_register":"Correo electronico",
+  "tel":"telefono",
+  "ciudad_register":"Ciudad",
+  "contraseña":"Contraseña",
+  "confirmar_contraseña":"Confirmar Contraseña ",
+  "enviar_register":"Enviar Inscripción",
+  "formato_resumen":"Formato de Resumen",
+
+
+  "estudiante":"Estudiante",
+  "profesional":"Profesional",
+  "ponente":"Ponente",
+  "asistente":"Asistente",
+
+  
+  "inicio_sesion":"Inicio de Sesion",
+  "usuario":"Usuario",
+  "Contraseña":"Contraseña",
+  "Ingresar":"Ingresar",
+  "Registrarte":"Registrarte"
+
+
+
 }
