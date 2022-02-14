@@ -33,14 +33,14 @@
 
     <div class="card">
       <mat-card *ngFor="let organizador of organizadores">
+        <div class="card-img">
+          <img mat-card-image src="{{ 'assets/images/' + organizador.image }}" />
+        </div>
+
         <mat-card-header>
           <mat-card-title>{{ organizador.name }}</mat-card-title>
           <mat-card-subtitle>{{ 'comite_organizador' | translate }}</mat-card-subtitle>
         </mat-card-header>
-
-        <div class="card-img">
-          <img mat-card-image src="{{ 'assets/images/' + organizador.image }}" />
-        </div>
 
         <mat-card-content>
           <h3> <strong>{{ 'Institucion' | translate }} </strong> {{ organizador.institucion }} </h3>
@@ -56,14 +56,14 @@
     <!-- ngFor del comite organizador-->
     <div class="card">
       <mat-card *ngFor="let organizador of internacional">
+        <div class="card-img">
+          <img mat-card-image src="{{ 'assets/images/' + organizador.image }}" />
+        </div>
+
         <mat-card-header>
           <mat-card-title>{{ organizador.name }}</mat-card-title>
           <mat-card-subtitle>{{ 'comite_organizador_internacional' | translate }}</mat-card-subtitle>
         </mat-card-header>
-
-        <div class="card-img">
-          <img mat-card-image src="{{ 'assets/images/' + organizador.image }}" />
-        </div>
 
         <mat-card-content>
           <h3> <strong>{{ 'Institucion' | translate }} </strong> {{ organizador.institucion }} </h3>
@@ -88,7 +88,7 @@
             </p>
           </div>
         </div>
-        
+
         <div class="imagen-port">
           <h2 for="">Topico 2</h2>
           <div class="hover-galeria">

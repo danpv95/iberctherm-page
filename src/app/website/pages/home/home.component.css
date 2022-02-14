@@ -56,7 +56,6 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-
   justify-content: space-around;
   align-content: center;
 }
@@ -68,21 +67,15 @@
 .card > mat-card {
   max-width: 25%;
   min-width: 350px;
-
-  background-image: radial-gradient(
-    circle farthest-corner at 10% 20%,
-    rgba(252, 255, 8, 1) 0%,
-    rgba(255, 223, 12, 1) 50.2%,
-    rgba(255, 201, 4, 1) 90%
-  );
-
   padding: 2%;
   margin-top: 20px;
+  border-radius: 16px;
 
+  background-color: #ffc046;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  /*box-shadow: 0px 0px 5px 1px black;*/
+  box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
 }
 
 /*imagen cuadreada centrada*/
@@ -92,7 +85,6 @@
   overflow: hidden;
   margin: auto;
   margin-bottom: 10px;
-  box-shadow: 0px 0px 5px 1px black;
   position: relative;
 }
 
