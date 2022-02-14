@@ -18,12 +18,16 @@
         </mat-form-field>
       </div>
 
-      <div style="display: block;">
+      <div>
         <button type="submit" mat-raised-button color="warn" (click)="login()"> {{ 'Ingresar' | translate }} </button>
         <!--<button mat-raised-button [routerLink]="['/registro']">  {{ 'Registrarte' | translate }}</button>-->
-        <button mat-raised-button (click)="register()">  {{ 'Registrarte' | translate }}</button>
+        <!--<button mat-raised-button (click)="register()">  {{ 'Registrarte' | translate }}</button>
         <button mat-raised-button (click)="userLogged()">  {{ 'Info Usuario' | translate }}</button>
-        <button mat-raised-button (click)="logout()">  {{ 'LogOut' | translate }}</button>
+        <button mat-raised-button (click)="logout()">  {{ 'LogOut' | translate }}</button>-->
+      </div>
+
+      <div class="registerLabel">
+        <p>Si aun no te has inscrito <a [routerLink]="['/registro']">REGISTRATE</a></p>
       </div>
     </form>
   </mat-card>

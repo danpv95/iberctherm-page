@@ -20,3 +20,18 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+mat-form-field,
+button{
+  width: 100%;
+}
+
+.registerLabel {
+ margin-top: 10px;
+}
+
+.registerLabel a{
+  text-decoration: none;
+  font-weight: bolder;
+  color: #00838f;
+}

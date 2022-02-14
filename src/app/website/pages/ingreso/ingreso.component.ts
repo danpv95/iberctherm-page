@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { FirebaseService } from 'src/app/core/services/firebase/firebase.service';
 
@@ -14,7 +15,8 @@ export class IngresoComponent implements OnInit {
     password: new FormControl('', [Validators.required]),
   });
 
-  constructor(public firebaseService: FirebaseService) {
+  constructor(private route:Router,
+    public firebaseService: FirebaseService) {
     // Se implementa para darle estilos a la vista y la imagen de fondo
   }
 
@@ -39,6 +41,7 @@ export class IngresoComponent implements OnInit {
     const { name, password } = this.formIngreso.value;
     this.firebaseService.login(name, password).then((res) => {
       console.log('Ingreso: ' + name);
+      this.route.navigate(['/admin']);
     });
   }
 
