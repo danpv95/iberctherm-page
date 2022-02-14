@@ -73,12 +73,25 @@
   "ponente":"Ponente",
   "asistente":"Asistente",
 
-  
-  "inicio_sesion":"Inicio de Sesion",
+
+  "inicio_sesion":"Inicio de Sesión",
   "usuario":"Usuario",
   "Contraseña":"Contraseña",
   "Ingresar":"Ingresar",
-  "Registrarte":"Registrarte"
+  "Registrarte":"Registrarte",
+
+  "Topicos":"Topicos",
+  "topico1":"Topico 1",
+  "topico2":"Topico 2",
+  "topico3":"Topico 3",
+  "topico4":"Topico 4",
+  "topico5":"Topico 5",
+"text_topico1":"Investigaciones enfocadas a la aplicación de la radiación infrarroja en ciencias humanas y sociales.",
+"text_topico2":"Investigaciones relacionadas al uso de la radiación infrarroja en Ciencia e Ingeniería de Materiales.",
+"text_topico3":"Investigaciones afines a las ciencias naturales (Biología, Física, Química, Matemáticas) y a las ciencias de la salud.",
+"text_topico4":"Evolución y tendencias actuales de la investigación usando termografía infrarroja, adquisición y procesamiento de imágenes termográficas, procesos de calibración y caracterización de sensores infrarrojos, aplicación de la termografía en procesos industriales, agroindustriales y comerciales, industria 4.0.",
+"text_topico5":"Investigaciones relacionadas con las ciencias de la computación, procesamiento y postprocesamiento de imágenes termográficas, big data (minería de datos, inteligencia artificial, etc).Investigaciones relacionadas con las ciencias de la computación, procesamiento y postprocesamiento de imágenes termográficas, big data (minería de datos, inteligencia artificial, etc)."
+
 
 
 

@@ -78,7 +78,21 @@
   "usuario":"User",
   "Contraseña":"Password",
   "Ingresar":"Get into",
-  "Registrarte":"sign up"
+  "Registrarte":"sign up",
+
+
+  "Topicos":"Topics",
+  "topico1":"Topical 1",
+  "topico2":"Topical 2",
+  "topico3":"Topical 3",
+  "topico4":"Topical 4",
+  "topico5":"Topical 5",
+"text_topico1":"Research focused on the application of infrared radiation in human and social sciences.",
+"text_topico2":"Research related to the use of infrared radiation in Materials Science and Engineering.",
+"text_topico3":"Research related to natural sciences (Biology, Physics, Chemistry, Mathematics) and health sciences.",
+"text_topico4":"Evolution and current trends in research using infrared thermography, acquisition and processing of thermographic images, calibration processes and characterization of infrared sensors, application of thermography in industrial, agro-industrial and commercial processes, industry 4.0.",
+"text_topico5":"Research related to computer science, thermographic image processing and post-processing, big data (data mining, artificial intelligence, etc).Research related to computer science, thermographic image processing and post-processing, big data (data mining, data, artificial intelligence, etc.)"
+
 
 
 
