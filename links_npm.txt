@@ -1,0 +1,12 @@
+fontawesome:
+https://github.com/FortAwesome/angular-fontawesome
+
+ngx-translate:
+https://github.com/ngx-translate/core
+
+firease:
+https://github.com/angular/angularfire/blob/master/docs/install-and-setup.md
+FIX ng10:he error is related to the version of firebase. Your firebase is likely greater than version 8.
+peer firebase@"^7.0 || ^8.0" from @angular/fire@6.1.5
+@angular/fire requires firebase to be either at 7.0 or 8.0.
+Run npm uninstall firebase and then npm i firebase@8.0. That worked for me

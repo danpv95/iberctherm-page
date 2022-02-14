@@ -1,6 +1,6 @@
-
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { WebsiteRoutingModule } from './website-routing.module';
 import { SharedModule } from './../shared/shared.module';
@@ -18,16 +18,13 @@ import { EventosComponent } from './pages/eventos/eventos.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { MaterialsModule } from './../materials/materials.module';
-0
-import {HttpClientModule, HttpClient} from '@angular/common/http';
-import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-
-export function cargarTraductorJson(http: HttpClient){
-  return new TranslateHttpLoader(http,"../assets/i18n/",".json")
-};
+export function cargarTraductorJson(http: HttpClient) {
+  return new TranslateHttpLoader(http, '../assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -42,15 +39,19 @@ export function cargarTraductorJson(http: HttpClient){
     RegistroComponent,
     PreInscripcionComponent,
   ],
-  imports: [CommonModule, WebsiteRoutingModule, SharedModule,
+  imports: [
+    CommonModule,
+    WebsiteRoutingModule,
+    SharedModule,
+    FormsModule,
     TranslateModule.forRoot({
-      loader:{
+      loader: {
         provide: TranslateLoader,
-        useFactory: (cargarTraductorJson),
-        deps: [HttpClient]
-      }
+        useFactory: cargarTraductorJson,
+        deps: [HttpClient],
+      },
     }),
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
 })
 export class WebsiteModule {}

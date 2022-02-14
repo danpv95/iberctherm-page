@@ -12,7 +12,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-//import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [],

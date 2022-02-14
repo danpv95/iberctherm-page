@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { inscripcion } from 'src/app/core/models/modelos.component';
-import { NotificationService } from 'src/app/core/notification/notification.service';
+import { NotificationService } from 'src/app/core/services/notification/notification.service';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({

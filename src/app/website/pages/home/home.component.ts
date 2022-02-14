@@ -8,9 +8,6 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-
-
-
   // tslint:disable-next-line: member-ordering
   organizadores: any[] = [
     {
@@ -31,7 +28,7 @@ export class HomeComponent implements OnInit {
       name: 'Manuel Pinzón Candelario',
       image: 'profeManuel.jpg',
       descripcion: this.translate.instant('profe2'),
-       institucion: 'Servicio Nacional de Aprendizaje SENA',
+      institucion: 'Servicio Nacional de Aprendizaje SENA',
       contacto: 'candelario@utp.edu.co ',
     },
     {
@@ -68,7 +65,7 @@ export class HomeComponent implements OnInit {
       descripcion: this.translate.instant('profe7'),
       institucion: 'Universidad del Valle',
       contacto: 'andres.david.restrepo@correounivalle.edu.co',
-    }
+    },
   ];
 
   // tslint:disable-next-line: member-ordering
@@ -96,32 +93,9 @@ export class HomeComponent implements OnInit {
     },
   ];
 
-  Tematicas: any[] = [
-    {
-      name: 'Materiales',
-      image: 'termografia.jpg',
-    },
-    {
-      name: 'Termografia medica',
-      image: 'termografia.jpg',
-    },
-    {
-      name: 'Termografia de materiales',
-      image: 'termografia.jpg',
-    },
-    {
-      name: 'Milton Humberto',
-      image: 'termografia.jpg',
-    },
-  ];
-
   constructor(public translate: TranslateService) {
-    this.translate.setDefaultLang('es');
   }
 
   ngOnInit(): void {
-    this.translate.use('es');
   }
-
- 
 }

@@ -1,267 +1,37 @@
-
-
-<div class="container">
-  <div class="contenedor">
-    <div style="margin-top: 2%;">
-      <h1>¿Quienes pueden participar?</h1>
-    </div>
-   
-        <p>
-         Pueden Participar estudiantes y profesionales de todas las areas, que esten 
-         interesados en la termografia infarroja.
-        </p>
-
-        <div style="margin-top: 2%;">
-          <h1>Inscribite a la conferencia: </h1>
+<div>
+  <div *ngIf="products.length > 0; else noProducts">
+    <ul>
+      <li *ngFor="let p of products">
+        {{p.name}}
+        {{p.description}}
+        {{p.price}}
+        <button (click)="aditProduct($event, p)">Edit</button>
+        <button (click)="deleteProduct($event, p)">Delete</button>
+        <div *ngIf="editing  && editingProduct.id==p.id">
+          <form (ngSubmit)="updateProduct()">
+            <h1>edit</h1>
+            <input type="text" name="name" [(ngModel)]="editingProduct.name">
+            <input type="text" name="description" [(ngModel)]="editingProduct.description">
+            <input type="text" name="price" [(ngModel)]="editingProduct.price">
+            <button type="submit">Update</button>
+          </form>
         </div>
-        <p>
-            Realiza la pre inscripcion.
-        </p>
-
-    
-
+      </li>
+    </ul>
   </div>
 
-</div>
+  <form (ngSubmit)="addProduct()">
+    <label for="">id</label>
+    <input type="text" name="name" [(ngModel)]="productSend.id">
+    <label for="">name</label>
+    <input type="text" name="name" [(ngModel)]="productSend.name">
+    <input type="text" name="description" [(ngModel)]="productSend.description">
+    <input type="text" name="price" [(ngModel)]="productSend.price">
 
-<div class="container">
+    <button type="submit">Save</button>
+  </form>
 
-  <div class="contenedor">
-    <div class="titulos">
-      <h2>Tipo de documento</h2>
-    </div>
-
-    <div class="row" style="text-align: center">
-      <!-- Input de Documento-->
-
-      <div class="col-xs-4">
-        <mat-form-field appearance="fill">
-          <mat-label>Tipo de documento</mat-label>
-          <mat-select>
-            <mat-option
-              *ngFor="let identificacion of identificacion"
-              [value]="identificacion.value"
-            >
-              {{ identificacion.viewValue }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
-
-      <div class="col-4">
-        <h2></h2>
-        <mat-form-field
-          class="example-full-width"
-          appearance="fill"
-          style="margin-top: -9%"
-        >
-          <mat-label>Numero de identificación</mat-label>
-          <input matInput />
-        </mat-form-field>
-      </div>
-    </div>
-  
-
-  <div class="contenedor">
-    <div class="titulos">
-      <h2>Denominación</h2>
-    </div>
-
-    <div class="row" style="text-align: center">
-      <!-- Input de Documento-->
-
-      <div class="col-6">
-        <mat-form-field appearance="fill">
-          <mat-label>Denominación</mat-label>
-          <mat-select>
-            <mat-option
-              *ngFor="let denominacion of denominacion"
-              [value]="denominacion.value"
-            >
-              {{ denominacion.viewValue }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
-    </div>
-  </div>
-
-  <div class="contenedor">
-    <div class="titulos">
-      <h2>Datos personales</h2>
-    </div>
-
-    <div class="row" style="text-align: center">
-      <!-- Datos personales-->
-
-      <div class="col-xs-6">
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Nombre</mat-label>
-          <input matInput />
-        </mat-form-field>
-      </div>
-
-      <div class="col-xs-6">
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Apellido</mat-label>
-          <input matInput />
-        </mat-form-field>
-      </div>
-    </div>
-  </div>
-
-  <div class="contenedor">
-    <div class="titulos">
-      <h2>En calidad de que te inscribiras</h2>
-    </div>
-
-    <div class="row" style="text-align: center">
-      <!-- Input de en calidad de que te inscribiras -->
-
-      <div class="col-xs-6">
-        <mat-form-field appearance="fill">
-          <mat-label>Inscripción</mat-label>
-          <mat-select>
-            <mat-option
-              *ngFor="let inscripcion of inscripcion"
-              [value]="inscripcion.value"
-            >
-              {{ inscripcion.viewValue }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
-    </div>
-  </div>
-
-  <div class="contenedor">
-    <div class="titulos">
-      <h2>¿Como participaras?</h2>
-    </div>
-
-    <div class="row" style="text-align: center">
-      <!-- Input de  como participaras-->
-
-      <div class="col-xs-6">
-        <mat-form-field appearance="fill">
-          <mat-label>Participar</mat-label>
-          <mat-select>
-            <mat-option
-              *ngFor="let participar of participar"
-              [value]="participar.value"
-            >
-              {{ participar.viewValue }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
-    </div>
-  </div>
-
-  <div class="contenedor">
-    <div class="titulos">
-      <h2>de que institucion vienes</h2>
-    </div>
-
-    <div class="row" style="text-align: center">
-      <!-- Input de Documento-->
-
-      <div class="col-xs-6">
-        <mat-form-field appearance="fill">
-          <mat-label>Institucion</mat-label>
-          <mat-select>
-            <mat-option
-              *ngFor="let Institucion of Institucion"
-              [value]="Institucion.value"
-            >
-              {{ Institucion.viewValue }}
-            </mat-option>
-          </mat-select>
-        </mat-form-field>
-      </div>
-    </div>
-  </div>
-
-  <div class="contenedor">
-    <div class="titulos">
-      <h2>Si no encuentra su institucion por favor escriba el nombre</h2>
-    </div>
-
-    <div class="row" style="text-align: center">
-      <!-- Input de Documento-->
-
-      <div class="col-xs-6">
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Institución</mat-label>
-          <input matInput />
-        </mat-form-field>
-      </div>
-
-      <div class="col-xs-6">
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Ciudad</mat-label>
-          <input matInput />
-        </mat-form-field>
-      </div>
-
-      <div class="col-xs-6">
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Pais</mat-label>
-          <input matInput />
-        </mat-form-field>
-      </div>
-    </div>
-  </div>
-
-  <div class="contenedor">
-    <div class="titulos">
-      <h2>¿Como podemos contactarte?</h2>
-    </div>
-
-    <div class="row" style="text-align: center">
-      <!-- Input de Documento-->
-
-      <div class="col-xs-6">
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Celular</mat-label>
-          <input matInput />
-        </mat-form-field>
-      </div>
-
-      <div class="col-xs-6">
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Telefono fijo</mat-label>
-          <input matInput />
-        </mat-form-field>
-      </div>
-
-      <div class="col-xs-6">
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Email</mat-label>
-          <input matInput />
-        </mat-form-field>
-      </div>
-    </div>
-  </div>
-
-  <div class="contenedor">
-    <div class="titulos">
-      <h2>Envia tu resumen</h2>
-    </div>
-
-    <div class="row" style="text-align: center">
-      <!-- Input de Documento-->
-
-      <div class="col-xs-6">
-        <mat-form-field class="example-full-width" appearance="fill">
-          <mat-label>Resumen</mat-label>
-          <input matInput style="width: 376%; height: 376%" />
-        </mat-form-field>
-      </div>
-    </div>
-  </div>
-
-  <div style="text-align: center; margin-bottom: 10%">
-    <button mat-raised-button>Enviar</button>
-  </div>
+  <ng-template #noProducts>
+    <p>There are not products yet.</p>
+  </ng-template>
 </div>
