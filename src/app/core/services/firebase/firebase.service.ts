@@ -65,12 +65,7 @@ export class FirebaseService {
   }
 
   async login(email: string, password: string) {
-    try {
-      return await this.fireAuth.signInWithEmailAndPassword(email, password);
-    } catch (err) {
-      console.log('error log: ', err);
-      return null;
-    }
+    return await this.fireAuth.signInWithEmailAndPassword(email, password);
   }
 
   getUserLog() {

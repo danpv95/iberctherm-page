@@ -41,25 +41,13 @@ export class IngresoComponent implements OnInit {
     const { name, password } = this.formIngreso.value;
     this.firebaseService.login(name, password)
     .then((response) => {
-          try {
-            if (response !== null) {
-              console.log('Ingreso: ' + name);
-              this.route.navigate(['/admin']);
-            }
-          } catch (error) {
-            window.alert('catch-error: ' + error.message);
-            return null;
+          if (response !== null) {
+            console.log('Ingreso: ' + name);
+            this.route.navigate(['/admin']);
           }
         }, (error) => {
           window.alert('error: ' + error.message);
         }
       );
-  }
-
-  register() {
-    const { name, password } = this.formIngreso.value;
-    this.firebaseService.register(name, password).then((res) => {
-      console.log('Se registro: ' + name);
-    });
   }
 }
