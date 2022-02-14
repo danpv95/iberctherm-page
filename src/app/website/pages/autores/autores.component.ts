@@ -56,4 +56,14 @@ export class AutoresComponent implements OnInit {
     this.editingProduct = {} as Product;
     this.editing = !this.editing;
   }
+
+
+  userLogged() {
+    this.firebaseService.getUserLog().subscribe((res) => {
+      console.log('email: ' + res?.email);
+    });
+  }
+  logout() {
+    this.firebaseService.logout();
+  }
 }
