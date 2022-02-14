@@ -77,7 +77,7 @@
   "inicio_sesion":"Login",
   "usuario":"User",
   "Contraseña":"Password",
-  "Ingresar":"Get into",
+  "Ingresar":"Access",
   "Registrarte":"sign up",
 
 
@@ -95,7 +95,10 @@
 
 
 
-"footer":"Carrera 27 #10-02 Barrio Alamos - Pereira - Risaralda - Colombia - AA: 97 - Postal code: 660003 Block 1 GIMM laboratory 1A-125 -contact: mmedina@utp.edu.co"
+"footer":"Carrera 27 #10-02 Barrio Alamos - Pereira - Risaralda - Colombia - AA: 97 - Postal code: 660003 Block 1 GIMM laboratory 1A-125 -contact: mmedina@utp.edu.co",
+
+"inscrito":"If you haven't signed up yet",
+"registrate":"SIGN UP"
 
 
 
