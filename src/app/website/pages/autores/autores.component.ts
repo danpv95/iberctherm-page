@@ -58,11 +58,27 @@ export class AutoresComponent implements OnInit {
   }
 
 
+  /*login() {
+    const { name, password } = this.formIngreso.value;
+    this.firebaseService.login(name, password).then((res) => {
+      console.log('Ingreso: ' + name);
+      this.route.navigate(['/admin']);
+    });
+  }
+
+  register() {
+    const { name, password } = this.formIngreso.value;
+    this.firebaseService.register(name, password).then((res) => {
+      console.log('Se registro: ' + name);
+    });
+  }*/
+
   userLogged() {
     this.firebaseService.getUserLog().subscribe((res) => {
       console.log('email: ' + res?.email);
     });
   }
+
   logout() {
     this.firebaseService.logout();
   }
