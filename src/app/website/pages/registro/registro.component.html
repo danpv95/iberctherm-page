@@ -1,160 +1,87 @@
 <body>
   <div class="container" style="width: 50%">
     <h1 style="text-align: center; margin-top: 5%"> {{ 'inscripcion_evento' | translate }}</h1>
-<p style="text-align: justify;"> {{ 'pasos_inscripcion' | translate }}
+    <p style="text-align: justify;"> {{ 'pasos_inscripcion' | translate }}
 
 
-</p>
+    </p>
     <div class="contenedor">
       <form [formGroup]="formRegister" (ngSubmit)="save($event)">
-        <mat-form-field
-          class="example-full-width"
-          appearance="fill"
-          style="margin-top: -9%;" >
+        <mat-form-field class="example-full-width" appearance="fill" style="margin-top: -9%;">
           <mat-label>{{ 'nombre' | translate }} </mat-label>
           <input matInput type="text" [formControl]="nameField" class="form-control" />
         </mat-form-field>
 
-        <mat-form-field
-          class="example-full-width"
-          appearance="fill"
-          style="margin-top: -9%; "
-        >
+        <mat-form-field class="example-full-width" appearance="fill" style="margin-top: -9%; ">
           <mat-label> {{ 'apellido' | translate }} </mat-label>
-          <input
-            matInput
-            type="text"
-            [formControl]="lastNameField"
-            class="form-control"
-          />
+          <input matInput type="text" [formControl]="lastNameField" class="form-control" />
         </mat-form-field>
 
-        <mat-form-field
-          class="example-full-width"
-          appearance="fill"
-          style="margin-top: -9%;"
-        >
-          <mat-label>{{ 'cedula' | translate }}  </mat-label>
-          <input 
-            matInput
-            type="number"
-            [formControl]="cedulaField"
-            class="form-control"
-          />
+        <mat-form-field class="example-full-width" appearance="fill" style="margin-top: -9%;">
+          <mat-label>{{ 'cedula' | translate }} </mat-label>
+          <input matInput type="number" [formControl]="cedulaField" class="form-control" />
         </mat-form-field>
 
-        <mat-form-field appearance="fill"  style="margin-top: -9%;">
+        <mat-form-field appearance="fill" style="margin-top: -9%;">
           <mat-label>{{ 'estudiante_profesional' | translate }} </mat-label>
-          <mat-select   [formControl]="asistenciaField" class="form-control">
-            <mat-option
-              *ngFor="let inscripcion of inscripcion"
-              [value]="inscripcion.value"
-            
-            >
-              {{ inscripcion.viewValue  }}
+          <mat-select [formControl]="asistenciaField" class="form-control">
+            <mat-option *ngFor="let inscripcion of inscripcion" [value]="inscripcion.value">
+              {{ inscripcion.viewValue }}
             </mat-option>
           </mat-select>
         </mat-form-field>
 
-
-        <mat-form-field appearance="fill"  style="margin-top: -9%;">
-          <mat-label>  {{ 'como_participar' | translate }}</mat-label>
-          <mat-select  [formControl]="participacionField" class="form-control">
-            <mat-option
-              *ngFor="let participar of participar"
-              [value]="participar.value"
-            >
+        <mat-form-field appearance="fill" style="margin-top: -9%;">
+          <mat-label> {{ 'como_participar' | translate }}</mat-label>
+          <mat-select [formControl]="participacionField" class="form-control">
+            <mat-option *ngFor="let participar of participar" [value]="participar.value">
               {{ participar.viewValue }}
             </mat-option>
           </mat-select>
         </mat-form-field>
 
-        <mat-form-field
-          class="example-full-width"
-          appearance="fill"
-          style="margin-top: -9%"
-        >
-          <mat-label> {{ 'email_register' | translate }}  </mat-label>
-          <input
-            matInput
-            type="email"
-            [formControl]="emailField"
-            class="form-control"
-          />
+        <mat-form-field class="example-full-width" appearance="fill" style="margin-top: -9%">
+          <mat-label> {{ 'email_register' | translate }} </mat-label>
+          <input matInput type="email" [formControl]="emailField" class="form-control" />
         </mat-form-field>
 
-        <mat-form-field
-          class="example-full-width"
-          appearance="fill"
-          style="margin-top: -9%"
-        >
-          <mat-label>  {{ 'tel' | translate }}  </mat-label>
-          <input
-            matInput
-            type="number"
-            [formControl]="phoneField"
-            class="form-control"
-          />
+        <mat-form-field class="example-full-width" appearance="fill" style="margin-top: -9%">
+          <mat-label> {{ 'tel' | translate }} </mat-label>
+          <input matInput type="number" [formControl]="phoneField" class="form-control" />
         </mat-form-field>
 
-        <mat-form-field
-          class="example-full-width"
-          appearance="fill"
-          style="margin-top: -9%"
-        >
-          <mat-label>   {{ 'ciudad_register' | translate }} </mat-label>
-          <input
-            matInput
-            type="text"
-            [formControl]="cityField"
-            class="form-control"
-          />
+        <mat-form-field class="example-full-width" appearance="fill" style="margin-top: -9%">
+          <mat-label> {{ 'ciudad_register' | translate }} </mat-label>
+          <input matInput type="text" [formControl]="cityField" class="form-control" />
         </mat-form-field>
 
         <!--Nombre de Usuario y contraseña-->
 
-        <mat-form-field
-          class="example-full-width"
-          appearance="fill"
-          style="margin-top: -9%"
-        >
+        <mat-form-field class="example-full-width" appearance="fill" style="margin-top: -9%">
           <mat-label> {{ 'contraseña' | translate }} </mat-label>
-          <input
-            matInput
-            type="password"
-            [formControl]="passwordField"
-            class="form-control"
-          />
+          <input matInput type="password" [formControl]="passwordField" class="form-control" />
         </mat-form-field>
 
-        <mat-form-field
-          class="example-full-width"
-          appearance="fill"
-          style="margin-top: -9%"
-        >
+        <mat-form-field class="example-full-width" appearance="fill" style="margin-top: -9%">
           <mat-label> {{ 'confirmar_contraseña' | translate }} </mat-label>
-          <input
-            matInput
-            type="password"
-            [formControl]="password1Field"
-            class="form-control"
-          />
+          <input matInput type="password" [formControl]="password1Field" class="form-control" />
         </mat-form-field>
 
-        <button type="submit" mat-raised-button color="warn" > {{ 'enviar_register' | translate }}</button>
+        <button type="submit" mat-raised-button color="warn"> {{ 'enviar_register' | translate }}</button>
         <!--FIN Formulario reactivo-->
       </form>
       <div style="margin-top: 5%; margin-bottom: 5%;">
         <h1> {{ 'formato_resumen' | translate }}</h1>
         <p style="text-align: justify;">
           {{ 'formato' | translate }}
-          <a href="https://drive.google.com/drive/folders/1dUYnTOuHL4_YBNuURVt5lAldCQfvdUYs?usp=sharing"  target="_blank">{{ 'link_formato' | translate }}</a>
+          <a href="https://drive.google.com/drive/folders/1dUYnTOuHL4_YBNuURVt5lAldCQfvdUYs?usp=sharing"
+            target="_blank">{{ 'link_formato' | translate }}</a>
         </p>
 
       </div>
 
 
-      
+
       <div class="row" style="text-align: center"></div>
     </div>
   </div>
