@@ -1,1 +1,16 @@
-<p>nav-tools works!</p>
+<h1>Lista de Registros</h1>
+
+<div *ngIf="register.length > 0; else noReisters">
+    <ul>
+        <li *ngFor="let p of register">
+            {{p.name}}
+            {{p.email}}
+            <button (click)="editProduct($event, p)">Edit</button>
+            <button (click)="deleteProduct($event, p)">Delete</button>
+        </li>
+    </ul>
+</div>
+
+<ng-template #noReisters>
+    <p>There are not products yet.</p>
+</ng-template>

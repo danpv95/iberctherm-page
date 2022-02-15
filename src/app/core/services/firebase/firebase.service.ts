@@ -52,12 +52,8 @@ export class FirebaseService {
   }
 
   // GET METHODS
-  getProducts() {
-    return this.products;
-  }
-  getRegister() {
-    return this.registers;
-  }
+  getProducts() {    return this.products;  }
+  getRegister() {    return this.registers;  }
 
   // POST METHODS
   addProduct(product: Product) {
@@ -73,6 +69,10 @@ export class FirebaseService {
   deleteProduct(product: Product) {
     this.productDoc = this.db.doc(`products/${product.id}`);
     this.productDoc.delete();
+  }
+  deleteRegister(data: DataRegister) {
+    this.registerDoc = this.db.doc(`register/${data.cedula}`);
+    this.registerDoc.delete();
   }
 
   //UPDATE METHODS
