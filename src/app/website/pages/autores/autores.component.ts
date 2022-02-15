@@ -57,7 +57,6 @@ export class AutoresComponent implements OnInit {
     this.editing = !this.editing;
   }
 
-
   /*login() {
     const { name, password } = this.formIngreso.value;
     this.firebaseService.login(name, password).then((res) => {

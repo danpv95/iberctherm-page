@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
 import { NavToolsComponent } from './nav-tools/nav-tools.component';
+import { StatusComponent } from './status/status.component';
 
 const routes: Routes = [
   {
@@ -14,8 +15,12 @@ const routes: Routes = [
         pathMatch: 'full',
       },
       {
-        path: 'nav-tools',
+        path: '',
         component: NavToolsComponent,
+      },
+      {
+        path: 'status',
+        component: StatusComponent,
       },
     ],
   },

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataRegister } from 'src/app/core/models/registro.model';
 import { FirebaseService } from 'src/app/core/services/firebase/firebase.service';
 
 @Component({
@@ -7,7 +8,7 @@ import { FirebaseService } from 'src/app/core/services/firebase/firebase.service
   styleUrls: ['./nav-tools.component.css']
 })
 export class NavToolsComponent implements OnInit {
-  register = [];
+  register:DataRegister[] = [];
   constructor(public firebaseService: FirebaseService) { }
 
   ngOnInit(): void {
@@ -15,7 +16,7 @@ export class NavToolsComponent implements OnInit {
   }
 
   getRegisters (){
-    this.firebaseService.getRegister().subscribe((register) => {
+    this.firebaseService.getRegister().subscribe((register: DataRegister[]) => {
       console.log(register);
       this.register = register;
     });

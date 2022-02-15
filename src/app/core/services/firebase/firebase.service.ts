@@ -5,6 +5,8 @@ import {
   AngularFirestoreCollection,
   AngularFirestoreDocument,
 } from '@angular/fire/firestore';
+import { geteuid } from 'process';
+
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -52,8 +54,16 @@ export class FirebaseService {
   }
 
   // GET METHODS
-  getProducts() {    return this.products;  }
-  getRegister() {    return this.registers;  }
+  getProducts() {
+    return this.products;
+  }
+  getRegister() {
+    return this.registers;
+  }
+
+  getRegisterbyId(mail: string) {
+    return this.db.collection('register', ref => ref.where('email','==',mail)).valueChanges();
+  }
 
   // POST METHODS
   addProduct(product: Product) {

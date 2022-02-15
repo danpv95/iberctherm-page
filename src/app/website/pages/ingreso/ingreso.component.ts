@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { FirebaseService } from 'src/app/core/services/firebase/firebase.service';
+import { DataRegister } from 'src/app/core/models/registro.model';
 
 @Component({
   selector: 'app-ingreso',
@@ -12,6 +13,8 @@ export class IngresoComponent implements OnInit {
   // Formulario reactivo que permite almacenar la informacion:
 
   errorMessage = '';
+  dataRegister: DataRegister = {};
+
   formIngreso = new FormGroup({
     name: new FormControl('', [Validators.required]),
     password: new FormControl('', [Validators.required]),
@@ -39,15 +42,24 @@ export class IngresoComponent implements OnInit {
 
   login() {
     const { name, password } = this.formIngreso.value;
-    this.firebaseService.login(name, password)
-    .then((response) => {
-          if (response !== null) {
-            console.log('Ingreso: ' + name);
-            this.route.navigate(['/admin']);
-          }
-        }, (error) => {
-          window.alert('error: ' + error.message);
+    this.firebaseService.login(name, password).then(
+      (response) => {
+        if (response !== null) {
+          console.log('Ingreso: ' + name);
+          this.route.navigate(['/admin']);
         }
-      );
+      },
+      (error) => {
+        window.alert('error: ' + error.message);
+      }
+    );
+  }
+
+  getRegisterbyId() {
+    const { name, password } = this.formIngreso.value;
+    this.firebaseService.getRegisterbyId(name).subscribe((response: DataRegister[]) => {
+      this.dataRegister = response[0];
+      console.log(this.dataRegister);
+    });
   }
 }
