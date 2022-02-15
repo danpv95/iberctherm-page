@@ -8,7 +8,6 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  // tslint:disable-next-line: member-ordering
   organizadores: any[] = [
     {
       name: 'Milton Medina',
@@ -68,7 +67,6 @@ export class HomeComponent implements OnInit {
     },
   ];
 
-  // tslint:disable-next-line: member-ordering
   internacional: any[] = [
     {
       name: 'Aura Conci',
@@ -93,9 +91,7 @@ export class HomeComponent implements OnInit {
     },
   ];
 
-  constructor(public translate: TranslateService) {
-  }
+  constructor(public translate: TranslateService) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 }

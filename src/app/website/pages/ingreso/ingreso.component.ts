@@ -44,9 +44,12 @@ export class IngresoComponent implements OnInit {
     const { name, password } = this.formIngreso.value;
     this.firebaseService.login(name, password).then(
       (response) => {
-        if (response !== null) {
+        if (response !== null && name === 'danpv95@gmail.com') {
           console.log('Ingreso: ' + name);
-          this.route.navigate(['/admin']);
+          this.route.navigate(['/admin/nav-tools']);
+        } else if(response !== null){
+          console.log('Ingreso: ' + name);
+          this.getRegisterbyId();
         }
       },
       (error) => {
@@ -57,9 +60,10 @@ export class IngresoComponent implements OnInit {
 
   getRegisterbyId() {
     const { name, password } = this.formIngreso.value;
-    this.firebaseService.getRegisterbyId(name).subscribe((response: DataRegister[]) => {
+    this.firebaseService.getRegisterbyMail(name).subscribe((response: DataRegister[]) => {
       this.dataRegister = response[0];
       console.log(this.dataRegister);
+      this.route.navigate(['/admin/status', { id: this.dataRegister.cedula }]);
     });
   }
 }

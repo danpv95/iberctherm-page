@@ -61,8 +61,14 @@ export class FirebaseService {
     return this.registers;
   }
 
-  getRegisterbyId(mail: string) {
-    return this.db.collection('register', ref => ref.where('email','==',mail)).valueChanges();
+  getRegisterbyMail(mail: string) {
+    return this.db
+      .collection('register', (ref) => ref.where('email', '==', mail))
+      .valueChanges();
+  }
+  getRegisterById(id: string) {
+    console.log('registerID: ' + id);
+    return this.registerCollections.doc(id).valueChanges();
   }
 
   // POST METHODS
