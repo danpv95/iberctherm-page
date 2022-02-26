@@ -40,6 +40,10 @@ export class RegistroComponent implements OnInit {
       value: this.translate.instant('asistente'),
       viewValue: this.translate.instant('asistente'),
     },
+    {
+      value: this.translate.instant('evaluador'),
+      viewValue: this.translate.instant('evaluador'),
+    }
   ];
 
   //Formulario reactivo que permite almacenar la informacion:
