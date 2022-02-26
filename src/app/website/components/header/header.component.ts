@@ -14,7 +14,6 @@ export class HeaderComponent implements OnInit {
   faSignInAlt = faSignInAlt;
 
   constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('es');
     this.translate.addLangs(['es', 'en', 'pt']);
 
     this.langs = this.translate.getLangs();
@@ -24,7 +23,9 @@ export class HeaderComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.translate.setDefaultLang('es');
+  }
 
   camnbiarLang(lang: string) {
     this.translate.use(lang);
