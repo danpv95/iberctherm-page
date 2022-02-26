@@ -43,6 +43,10 @@ export class RegistroComponent implements OnInit {
     {
       value: this.translate.instant('evaluador'),
       viewValue: this.translate.instant('evaluador'),
+    },
+    {
+      value: this.translate.instant('empresa'),
+      viewValue: this.translate.instant('empresa'),
     }
   ];
 
