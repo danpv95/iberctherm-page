@@ -1,8 +1,17 @@
 h1 {
-    font-size: 40px;
-    font-weight: bolder;
-    text-align: center;
-    line-height: 150%;
-  
-    margin: 1.5%;
-  }
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 150%;
+
+  margin: 1.5%;
+}
+
+.target {
+  border-style: groove;
+  margin-bottom: 5%;
+  padding: 5%;
+  font-size: 100%;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, rgb(253, 252, 166), white);
+}
