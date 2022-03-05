@@ -1,6 +1,19 @@
 <div class="container" style="width: 50%">
   <h1 style="text-align: center; margin-top: 5%"> {{ 'inscripcion_evento' | translate }}</h1>
   <p style="text-align: justify;"> {{ 'pasos_inscripcion' | translate }}</p>
+<p>Los mejores trabajos seran publicados en las revistas:
+  <br>
+  Instituto de Física <a href="https://iopscience.iop.org/" target="_blank" > IOP </a>
+  <br>
+  la revista Scientia et Technica de la Universidad Tecnologica de Pereira <a href="https://revistas.utp.edu.co/index.php/revistaciencia" target="_blank"> Scientia et Technica
+  </a>
+  <br>
+  La revista entre ciencia e ingenieria de la Universidad Catolica <a href="https://revistas.ucp.edu.co/index.php/entrecienciaeingenieria" target="_blank"> Entre ciencia e ingenieria
+  </a>
+  <br>
+
+</p>
+<h2>¡Es una gran Oportunidad!</h2>
 
   <div class="contenedor">
     <form [formGroup]="formRegister" (ngSubmit)="save($event)">
