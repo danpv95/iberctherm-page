@@ -1,12 +1,7 @@
-body {
-    background-image: url("/src/assets/images/HumbertoLoaiza.png");
-  }
-
-  mat-form-field{ 
-    margin: 5%;
-
-  }
-  .contenedor{
-    text-align: center;
-    margin-top: 10%;
-  }
+mat-form-field {
+  margin: 5%;
+}
+.contenedor {
+  text-align: center;
+  margin-top: 10%;
+}
