@@ -109,7 +109,7 @@ export class RegistroComponent implements OnInit {
     );
     this.addRegistro(this.datosRegistro);
   }
-
+  //  Agregar registro de usuario en Firestore
   addRegistro(datosRegistro: DataRegister) {
     this.firebaseService.addRegister(datosRegistro);
     if (confirm('Are you sure you want to save if ?')) {
@@ -119,6 +119,7 @@ export class RegistroComponent implements OnInit {
     }
   }
 
+  //  Registrar usuario en Auth Firebase
   register() {
     const { email, password } = this.formRegister.value;
     this.firebaseService.register(email, password).then(

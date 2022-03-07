@@ -1,7 +1,7 @@
 <div>
-  <h1>hgjgkl</h1> 
-  <button mat-raised-button (click)="logout()">  {{ 'LogOut' | translate }}</button>
-  <button mat-raised-button (click)="userLogged()">  {{ 'Info Usuario' | translate }}</button>
+  <h1>hgjgkl</h1>
+  <button mat-raised-button (click)="logout()"> {{ 'LogOut' | translate }}</button>
+  <button mat-raised-button (click)="userLogged()"> {{ 'Info Usuario' | translate }}</button>
   <div *ngIf="products.length > 0; else noProducts">
     <ul>
       <li *ngFor="let p of products">
@@ -23,7 +23,7 @@
     </ul>
   </div>
 
-  <form (ngSubmit)="addProduct()">
+  <!--<form (ngSubmit)="addProduct()">
     <label for="">id</label>
     <input type="text" name="name" [(ngModel)]="productSend.id">
     <label for="">name</label>
@@ -32,7 +32,7 @@
     <input type="text" name="price" [(ngModel)]="productSend.price">
 
     <button type="submit">Save</button>
-  </form>
+  </form> -->
 
   <ng-template #noProducts>
     <p>There are not products yet.</p>

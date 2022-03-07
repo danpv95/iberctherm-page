@@ -16,11 +16,6 @@ import { Product, DataRegister } from '../../models/index-models';
   providedIn: 'root',
 })
 export class FirebaseService {
-  // Product
-  productsCollections: AngularFirestoreCollection; // coleccion de productos
-  productDoc: AngularFirestoreDocument<Product>; // un solo elemento
-  products: Observable<Product[]>; // lista de elementos
-
   // Registros
   registerCollections: AngularFirestoreCollection; // coleccion de productos
   registerDoc: AngularFirestoreDocument<DataRegister>; // un solo elemento
@@ -28,19 +23,7 @@ export class FirebaseService {
 
   constructor(public db: AngularFirestore, public fireAuth: AngularFireAuth) {
     // this.products = this.db.collection('products').valueChanges();
-    // Products
-    this.productsCollections = this.db.collection('products');
-    this.products = this.productsCollections.snapshotChanges().pipe(
-      map((actions) => {
-        return actions.map((a) => {
-          const data = a.payload.doc.data() as Product;
-          data.id = a.payload.doc.id;
-          return data;
-        });
-      })
-    );
-
-    // Register
+     // Register
     this.registerCollections = this.db.collection('register');
     this.registers = this.registerCollections.snapshotChanges().pipe(
       map((actions) => {
@@ -54,9 +37,6 @@ export class FirebaseService {
   }
 
   // GET METHODS
-  getProducts() {
-    return this.products;
-  }
   getRegister() {
     return this.registers;
   }
@@ -72,9 +52,6 @@ export class FirebaseService {
   }
 
   // POST METHODS
-  addProduct(product: Product) {
-    this.productsCollections.doc(String(product.id)).set(product);
-  }
   addRegister(datosRegistro: DataRegister) {
     this.registerCollections
       .doc(String(datosRegistro.cedula))
@@ -82,28 +59,40 @@ export class FirebaseService {
   }
 
   // DELETE METHODS
-  deleteProduct(product: Product) {
-    this.productDoc = this.db.doc(`products/${product.id}`);
-    this.productDoc.delete();
-  }
   deleteRegister(data: DataRegister) {
     this.registerDoc = this.db.doc(`register/${data.cedula}`);
     this.registerDoc.delete();
   }
 
   //UPDATE METHODS
-  updateProduct(product: Product) {
+  /*updateProduct(product: Product) {
     this.productDoc = this.db.doc(`products/${product.id}`);
     this.productDoc.update(product);
+  }*/
+
+  // Verificacion
+  async sendVerificationEmail(): Promise <void> {
+    return (await this.fireAuth.currentUser).sendEmailVerification();
   }
 
   // Authentication
   async register(email: string, password: string) {
-    return await this.fireAuth.createUserWithEmailAndPassword(email, password);
+    try {
+      const register = await this.fireAuth.createUserWithEmailAndPassword(email, password);
+      this.sendVerificationEmail();
+      return register;
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   async login(email: string, password: string) {
-    return await this.fireAuth.signInWithEmailAndPassword(email, password);
+    try {
+      const result = await this.fireAuth.signInWithEmailAndPassword(email, password);
+      return result;
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   getUserLog() {
