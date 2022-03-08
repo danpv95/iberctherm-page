@@ -1,10 +1,16 @@
 import { Injectable } from '@angular/core';
+
 import { AngularFireAuth } from '@angular/fire/auth';
 import {
   AngularFirestore,
   AngularFirestoreCollection,
   AngularFirestoreDocument,
 } from '@angular/fire/firestore';
+import { AngularFireStorage } from '@angular/fire/storage';
+
+import firebase from 'firebase/app';
+import 'firebase/storage';
+
 import { geteuid } from 'process';
 
 import { Observable } from 'rxjs';
@@ -21,9 +27,12 @@ export class FirebaseService {
   registerDoc: AngularFirestoreDocument<DataRegister>; // un solo elemento
   registers: Observable<DataRegister[]>; // lista de elementos
 
-  constructor(public db: AngularFirestore, public fireAuth: AngularFireAuth) {
+  //  Sotrage
+  storageRef = firebase.storage().ref();
+
+  constructor(public db: AngularFirestore, private storage: AngularFireStorage, public fireAuth: AngularFireAuth) {
     // this.products = this.db.collection('products').valueChanges();
-     // Register
+    // Register
     this.registerCollections = this.db.collection('register');
     this.registers = this.registerCollections.snapshotChanges().pipe(
       map((actions) => {
@@ -34,6 +43,16 @@ export class FirebaseService {
         });
       })
     );
+
+  }
+
+  async uploadFile(name: string, fileBase64:any) {
+    try {
+      let response = await this.storageRef.child('users/' + name).putString(fileBase64, 'data_url');
+      console.log(response);
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   // GET METHODS

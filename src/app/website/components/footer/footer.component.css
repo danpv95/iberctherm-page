@@ -1,6 +1,6 @@
 .container-footer {
   width: 100%;
-  background-color: #006064;
+  background-color: #F27649;
 }
 
 .container-footer .container-1 {
@@ -46,7 +46,7 @@
   line-height: 50px;
   margin-right: 10px;
   border-radius: 10px;
-  background-color: #00838f;
+  background-color: #023859;
   transition: all 400ms ease;  
 }
 
@@ -61,7 +61,7 @@
 
 /* Footer 2*/
 .container-footer .container-2 {
-  background-color: #01579b;
+  background-color: #023859;
   padding: 15px 10px;
   text-align: center;
   color: white;

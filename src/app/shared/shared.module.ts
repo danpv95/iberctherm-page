@@ -2,11 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
-// font AwsomeModule
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-//Components compartidos
-//Importo el angular materials
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MaterialsModule } from '../materials/materials.module';
 
 @NgModule({
@@ -18,6 +15,10 @@ import { MaterialsModule } from '../materials/materials.module';
     ReactiveFormsModule,
     FontAwesomeModule,
   ],
-  exports: [MaterialsModule, FontAwesomeModule],
+  exports: [
+    RouterModule,
+    MaterialsModule,
+    ReactiveFormsModule,
+    FontAwesomeModule,],
 })
 export class SharedModule {}

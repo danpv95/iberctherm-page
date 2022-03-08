@@ -1,6 +1,6 @@
 .container-header {
   width: 100%;
-  background-color: #ffab00;
+  background-color: #F29F05;
 }
 
 nav {
@@ -39,7 +39,7 @@ nav ul li {
 }
 nav ul li a {
   color: #f2f2f2;
-  background-color: #de480b;
+  background-color: #023859;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;

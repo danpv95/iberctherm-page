@@ -79,7 +79,8 @@
   flex-direction: column;
   justify-content: center;
 
-  background-color: #ffc046;
+  background-color: #0D6BA6;
+  color: white;
   border-radius: 16px;
   box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
 }

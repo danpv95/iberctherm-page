@@ -1,7 +1,7 @@
 <div class="banner">
   <img src="assets/resource/banner2.jpeg" />
 
-  
+
 </div>
 
 <div class="container">
@@ -10,17 +10,19 @@
   <h1>{{ 'evento' | translate }}</h1>
   <p> {{ 'home_saludo' | translate }} </p>
   <!--Contenedor de nota de los organizadores-->
-  <h1>{{ 'nota_organizadores' | translate }}</h1>
+  <!--<h1>{{ 'nota_organizadores' | translate }}</h1>-->
   <p> {{ 'home_saludo2' | translate }} </p>
+  <p><strong>{{'home_saludo3' | translate}}</strong>  <a  href="../../../../assets/images/TEMPLATE_ABSTRACT_EXTEND.docx" download > {{'formato Resumen' | uppercase}} </a></p>
+  
 
   <!--Contenedor de los logos del congreso-->
   <div class="container-logos">
     <a href="https://www.utp.edu.co/" target="_blank">
       <img class="logo" src="assets/resource/Logo_U.T.P.png" />
     </a>
-    <a href="https://gimm-gef.co/gimm" target="_blank">
+    <!--<a href="https://gimm-gef.co/gimm" target="_blank">
       <img class="logo" src="assets/resource/gimm.png" />
-    </a>
+    </a>-->
     <a href="https://gimm-gef.co/gef" target="_blank">
       <img class="logo" src="assets/resource/logo_gef.png" />
     </a>
@@ -78,15 +80,15 @@
 
 
   <section class="topics">
-  
+
     <div class="contenedor">
       <h1 class="titulo"> {{ 'Topicos' | translate }} </h1>
-  
+
       <div class="galeria-port">
         <div class="imagen-port">
           <h2 for=""> {{ 'topico1' | translate }}</h2>
           <div class="hover-galeria">
-            <p> {{ 'text_topico1' | translate }} 
+            <p> {{ 'text_topico1' | translate }}
             </p>
           </div>
         </div>
@@ -94,14 +96,14 @@
         <div class="imagen-port">
           <h2 for=""> {{ 'topico2' | translate }} </h2>
           <div class="hover-galeria">
-            <p> {{ 'text_topico2' | translate }}  </p>
+            <p> {{ 'text_topico2' | translate }} </p>
           </div>
         </div>
         <div class="imagen-port">
           <h2 for=""> {{ 'topico3' | translate }} </h2>
           <div class="hover-galeria">
-            <p> {{ 'text_topico3' | translate }} 
-           </p>
+            <p> {{ 'text_topico3' | translate }}
+            </p>
           </div>
         </div>
         <div class="imagen-port">
@@ -116,7 +118,7 @@
             <p>{{ 'text_topico5' | translate }}</p>
           </div>
         </div>
-  
+
       </div>
     </div>
   </section>
@@ -129,8 +131,9 @@
     </div>
 
     <p> {{ 'participar' | translate }} </p>
-    
-    </div>
+    <h2 style="text-align: center;"> <strong> {{'participar_2' | translate}}</strong></h2>
+
+  </div>
 
   <div style="text-align: center; margin-bottom: 10%;">
     <button routerLink="/registro" mat-raised-button color="warn"> {{ 'registro' | translate }} </button>
