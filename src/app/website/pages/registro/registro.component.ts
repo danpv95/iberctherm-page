@@ -5,6 +5,8 @@ import { inscripcion, DataRegister } from 'src/app/core/models/index-models';
 import { TranslateService } from '@ngx-translate/core';
 import { FirebaseService } from 'src/app/core/services/firebase/firebase.service';
 
+// https://www.gimm-gef.com/first-congress-iberctherm
+
 @Component({
   selector: 'app-registro',
   templateUrl: './registro.component.html',
@@ -15,7 +17,7 @@ export class RegistroComponent implements OnInit {
 
   constructor(
     public firebaseService: FirebaseService,
-    private translate: TranslateService
+    private translate: TranslateService,
   ) {
     this.translate.setDefaultLang('es');
   }
@@ -70,21 +72,18 @@ export class RegistroComponent implements OnInit {
   get nameField() {
     return this.formRegister.get('name');
   }
-
   get lastNameField() {
     return this.formRegister.get('lastName');
   }
   get emailField() {
     return this.formRegister.get('email');
   }
-
   get phoneField() {
     return this.formRegister.get('phone');
   }
   get cityField() {
     return this.formRegister.get('city');
   }
-
   get cedulaField() {
     return this.formRegister.get('cedula');
   }
@@ -110,6 +109,7 @@ export class RegistroComponent implements OnInit {
     this.addRegistro(this.datosRegistro);
   }
 
+  //  Agregar registro de usuario en Firestore
   addRegistro(datosRegistro: DataRegister) {
     this.firebaseService.addRegister(datosRegistro);
     if (confirm('Are you sure you want to save if ?')) {
@@ -119,6 +119,7 @@ export class RegistroComponent implements OnInit {
     }
   }
 
+  //  Registrar usuario en Auth Firebase
   register() {
     const { email, password } = this.formRegister.value;
     this.firebaseService.register(email, password).then(
@@ -129,5 +130,31 @@ export class RegistroComponent implements OnInit {
         window.alert('error: ' + error.message);
       }
     );
+  }
+
+  files: any[] = [];
+
+  uploadFile(event: any) {
+    let archivos = event.target.files;
+    let nombre = "jonathan";
+
+    for (let i = 0; i < archivos.length; i++) {
+
+      let reader = new FileReader();
+      reader.readAsDataURL(archivos[0]);
+      reader.onloadend = () => {
+        console.log(reader.result);
+        this.files.push(reader.result);
+        this.firebaseService.uploadFile(nombre + "_" + Date.now(), reader.result).then(urlImagen => {
+          let usuario = {
+            name: "jonathan",
+            nickName: "yonykikok",
+            password: "401325",
+            imgProfile: urlImagen
+          }
+          console.log(urlImagen);
+        });
+      }
+    }
   }
 }

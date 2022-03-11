@@ -51,19 +51,25 @@
   margin-top: 30px;
 }
 
-.card {
+.container-comite {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
 }
 
 .card h4 {
   text-align: justify;
 }
 
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+  border: none;
+}
+
 .card > mat-card {
+
   max-width: 25%;
   min-width: 350px;
   padding: 2%;
@@ -73,7 +79,8 @@
   flex-direction: column;
   justify-content: center;
 
-  background-color: #ffc046;
+  background-color: #0D6BA6;
+  color: white;
   border-radius: 16px;
   box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
 }
@@ -117,7 +124,9 @@
 
 .galeria-port {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+
   justify-content: space-around;
 }
 

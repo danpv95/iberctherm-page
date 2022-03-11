@@ -15,10 +15,10 @@ export class AutoresComponent implements OnInit {
 
   constructor(public firebaseService: FirebaseService) {}
   ngOnInit(): void {
-    this.getProducts();
+    //this.getProducts();
   }
 
-  getProducts() {
+  /*getProducts() {
     this.firebaseService.getProducts().subscribe((products) => {
       console.log(products);
       this.products = products;
@@ -55,7 +55,7 @@ export class AutoresComponent implements OnInit {
     this.firebaseService.updateProduct(this.editingProduct);
     this.editingProduct = {} as Product;
     this.editing = !this.editing;
-  }
+  }*/
 
   /*login() {
     const { name, password } = this.formIngreso.value;

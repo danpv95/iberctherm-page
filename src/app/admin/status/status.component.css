@@ -223,27 +223,7 @@ h3:after {
   }
 }
 
-@media (max-width: 500px) {
-  .utility-info li:last-of-type {
-    width: 100%;
-  }
-  .card-info {
-    display: none;
-  }
-  .blog-card:hover .title-content,
-  .title-content {
-    margin-top: 40px;
-  }
-  .blog-card {
-    height: 300px;
-  }
-  .blog-card h3 {
-    font-size: 1.3em;
-  }
-  .intro {
-    font-size: 0.8em;
-  }
-}
+
 
 /*  ================  */
 

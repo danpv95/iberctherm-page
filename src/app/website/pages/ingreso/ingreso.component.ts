@@ -40,16 +40,22 @@ export class IngresoComponent implements OnInit {
     console.log(this.formIngreso.value);
   }
 
-  login() {
+  login(): void {
     const { name, password } = this.formIngreso.value;
+
     this.firebaseService.login(name, password).then(
       (response) => {
+        //console.log(response.user);
         if (response !== null && name === 'danpv95@gmail.com') {
           console.log('Ingreso: ' + name);
+          console.log(response.user);
           this.route.navigate(['/admin/nav-tools']);
-        } else if(response !== null){
+        } else if(response !== null && response.user.emailVerified){
           console.log('Ingreso: ' + name);
           this.getRegisterbyId();
+        }else if (!response.user.emailVerified){  // verificacion por Email
+          this.getRegisterbyId();
+          //  this.firebaseService.sendVerificationEmail();
         }
       },
       (error) => {
@@ -58,7 +64,7 @@ export class IngresoComponent implements OnInit {
     );
   }
 
-  getRegisterbyId() {
+  getRegisterbyId(): void {
     const { name, password } = this.formIngreso.value;
     this.firebaseService.getRegisterbyMail(name).subscribe((response: DataRegister[]) => {
       this.dataRegister = response[0];

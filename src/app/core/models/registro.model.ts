@@ -9,4 +9,5 @@ export interface DataRegister {
   password?: string;
   password1?: string;
   participacion?: string;
+  abstract?: string;
 }
