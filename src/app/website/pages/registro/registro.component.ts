@@ -108,6 +108,7 @@ export class RegistroComponent implements OnInit {
     );
     this.addRegistro(this.datosRegistro);
   }
+
   //  Agregar registro de usuario en Firestore
   addRegistro(datosRegistro: DataRegister) {
     this.firebaseService.addRegister(datosRegistro);

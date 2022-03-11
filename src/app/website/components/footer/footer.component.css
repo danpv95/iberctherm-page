@@ -1,6 +1,6 @@
 .container-footer {
   width: 100%;
-  background-color: #F27649;
+  background-color: #f2a922;
 }
 
 .container-footer .container-1 {
@@ -25,15 +25,13 @@
 }
 
 .container-footer .container-1 .box h2 {
-  color: white;
   margin-bottom: 25px;
   font-size: 20px;
-  text-decoration: underline #ffc046 2.5px;
+  text-decoration: underline #023859 2.5px;
   text-underline-offset: 8px;
 }
 
 .container-footer .container-1 .box p {
-  color: #efefef;
   margin-bottom: 10px;
 }
 
@@ -46,22 +44,22 @@
   line-height: 50px;
   margin-right: 10px;
   border-radius: 10px;
-  background-color: #023859;
-  transition: all 400ms ease;  
+  background-color: #0d6ba6;
+  transition: all 400ms ease;
 }
 
-.container-footer .container-1 .box .icon a:hover{
-  background-color: #ffc046; 
+.container-footer .container-1 .box .icon a:hover {
+  background-color: #f2e41b;
 }
 
-.container-footer .container-1 .box .icon img{
+.container-footer .container-1 .box .icon img {
   width: 70%;
   padding: 15%;
 }
 
 /* Footer 2*/
 .container-footer .container-2 {
-  background-color: #023859;
+  background-color: #323e40;
   padding: 15px 10px;
   text-align: center;
   color: white;
@@ -70,7 +68,7 @@
 .container-footer .container-2 small {
   font-size: 15px;
 }
- /*RESPONSIVE*/
+/*RESPONSIVE*/
 @media screen and (max-width: 800px) {
   .container-footer .container-1 {
     width: 80%;

@@ -45,7 +45,7 @@ export class IngresoComponent implements OnInit {
 
     this.firebaseService.login(name, password).then(
       (response) => {
-        console.log(response.user);
+        //console.log(response.user);
         if (response !== null && name === 'danpv95@gmail.com') {
           console.log('Ingreso: ' + name);
           console.log(response.user);

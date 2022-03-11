@@ -97,7 +97,7 @@ export class FirebaseService {
   // Authentication
   async register(email: string, password: string) {
     try {
-      const register = await this.fireAuth.createUserWithEmailAndPassword(email, password);
+      const register = await (await this.fireAuth.createUserWithEmailAndPassword(email, password));
       this.sendVerificationEmail();
       return register;
     } catch (error) {
