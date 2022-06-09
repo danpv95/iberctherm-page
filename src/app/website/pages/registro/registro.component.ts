@@ -5,7 +5,7 @@ import { inscripcion, DataRegister } from 'src/app/core/models/index-models';
 import { TranslateService } from '@ngx-translate/core';
 import { FirebaseService } from 'src/app/core/services/firebase/firebase.service';
 
-// https://www.gimm-gef.com/first-congress-iberctherm
+//  https://www.gimm-gef.com/first-congress-iberctherm
 
 @Component({
   selector: 'app-registro',
@@ -52,7 +52,7 @@ export class RegistroComponent implements OnInit {
     }
   ];
 
-  //Formulario reactivo que permite almacenar la informacion:
+  //  Formulario reactivo que permite almacenar la informacion:
   formRegister = new FormGroup({
     name: new FormControl('', [Validators.required]),
     lastName: new FormControl('', [Validators.required]),
@@ -68,7 +68,7 @@ export class RegistroComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  //Se llaman los elementos del formulario reactivo
+  //  Se llaman los elementos del formulario reactivo
   get nameField() {
     return this.formRegister.get('name');
   }
@@ -100,7 +100,7 @@ export class RegistroComponent implements OnInit {
     return this.formRegister.get('participacion');
   }
 
-  //Metodo que envia los datos del formulario:
+  //  Metodo que envia los datos del formulario:
   save($event: any) {
     this.datosRegistro = Object.assign(
       this.datosRegistro,

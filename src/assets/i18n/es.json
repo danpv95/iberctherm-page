@@ -1,9 +1,21 @@
 {
-  "evento": "Evento",
-  "evento-content": "Desde el grupo de investigación GEF (Grupo de Electrofisiología) adscrito a la Facultad de Ciencias Básicas de la Universidad Tecnológica de Pereira, tenemos el placer de darles la bienvenida a la PRIMERA CONFERENCIA IBEROAMERICANA DE TERMOGRAFÍA INFRARROJA - 1IBERCTHERM, que se llevará a cabo del 18 al 20 de mayo de 2022, con el acompañamiento de un comité organizador nacional e internacional. Una conferencia incluyente para los profesionales, profesores, estudiantes y aficionados, brindándoles una oportunidad para adquirir nuevos conocimientos, así como intercambiar experiencias y difundir información científica en relación a la termografía infrarroja en Colombia y en Iberoamérica.",
-  "home_saludo": "Desde el grupo de investigación GEF (Grupo de Electrofisiología) adscrito a la Facultad de Ciencias Básicas de la Universidad Tecnológica de Pereira, tenemos el placer de darles la bienvenida a la PRIMERA CONFERENCIA IBEROAMERICANA DE TERMOGRAFÍA INFRARROJA - 1IBERCTHERM, que se llevará a cabo del 18 al 20 de mayo de 2022, con el acompañamiento de un comité organizador nacional e internacional. Una conferencia incluyente para los profesionales, profesores, estudiantes y aficionados, brindándoles una oportunidad para adquirir nuevos conocimientos, así como intercambiar experiencias y  difundir información científica en relación a la termografía infrarroja en Colombia y en Iberoamérica.",
-  "home_saludo2": "La versatilidad de la termografía infrarroja permite que sea aplicada en diferentes áreas como son: las ciencias básicas, las ciencias de la salud, la ingeniería, la industria, entre otras; favoreciendo la confluencia al evento de diferentes personas que trabajan e investigan en termografía, haciendo posible la adaptación de esta técnica en distintas áreas. Es un evento iberoamericano que busca la divulgación, discusión y apropiación de desarrollos tecnológicos y científicos de los grupos de investigación, de las empresas relacionadas con la termografía; permitiendo la diseminación del conocimiento y la construcción de redes de conocimiento.",
-  "home_saludo3":" El primer IBERCTHERM se realizará de manera completamente VIRTUAL y no tendrá NINGÚN COSTO para los asistentes al evento.",
+  "nav_bar": {
+    "inicio": "Inicio",
+    "registro": "Registro",
+    "evento": "Evento",
+    "comercial": "Comercial",
+    "sesion": "Comercial"
+  },
+  "home_page": {
+    "evento": {
+      "titulo": "Evento",
+      "evento-content": "Desde el grupo de investigación GEF (Grupo de Electrofisiología) adscrito a la Facultad de Ciencias Básicas de la Universidad Tecnológica de Pereira, tenemos el placer de darles la bienvenida a la PRIMERA CONFERENCIA IBEROAMERICANA DE TERMOGRAFÍA INFRARROJA - 1IBERCTHERM, que se llevará a cabo del 15 al 17 de junio de 2022, con el acompañamiento de un comité organizador nacional e internacional. Una conferencia incluyente para los profesionales, profesores, estudiantes y aficionados, brindándoles una oportunidad para adquirir nuevos conocimientos, así como intercambiar experiencias y difundir información científica en relación a la termografía infrarroja en Colombia y en Iberoamérica.",
+      "home_saludo": "Desde el grupo de investigación GEF (Grupo de Electrofisiología) adscrito a la Facultad de Ciencias Básicas de la Universidad Tecnológica de Pereira, tenemos el placer de darles la bienvenida a la PRIMERA CONFERENCIA IBEROAMERICANA DE TERMOGRAFÍA INFRARROJA - 1IBERCTHERM, que se llevará a cabo del 15 al 17 de junio de 2022, con el acompañamiento de un comité organizador nacional e internacional. Una conferencia incluyente para los profesionales, profesores, estudiantes y aficionados, brindándoles una oportunidad para adquirir nuevos conocimientos, así como intercambiar experiencias y  difundir información científica en relación a la termografía infrarroja en Colombia y en Iberoamérica.",
+      "home_saludo2": "La versatilidad de la termografía infrarroja permite que sea aplicada en diferentes áreas como son: las ciencias básicas, las ciencias de la salud, la ingeniería, la industria, entre otras; favoreciendo la confluencia al evento de diferentes personas que trabajan e investigan en termografía, haciendo posible la adaptación de esta técnica en distintas áreas. Es un evento iberoamericano que busca la divulgación, discusión y apropiación de desarrollos tecnológicos y científicos de los grupos de investigación, de las empresas relacionadas con la termografía; permitiendo la diseminación del conocimiento y la construcción de redes de conocimiento.",
+      "home_saludo3": " El primer IBERCTHERM se realizará de manera completamente VIRTUAL y no tendrá NINGÚN COSTO para los asistentes al evento."
+    }
+  },  
+  
   "nota_organizadores": "Nota de los Organizadores",
   "comite_organizador": "Comité Organizador Nacional",
   "Institucion": "Institución: ",
@@ -12,6 +24,7 @@
   "tematicas": "Temáticas",
   "inicio": "Inicio",
   "autores": "Autores",
+  
   "Evento": "Evento",
   "Cronograma": "Cronograma",
   "Comercial": "Comercial",
@@ -120,6 +133,4 @@
  "perla":"La magia de la perla",
  "pereira_magia":"    Pereira es la ciudad capital del departamento de Risaralda, la ciudad más poblada del eje cafetero y la segunda ciudad más grande de la región Paisa Colombiana. Apodada “La querendona, trasnochadora y morena” o “La perla del otún”, Pereira cuenta con una agradable clima templado gracias a su ubicación geográfica entre el cálido valle del cauca y las frías zonas montañosas de la cordillera central de Colombia. La ciudad tiene todas las prestaciones que una ciudad moderna puede ofrecer como: hotelería, Diversos medios de transportes, infraestructura vial, hospitales y seguridad. La cultura pereirana tiene sus raíces en la cultura cafetera de la región, lo cual hace parte del atractivo turístico de la ciudad y de sus zonas rurales, donde pueden observarse hermosas residencias construidas con el característico estilo colonial cafetero. También, en el ámbito urbano, Pereira cuenta con múltiples espacios deportivos y de esparcimiento para deleitarse con los servicios que la ciudad puede ofrecer. Sin quedarse atrás en el desarrollo tecnológico y comercial que caracteriza al siglo XXI, Pereira ofrece a sus ciudadanos y visitantes una inmensa variedad de productos y servicios debido al carácter comercial de la ciudad, al ubicarse en el centro del triángulo de oro colombiano conformado por las ciudades de Bogotá, Medellín y Calí; La Perla del otún constituye un punto intermedio en las principales rutas comerciales del país, lo que le vale otro dos de sus apodos “La ciudad sin puertas” y “La capital del eje”. En Pereira, usted podrá disfrutar de una diversa gastronomía regional, platos como: La bandeja Paisa, El Mondongo, ajiaco, Sancocho, Tamales, Patacones, Arepas, buñuelos y Mazamorra. Le brindarán una experiencia inolvidable. Al igual que visitar el parque natural de la Laguna de Otún, las aguas termales o las diferentes zonas de camping, centros comerciales, parques acuáticos presentes a las afueras de la ciudad. La ciudad te recibe con los brazos abiertos",
  "ven_a_pereira":" Ven a nuestra ciudad. ¡Te esperamos con las manos abiertas! Enamorate de la querendona"
-
-
 }

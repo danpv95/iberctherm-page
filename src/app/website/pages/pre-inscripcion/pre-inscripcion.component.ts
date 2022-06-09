@@ -11,6 +11,7 @@ import { inscripcion } from 'src/app/core/models/modelos.component';
 })
 export class PreInscripcionComponent implements OnInit {
   constructor() {}
+  
   identificacion: inscripcion[] = [
     { value: 'C.C', viewValue: 'C.C' },
     { value: 'T.I', viewValue: 'T.I' },
