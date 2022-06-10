@@ -24,31 +24,31 @@ export class RegistroComponent implements OnInit {
 
   inscripcion: inscripcion[] = [
     {
-      value: this.translate.instant('estudiante'),
-      viewValue: this.translate.instant('estudiante'),
+      value: this.translate.instant('registro.formulario.estudiante'),
+      viewValue: this.translate.instant('registro.formulario.estudiante'),
     },
     {
-      value: this.translate.instant('profesional'),
-      viewValue: this.translate.instant('profesional'),
+      value: this.translate.instant('registro.formulario.profesional'),
+      viewValue: this.translate.instant('registro.formulario.profesional'),
     },
   ];
 
   participar: inscripcion[] = [
     {
-      value: this.translate.instant('ponente'),
-      viewValue: this.translate.instant('ponente'),
+      value: this.translate.instant('registro.formulario.ponente'),
+      viewValue: this.translate.instant('registro.formulario.ponente'),
     },
     {
-      value: this.translate.instant('asistente'),
-      viewValue: this.translate.instant('asistente'),
+      value: this.translate.instant('registro.formulario.asistente'),
+      viewValue: this.translate.instant('registro.formulario.asistente'),
     },
     {
-      value: this.translate.instant('evaluador'),
-      viewValue: this.translate.instant('evaluador'),
+      value: this.translate.instant('registro.formulario.evaluador'),
+      viewValue: this.translate.instant('registro.formulario.evaluador'),
     },
     {
-      value: this.translate.instant('empresa'),
-      viewValue: this.translate.instant('empresa'),
+      value: this.translate.instant('registro.formulario.empresa'),
+      viewValue: this.translate.instant('registro.formulario.empresa'),
     }
   ];
 

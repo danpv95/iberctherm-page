@@ -7,16 +7,16 @@
     </div>
 
     <div class="box">
-      <h2>Congreso IbercTherm </h2>
-      <p>{{'termografia'|translate}}</p>
-      <h2>{{ 'comunes.universidad' | translate }}</h2>
-      <P>{{ 'footer.descripcion' | translate }}</P>
+      <h2>{{'footer.congreso'|translate}}</h2>
+      <p>{{ 'footer.termografia' | translate }}</p>
+      <h2>{{ "comun.universidad" | translate }}</h2>
+      <P>{{ "footer.descripcion" | translate }}</P>
     </div>
 
     <div class="box">
-      <h2>{{ "contactanos" | translate | uppercase }}</h2>
-      <p><strong>Email: </strong> mmedina@utp.edu.co</p>
-      <h2>{{ "redes" | translate | uppercase }}</h2>
+      <h2>{{ 'footer.contactanos' | translate | uppercase }}</h2>
+      <p><strong>Email: </strong> {{'footer.email'|translate}}</p>
+      <h2>{{ 'footer.redes' | translate | uppercase }}</h2>
       <div class="icon">
         <a href="https://testdevdd1234.com/deploy">
           <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" />
@@ -27,8 +27,10 @@
 
   <div class="container-2">
     <small
-      >&copy; 2022 <b>Daga Company</b> - Todos los derechos Reservados - </small
+      >&copy; 2022 <b>Daga Company</b> - {{'footer.derechos.derechos_reservados' | translate}} -
+    </small>
+    <a href="#/inscripcion" style="color: rgb(255, 145, 0)">
+      {{'footer.derechos.politicas' | translate}}</a
     >
-    <a href="#/inscripcion" style="color: rgb(255, 145, 0);">  POLITICAS DE PRIVACIDAD</a>
   </div>
 </div>

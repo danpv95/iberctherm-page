@@ -1,97 +1,89 @@
 <div class="container" style="width: 50%">
-  <h1 style="text-align: center; margin-top: 5%"> {{ 'inscripcion_evento' | translate }}</h1>
-  <p style="text-align: justify;"> {{ 'pasos_inscripcion' | translate }}</p>
-
-  <p>Los mejores trabajos seran publicados en las revistas:</p>
+  <h1 style="text-align: center; margin-top: 5%"> {{ 'registro.inscripcion_evento' | translate }}</h1>
+  <p style="text-align: justify;"> {{ 'registro.pasos_inscripcion' | translate }}</p>
+  
+  <p>{{'registro.mejores_trabajos'|translate}}</p>
   <ul>
-    <li>Instituto de Física <a href="https://iopscience.iop.org/" target="_blank"> IOP </a></li>
-    <li>la revista Scientia et Technica de la Universidad Tecnologica de Pereira <a
-        href="https://revistas.utp.edu.co/index.php/revistaciencia" target="_blank"> Scientia et Technica
-      </a></li>
-    <li>La revista entre ciencia e ingenieria de la Universidad Catolica <a
-        href="https://revistas.ucp.edu.co/index.php/entrecienciaeingenieria" target="_blank"> Entre ciencia e ingenieria
-      </a></li>
+    <li>{{'registro.revista.iop'|translate}} <a href="https://iopscience.iop.org/" target="_blank"> LINK </a></li>
+    <li>{{'registro.revista.science'|translate}} <a href="https://revistas.utp.edu.co/index.php/revistaciencia"target="_blank"> LINK </a></li>
+    <li>{{'registro.revista.ciencia_ingenieria'|translate}} <a href="https://revistas.ucp.edu.co/index.php/entrecienciaeingenieria" target="_blank"> LINK </a></li>
   </ul>
 
-  <h2>¡Es una gran Oportunidad!</h2>
+  <h2>{{'registro.oportunidad'|translate}}</h2>
 
   <div style="margin-top: 5%; margin-bottom: 5%;">
-    <h1> {{ 'formato_resumen' | translate }}</h1>
-    <p style="text-align: justify;">
-      {{ 'formato' | translate }}
-      <a href="../../../../assets/images/TEMPLATE_ABSTRACT_EXTEND.docx" download> {{ 'link_formato' | translate }} </a>
+    <h1> {{ 'registro.titulo_formato' | translate }}</h1>
+    <p style="text-align: justify;">{{ 'registro.parrafo_formato' | translate }}
+      <a href="../../../../assets/images/TEMPLATE_ABSTRACT_EXTEND.docx" download> {{'registro.link_registro' | translate |uppercase}} </a>
     </p>
   </div>
 
   <div class="contenedor">
+    <h1> {{ 'registro.formulario.titulo' | translate |uppercase}}</h1>
     <form [formGroup]="formRegister" (ngSubmit)="save($event)">
       <mat-form-field class="example-full-width" appearance="outline" style="margin-top: -9%;">
-        <mat-label>{{ 'nombre' | translate }} </mat-label>
+        <mat-label>{{ 'registro.formulario.nombre' | translate }} </mat-label>
         <input matInput type="text" [formControl]="nameField" class="form-control" />
       </mat-form-field>
-
+  
       <mat-form-field class="example-full-width" appearance="outline" style="margin-top: -9%; ">
-        <mat-label> {{ 'apellido' | translate }} </mat-label>
+        <mat-label> {{ 'registro.formulario.apellido' | translate }} </mat-label>
         <input matInput type="text" [formControl]="lastNameField" class="form-control" />
       </mat-form-field>
-
+  
       <mat-form-field class="example-full-width" appearance="outline" style="margin-top: -9%;">
-        <mat-label>{{ 'cedula' | translate }} </mat-label>
+        <mat-label>{{ 'registro.formulario.cedula' | translate }} </mat-label>
         <input matInput type="number" [formControl]="cedulaField" class="form-control" />
       </mat-form-field>
-
+  
       <mat-form-field appearance="outline" style="margin-top: -9%;">
-        <mat-label>{{ 'estudiante_profesional' | translate }} </mat-label>
+        <mat-label>{{ 'registro.formulario.estudiante_profesional' | translate }} </mat-label>
         <mat-select [formControl]="asistenciaField" class="form-control" style="border: none;">
-          <mat-option *ngFor="let inscripcion of inscripcion" [value]="inscripcion.value">
-            {{ inscripcion.viewValue }}
-          </mat-option>
+          <mat-option *ngFor="let inscripcion of inscripcion" [value]="inscripcion.value">{{ inscripcion.viewValue }}</mat-option>
         </mat-select>
       </mat-form-field>
-
+  
       <mat-form-field appearance="outline" style="margin-top: -9%;">
-        <mat-label> {{ 'como_participar' | translate }}</mat-label>
+        <mat-label> {{ 'registro.formulario.como_participar' | translate }}</mat-label>
         <mat-select [formControl]="participacionField" class="form-control" style="border: none;">
-          <mat-option *ngFor="let participar of participar" [value]="participar.value">
-            {{ participar.viewValue }}
-          </mat-option>
+          <mat-option *ngFor="let participar of participar" [value]="participar.value">{{ participar.viewValue }}</mat-option>
         </mat-select>
       </mat-form-field>
-
+  
       <mat-form-field class="example-full-width" appearance="outline" style="margin-top: -9%">
-        <mat-label> {{ 'email_register' | translate }} </mat-label>
+        <mat-label> {{ 'registro.formulario.email_register' | translate }} </mat-label>
         <input matInput type="email" [formControl]="emailField" class="form-control" />
       </mat-form-field>
-
+  
       <mat-form-field class="example-full-width" appearance="outline" style="margin-top: -9%">
-        <mat-label> {{ 'tel' | translate }} </mat-label>
+        <mat-label> {{ 'registro.formulario.tel' | translate }} </mat-label>
         <input matInput type="number" [formControl]="phoneField" class="form-control" />
       </mat-form-field>
-
+  
       <mat-form-field class="example-full-width" appearance="outline" style="margin-top: -9%">
-        <mat-label> {{ 'ciudad_register' | translate }} </mat-label>
+        <mat-label> {{ 'registro.formulario.ciudad_register' | translate }} </mat-label>
         <input matInput type="text" [formControl]="cityField" class="form-control" />
       </mat-form-field>
-
+  
       <!--Nombre de Usuario y contraseña-->
-
+  
       <mat-form-field class="example-full-width" appearance="outline" style="margin-top: -9%">
-        <mat-label> {{ 'contraseña' | translate }} </mat-label>
+        <mat-label> {{ 'registro.formulario.contraseña' | translate }} </mat-label>
         <input matInput type="password" [formControl]="passwordField" class="form-control" />
       </mat-form-field>
-
+  
       <mat-form-field class="example-full-width" appearance="outline" style="margin-top: -9%">
-        <mat-label> {{ 'confirmar_contraseña' | translate }} </mat-label>
+        <mat-label> {{ 'registro.formulario.confirmar_contraseña' | translate }} </mat-label>
         <input matInput type="password" [formControl]="password1Field" class="form-control" />
       </mat-form-field>
 
+     
       <div class="mb-3">
         <input type="file" class="form-control" aria-label="file example" required (change)="uploadFile($event)">
         <div class="invalid-feedback">Invalid File</div>
       </div>
-
-      <button type="submit" mat-raised-button color="warn" style="margin: 30px;"> {{ 'enviar_register' | translate
-        }}</button>
+      <h3><strong> {{ 'registro.nota' | translate |uppercase}}</strong></h3>
+      <button type="submit" mat-raised-button color="warn" style="margin: 30px;"> {{ 'registro.formulario.enviar_register' | translate }}</button>
       <!--FIN Formulario reactivo-->
     </form>
 

@@ -6,9 +6,10 @@
     "comercial": "Comercial",
     "sesion": "Inicio de sesión"
   },
-  "comunes": {
+  "comun": {
     "universidad": "Universidad Tecnológica de Pereira",
-    "registro": "Registro"
+    "registro": "Registro",
+    "email": "Email"
   },
   "home_page": {
     "evento": {
@@ -45,6 +46,42 @@
       "participar_2": "¡ÚNASE A NUESTRO EVENTO Y ANÍMESE A PARTICIPAR!"
     }
   },
+  "registro": {
+    "inscripcion_evento": "Inscripción al evento",
+    "pasos_inscripcion": "Para realizar la Inscripción al evento es necesario que llene la siguiente información, con la cual podremos contactarlo. Si va a participar en modalidad de Ponente su inscripción solo será efectiva cuando envíe el resumen, del trabajo a presentar durante el evento. El resumen es necesario enviarlo al correo mmedina@utp.edu.co. Al final del formulario se encuentra un link, en donde podrás descargar el formato de resumen para el evento. Si tienes alguna pregunta sobre el proceso de inscripción, contáctate con nosotros por medio del correo electrónico mmedina@utp.edu.co",
+    "mejores_trabajos": "Los mejores trabajos seran publicados en las revistas:",
+    "revista": {
+      "iop": "Instituto de Física (IOP): ",
+      "science": "la revista Scientia et Technica de la Universidad Tecnologica de Pereira: ",
+      "ciencia_ingenieria": "La revista entre ciencia e ingenieria de la Universidad Catolica: "
+    },
+    "oportunidad": "¡Es una gran Oportunidad!",
+    "titulo_formato": "Formato de resumen",
+    "parrafo_formato": "Para enviar el resumen es necesario tener en cuenta el formato básico del evento, el cual podrá encontrarlo dando click en el siguiente enlace. El enlace descarga el formato para el evento. Muchos éxitos en su participación y es un placer tenerle en cuenta para nuestro evento.  Att: equipo de trabajo de la primera conferencia Iberoamericana de termografía infrarroja",
+    "link_registro": "Registrarse al evento",
+    "formulario": {
+      "titulo":"formulario registro",
+      "nombre": "Nombre",
+      "apellido": "Apellido",
+      "cedula": "Cedula",
+      "estudiante_profesional": "¿Eres estudiante o profesional?",
+      "estudiante": "Estudiante",
+      "profesional": "Profesional",
+      "como_participar": " ¿Como vas a participar?",
+      "ponente": "Ponente",
+      "asistente": "Asistente",
+      "evaluador": "Evaluador",
+      "empresa": "Empresa",
+      "email_register": "Correo electrónico",
+      "tel": "Teléfono",
+      "ciudad_register": "Ciudad",
+      "contraseña": "Contraseña",
+      "confirmar_contraseña": "Confirmar Contraseña ",
+      "enviar_register": "Enviar Inscripción",
+      "formato_resumen": "Formato de Resumen"
+    },
+    "nota":"nota: el formato a adjuntar es un archivo .docx que se evidencia en formato de resumen"
+  },
   "profesor": {
     "profe0": "Ph.D. En Física, Investigador Junior de Minciencias, docente de la Universidad Tecnológica de Pereira, director del grupo de Investigación en Electrofisiología reconocido en categoría b, co-director del Grupo de Investigación en propiedades Magnéticas y Magneto-ópticas de nuevos materiales (GIMM) reconocido en categoría b.",
     "profe1": "Estudiante de Doctorado en Ciencias, Magister en Ingeniería Eléctrica, docente de la Universidad Tecnológica de Pereira, integrante del grupo de Investigación en Electrofisiología reconocido en categoría b.",
@@ -73,16 +110,26 @@
     "politica6_text": "En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es proporcionada a nuestro sitio web. Iberc Therm  Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento."
   },
   "footer": {
-    "descripcion": "Carrera 27 #10-02 Barrio Alamos - Pereira - Risaralda - Colombia - AA: 97 - Código postal: 660003 Bloque 1 laboratorio GIMM 1A-125 -contacto"
+    "congreso": "Congreso IbercTherm",
+    "termografia": "Termografía Infrarroja",
+    "descripcion": "Carrera 27 #10-02 Barrio Alamos - Pereira - Risaralda - Colombia - AA: 97 - Código postal: 660003 Bloque 1 laboratorio GIMM 1A-125 -contacto",
+    "contactanos": "contactanos",
+    "redes": "Redes",
+    "email": "mmedina@utp.edu.co",
+    "derechos": {
+      "derechos_reservados": "Todos los derechos Reservados",
+      "politicas": "POLITICAS DE PRIVACIDAD"
+    }
   },
-  
+
+  "estudiante": "Estudiante++++",
+
+    
   "tematicas": "Temáticas",
   "autores": "Autores",
   "Cronograma": "Cronograma",
   "Inscripcion_empresas": "Inscripción para empresas",
   "Salon_virtual": "Salón virtual",
-    
-  "termografia": "Termografía Infrarroja",
   "pagina_comercial": "Pagina Comercial",
   "texto_empresa": "La primera conferencia iberoamericana de termografía infrarroja tiene la finalidad de reunir a todas las personas y empresas interesadas en exponer estudios y/o actividades comerciales en el área de termografía infrarroja, donde se implemente esta técnica como herramienta en las  etapas de elaboración de productos o prestación de servicios. Se contará con la presencia de diferentes ponencias Nacionales e Internacionales, donde se explicarán al público sus más recientes investigaciones y como la termografía infrarroja, se muestra cómo se consolida como una tecnología capaz de expandir o profundizar el conocimiento en los diferentes ámbitos científicos, tecnológicos, industriales y  comerciales. También, algunos estudiantes pertenecientes al comité organizador del evento en calidad de ponentes darán a conocer los  resultados de proyectos formativos de investigación de financiación estatal enfocados en la implementación de termografía infrarroja en el área de la salud, detallando: los procedimientos, instrumentos, técnicas implementadas para llevar a cabo dichas investigaciones y conclusiones con el objetivo de mostrar sus resultados a un público experto o interesado en el área de termografía infrarroja para el debate y divulgación de nuevos conocimientos. En la conferencia. Además de mostrar las investigaciones en curso y avances científicos, se pretende brindar a las nuevas generaciones de ingenieros y científicos la oportunidad de adquirir conocimientos en el área de la termografía infrarroja y sus aplicaciones en el mundo académico e industrial. Usted y/o su organización podrán participar como ponente, asistente, o empresa.",
   "Pre_Inscripción_Empresas": "  Formulario de Pre Inscripción para Empresas",
@@ -92,37 +139,7 @@
   "area_trabaja": "Área en la que trabaja",
   "ciudad": "Ciudad",
   "contactarte": "¿Como podemos contactarte?",
-  
-  "Celular": "Celular",
-  "telefono": "Teléfono fijo",
-  "email": "Email",
-  "enviar": "Enviar",
 
-  "registro_evento":"Registrarse al evento",
-  "inscripcion_evento":"Inscripción al evento",
-  "pasos_inscripcion":"Para realizar la Inscripción al evento es necesario que llene la siguiente información, con la cual podremos contactarlo. Si va a participar en modalidad de Ponente su inscripción solo será efectiva cuando envíe el resumen, del trabajo a presentar durante el evento. El resumen es necesario enviarlo al correo mmedina@utp.edu.co. Al final del formulario se encuentra un link, en donde podrás descargar el formato de resumen para el evento. Si tienes alguna pregunta sobre el proceso de inscripción, contáctate con nosotros por medio del correo electrónico mmedina@utp.edu.co",
-  "formato":"Para enviar el resumen es necesario tener en cuenta el formato básico del evento, el cual podrá encontrarlo dando click en el siguiente enlace. El enlace descarga el formato para el evento. Muchos éxitos en su participación y es un placer tenerle en cuenta para nuestro evento.  Att: equipo de trabajo de la primera conferencia Iberoamericana de termografía infrarroja",
-  "link_formato":"Formato de resumen",
-
-  "nombre":"Nombre",
-  "apellido":"Apellido",
-  "cedula":"Cedula",
-  "estudiante_profesional":"¿Eres estudiante o profesional?",
-  "como_participar":" ¿Como vas a participar?",
-  "email_register":"Correo electrónico",
-  "tel":"teléfono",
-  "ciudad_register":"Ciudad",
-  "contraseña":"Contraseña",
-  "confirmar_contraseña":"Confirmar Contraseña ",
-  "enviar_register":"Enviar Inscripción",
-  "formato_resumen":"Formato de Resumen",
-
-  "estudiante":"Estudiante",
-  "profesional":"Profesional",
-  "ponente":"Ponente",
-  "asistente":"Asistente",
-  "evaluador":"Evaluador",
-  "empresa":"Empresa",
 
   "inicio_sesion":"Inicio de Sesión",
   "usuario":"Usuario",
@@ -141,5 +158,10 @@
   "cronograma":"Cronograma del evento",
   "perla":"La magia de la perla",
   "pereira_magia":"    Pereira es la ciudad capital del departamento de Risaralda, la ciudad más poblada del eje cafetero y la segunda ciudad más grande de la región Paisa Colombiana. Apodada “La querendona, trasnochadora y morena” o “La perla del otún”, Pereira cuenta con una agradable clima templado gracias a su ubicación geográfica entre el cálido valle del cauca y las frías zonas montañosas de la cordillera central de Colombia. La ciudad tiene todas las prestaciones que una ciudad moderna puede ofrecer como: hotelería, Diversos medios de transportes, infraestructura vial, hospitales y seguridad. La cultura pereirana tiene sus raíces en la cultura cafetera de la región, lo cual hace parte del atractivo turístico de la ciudad y de sus zonas rurales, donde pueden observarse hermosas residencias construidas con el característico estilo colonial cafetero. También, en el ámbito urbano, Pereira cuenta con múltiples espacios deportivos y de esparcimiento para deleitarse con los servicios que la ciudad puede ofrecer. Sin quedarse atrás en el desarrollo tecnológico y comercial que caracteriza al siglo XXI, Pereira ofrece a sus ciudadanos y visitantes una inmensa variedad de productos y servicios debido al carácter comercial de la ciudad, al ubicarse en el centro del triángulo de oro colombiano conformado por las ciudades de Bogotá, Medellín y Calí; La Perla del otún constituye un punto intermedio en las principales rutas comerciales del país, lo que le vale otro dos de sus apodos “La ciudad sin puertas” y “La capital del eje”. En Pereira, usted podrá disfrutar de una diversa gastronomía regional, platos como: La bandeja Paisa, El Mondongo, ajiaco, Sancocho, Tamales, Patacones, Arepas, buñuelos y Mazamorra. Le brindarán una experiencia inolvidable. Al igual que visitar el parque natural de la Laguna de Otún, las aguas termales o las diferentes zonas de camping, centros comerciales, parques acuáticos presentes a las afueras de la ciudad. La ciudad te recibe con los brazos abiertos",
-  "ven_a_pereira":" Ven a nuestra ciudad. ¡Te esperamos con las manos abiertas! Enamorate de la querendona"
+  "ven_a_pereira":" Ven a nuestra ciudad. ¡Te esperamos con las manos abiertas! Enamorate de la querendona",
+
+  "Celular": "Celular",
+      "telefono": "Teléfono fijo",
+    
+      "enviar": "Enviar"
 }
