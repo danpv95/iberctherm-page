@@ -3,21 +3,35 @@
     <!--LOGO PAGE-->
     <span class="logo">
       <img routerLink="home" src="assets/resource/logo_congreso.png" />
-      <select class="active" #langSelect (change)="camnbiarLang(langSelect.value)">
+      <select
+        class="active"
+        #langSelect
+        (change)="camnbiarLang(langSelect.value)"
+      >
         <option *ngFor="let lang of langs" [value]="lang">{{ lang }}</option>
       </select>
     </span>
-    <input type="checkbox" id="click">
+    <input type="checkbox" id="click" />
     <label for="click" class="menu-btn">
       <fa-icon [icon]="faBars"></fa-icon>
     </label>
     <ul>
-      <li><a routerLink="home">{{ "nav_bar.inicio" | translate }}</a></li>
-      <li><a routerLink="registro">{{ "nav_bar.registro" | translate }}</a></li>
-      <li><a routerLink="evento">{{ "nav_bar.evento" | translate }}</a></li>
-      <li><a routerLink="pagos">{{ "nav_bar.comercial" | translate }}</a></li>
-      <li><a class="active" routerLink="ingreso"> {{ "nav_bar.sesion" | translate }} <fa-icon [icon]="faSignInAlt">
-          </fa-icon>
+      <li>
+        <a routerLink="home">{{ "nav_bar.inicio" | translate }}</a>
+      </li>
+      <li>
+        <a routerLink="registro">{{ "nav_bar.registro" | translate }}</a>
+      </li>
+      <li>
+        <a routerLink="evento">{{ "nav_bar.evento" | translate }}</a>
+      </li>
+      <li>
+        <a routerLink="pagos">{{ "nav_bar.comercial" | translate }}</a>
+      </li>
+      <li>
+        <a class="active" routerLink="ingreso">
+          {{ "nav_bar.sesion" | translate }}
+          <fa-icon [icon]="faSignInAlt"> </fa-icon>
         </a>
       </li>
     </ul>

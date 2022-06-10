@@ -4,7 +4,11 @@
     "registro": "Registro",
     "evento": "Evento",
     "comercial": "Comercial",
-    "sesion": "Comercial"
+    "sesion": "Inicio de sesión"
+  },
+  "comunes": {
+    "universidad": "Universidad Tecnológica de Pereira",
+    "registro": "Registro"
   },
   "home_page": {
     "evento": {
@@ -12,26 +16,72 @@
       "evento-content": "Desde el grupo de investigación GEF (Grupo de Electrofisiología) adscrito a la Facultad de Ciencias Básicas de la Universidad Tecnológica de Pereira, tenemos el placer de darles la bienvenida a la PRIMERA CONFERENCIA IBEROAMERICANA DE TERMOGRAFÍA INFRARROJA - 1IBERCTHERM, que se llevará a cabo del 15 al 17 de junio de 2022, con el acompañamiento de un comité organizador nacional e internacional. Una conferencia incluyente para los profesionales, profesores, estudiantes y aficionados, brindándoles una oportunidad para adquirir nuevos conocimientos, así como intercambiar experiencias y difundir información científica en relación a la termografía infrarroja en Colombia y en Iberoamérica.",
       "home_saludo": "Desde el grupo de investigación GEF (Grupo de Electrofisiología) adscrito a la Facultad de Ciencias Básicas de la Universidad Tecnológica de Pereira, tenemos el placer de darles la bienvenida a la PRIMERA CONFERENCIA IBEROAMERICANA DE TERMOGRAFÍA INFRARROJA - 1IBERCTHERM, que se llevará a cabo del 15 al 17 de junio de 2022, con el acompañamiento de un comité organizador nacional e internacional. Una conferencia incluyente para los profesionales, profesores, estudiantes y aficionados, brindándoles una oportunidad para adquirir nuevos conocimientos, así como intercambiar experiencias y  difundir información científica en relación a la termografía infrarroja en Colombia y en Iberoamérica.",
       "home_saludo2": "La versatilidad de la termografía infrarroja permite que sea aplicada en diferentes áreas como son: las ciencias básicas, las ciencias de la salud, la ingeniería, la industria, entre otras; favoreciendo la confluencia al evento de diferentes personas que trabajan e investigan en termografía, haciendo posible la adaptación de esta técnica en distintas áreas. Es un evento iberoamericano que busca la divulgación, discusión y apropiación de desarrollos tecnológicos y científicos de los grupos de investigación, de las empresas relacionadas con la termografía; permitiendo la diseminación del conocimiento y la construcción de redes de conocimiento.",
-      "home_saludo3": " El primer IBERCTHERM se realizará de manera completamente VIRTUAL y no tendrá NINGÚN COSTO para los asistentes al evento."
+      "home_saludo3": " El primer IBERCTHERM se realizará de manera completamente VIRTUAL y no tendrá NINGÚN COSTO para los asistentes al evento. "
+    },
+    "organizadores": {
+      "nota_organizadores": "Nota de los Organizadores",
+      "comite_organizador": "Comité Organizador Nacional",
+      "Institucion": "Institución: ",
+      "contacto": "Contacto: ",
+      "comite_organizador_internacional": "Comité Organizador Internacional"
+    },
+    "topicos": {
+      "titulo": "Tópicos",
+      "descripcion": "De acuerdo con la base Scopus, si nos limitamos a la región iberoamericana el 20% de los documentos están enfocados desde el área de ingeniería, el 12% en el área de Física y Astronomía el 10% son documentos relacionados con Ciencia de Materiales, y se tiene un 8% de temas relacionados con medicina y un 8% enfocado a ciencias de la computación. El restante 42% está repartido en muy diversas áreas: Energía, Bioquímica, Agricultura y Ciencias Biológicas, Química, Matemáticas, etc. Por lo tanto, es evidente que los temas considerados presentan una multidisciplinariedad y versatilidad en cuanto a los temas considerados.",
+      "topico1": "Tópico 1",
+      "text_topico1": "Investigaciones enfocadas a la aplicación de la radiación infrarroja en ciencias humanas y sociales.",
+      "topico2": "Tópico 2",
+      "text_topico2": "Investigaciones relacionadas al uso de la radiación infrarroja en Ciencia e Ingeniería de Materiales.",
+      "topico3": "Tópico 3",
+      "text_topico3": "Investigaciones afines a las ciencias naturales (Biología, Física, Química, Matemáticas) y a las ciencias de la salud.",
+      "topico4": "Tópico 4",
+      "text_topico4": "Evolución y tendencias actuales de la investigación usando termografía infrarroja, adquisición y procesamiento de imágenes termográficas, procesos de calibración y caracterización de sensores infrarrojos, aplicación de la termografía en procesos industriales, agroindustriales y comerciales, industria 4.0.",
+      "topico5": "Tópico 5",
+      "text_topico5": "Investigaciones relacionadas con las ciencias de la computación, procesamiento y postprocesamiento de imágenes termográficas, big data (minería de datos, inteligencia artificial, etc)."
+    },
+    "participacion": {
+      "quienes_participar": "¿Quiénes pueden participar?",
+      "participar": "Pueden participar estudiantes, profesores y profesionales de todas las áreas, que estén interesados en aprender sobre la termografía infrarroja, o hacer difusión de los resultados de sus proyectos de investigación en los cuales implementan la técnica de termografía infrarroja. Este evento se realizará de manera completamente VIRTUAL y no tendrá NINGÚN COSTO para todos los asistentes. Se considerará la publicación de los mejores trabajos en revistas indexadas por el Ministerio de Ciencia Tecnología e Innovación. Es una gran oportunidad para aprender y conocer una técnica que está revolucionando el mundo en todas sus áreas, desde el deporte, la medicina, la ingeniería, entre otras.",
+      "participar_2": "¡ÚNASE A NUESTRO EVENTO Y ANÍMESE A PARTICIPAR!"
     }
-  },  
+  },
+  "profesor": {
+    "profe0": "Ph.D. En Física, Investigador Junior de Minciencias, docente de la Universidad Tecnológica de Pereira, director del grupo de Investigación en Electrofisiología reconocido en categoría b, co-director del Grupo de Investigación en propiedades Magnéticas y Magneto-ópticas de nuevos materiales (GIMM) reconocido en categoría b.",
+    "profe1": "Estudiante de Doctorado en Ciencias, Magister en Ingeniería Eléctrica, docente de la Universidad Tecnológica de Pereira, integrante del grupo de Investigación en Electrofisiología reconocido en categoría b.",
+    "profe2": "Magíster en Economía, Magíster en Ingeniería, Especializado en Gerencia Ambiental, Especialista en Gerencia y Gestión Cultural, Ingeniero en metalurgia, docente del Servicio Nacional de Aprendizaje SENA.",
+    "profe3": "El Dr. Jaime Andrés Pérez Taborda recibió el título de Ingeniero Físico (Hons.) de la Universidad Tecnológica de Pereira, Colombia, y el título de máster en radiación de sincrotrón y aceleradores de partículas de la Universidad Autónoma de Barcelona, así como su doctorado (Cum laude) del Instituto de Microelectrónica de Madrid, Universidad Complutense de Madrid.",
+    "profe4": "Doctora en filosofía de la Universidad de Cambridge, profesora asociada al departamento de Ingeniería Eléctrica y Electrónica de la Universidad de los Andes, Magíster en Ingeniería Eléctrica, profesional en Física y en Ingeniería Eléctrica.",
+    "profe5": "Doctor en ciencias de la Escuela Politécnica Federal de Lausanne, Magíster en Química y profesional en Química de la Universidad del Valle, Investigador asociado de Minciencias.",
+    "profe6": "Doctor en Robótica y Visión Artificial, Université d´Evry, Francia, Magíster en Automática e Ingeniero Electricista de la Universidad del Valle, integrante del grupo de investigación en Percepción y Sistemas Inteligentes, PSI e Investigador Senior de Minciencias.",
+    "profe7": "Doctor en Ingeniería, Magíster en Automática, e Ingeniero Electrónico de la Universidad del Valle, Integrante del grupo de investigación en Percepción y Sistemas Inteligentes, PSI e Investigador Senior de Minciencias.",
+    "profe8": "Doctora, Magíster y profesional de Ingeniería Civil de la Universidad Católica de Río de Janeiro, docente de ciencias de la computación en la Universidade Federal Fluminense-UFF.",
+    "profe9": "Doctor en Energética y Transferencia de Calor en el Instituto Nacional de Ciencias Aplicadas de Lyon, Especializado en Estudios a Profundidad en Energética en la Universidad de Niza, Licenciado en Física de la Universidad Nacional Autónoma de México.",
+    "profe10": "Doctor en Electrónica Industrial por la Universidad de Minho, Magíster en Automatización Industrial y Gestión de Procesos, Ingeniero Mecánico de la Universidad de Oporto, integrante del grupo de Automatización, Instrumentación y Control."
+  },
+  "politicas": {
+    "politica1": "POLÍTICA DE PRIVACIDAD",
+    "politica1_text": "La presente Política de Privacidad establece los términos en que Iberc Therm usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Este evento está comprometido con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo, esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.",
+    "politica2": "INFORMACIÓN QUE ES RECOGIDA",
+    "politica2_text": "Nuestro sitio web podrá recoger información personal por ejemplo: Nombre, información de contacto como su dirección de correo electrónica e información demográfica. ",
+    "politica3": "USO DE LA INFORMACIÓN RECOGIDA",
+    "politica3_text": "Nuestro sitio web emplea la información con el fin de proporcionar la inscripción al evento Es posible que sean enviados correos electrónicos, avisando las actividades propuestas durante el evento. Iberc Therm está altamente comprometido para cumplir con el compromiso de mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista ningún acceso no autorizado.",
+    "politica4": "COOKIES",
+    "politica4_text": "Una cookies se refiere a un fichero que es enviado con la finalidad de solicitar permiso para almacenarse en su ordenador, al aceptar dicho fichero se crea y la cookies sirve entonces para tener información respecto al tráfico web, y también facilita las futuras visitas a una web recurrente. Otra función que tienen las cookies es que con ellas las web pueden reconocerte individualmente y por tanto brindarte el mejor servicio personalizado de su web. Nuestro sitio web emplea las cookies para poder identificar las páginas que son visitadas y su frecuencia. Esta información es empleada únicamente para análisis estadístico y después la información se elimina de forma permanente. Usted puede eliminar las cookies en cualquier momento desde su ordenador. Sin embargo las cookies ayudan a proporcionar un mejor servicio de los sitios web, estás no dan acceso a información de su ordenador ni de usted, a menos de que usted así lo quiera y la proporcione directamente, visitas a una web . Usted puede aceptar o negar el uso de cookies, sin embargo la mayoría de navegadores aceptan cookies automáticamente pues sirve para tener un mejor servicio web. También usted puede cambiar la configuración de su ordenador para declinar las cookies. Si se declinan es posible que no pueda utilizar algunos de nuestros servicios.",
+    "politica5": "ENLACES A TERCEROS",
+    "politica5_text": "Este sitio web pudiera contener enlaces a otros sitios que pudieran ser de su interés. Una vez que usted de clic en estos enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que es redirigido y por lo tanto no somos responsables de los términos o privacidad ni de la protección de sus datos en esos otros sitios terceros. Dichos sitios están sujetos a sus propias políticas de privacidad por lo cual es recomendable que los consulte para confirmar que usted está de acuerdo con estas.",
+    "politica6": "CONTROL DE SU INFORMACIÓN PERSONAL",
+    "politica6_text": "En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es proporcionada a nuestro sitio web. Iberc Therm  Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento."
+  },
+  "footer": {
+    "descripcion": "Carrera 27 #10-02 Barrio Alamos - Pereira - Risaralda - Colombia - AA: 97 - Código postal: 660003 Bloque 1 laboratorio GIMM 1A-125 -contacto"
+  },
   
-  "nota_organizadores": "Nota de los Organizadores",
-  "comite_organizador": "Comité Organizador Nacional",
-  "Institucion": "Institución: ",
-  "contacto": "Contacto: ",
-  "comite_organizador_internacional": "Comité Organizador Internacional",
   "tematicas": "Temáticas",
-  "inicio": "Inicio",
   "autores": "Autores",
-  
-  "Evento": "Evento",
   "Cronograma": "Cronograma",
-  "Comercial": "Comercial",
   "Inscripcion_empresas": "Inscripción para empresas",
   "Salon_virtual": "Salón virtual",
-  "Inicio_sesion": "Inicio de sesión",
-  "universidad": "Universidad Tecnológica de Pereira",
+    
   "termografia": "Termografía Infrarroja",
   "pagina_comercial": "Pagina Comercial",
   "texto_empresa": "La primera conferencia iberoamericana de termografía infrarroja tiene la finalidad de reunir a todas las personas y empresas interesadas en exponer estudios y/o actividades comerciales en el área de termografía infrarroja, donde se implemente esta técnica como herramienta en las  etapas de elaboración de productos o prestación de servicios. Se contará con la presencia de diferentes ponencias Nacionales e Internacionales, donde se explicarán al público sus más recientes investigaciones y como la termografía infrarroja, se muestra cómo se consolida como una tecnología capaz de expandir o profundizar el conocimiento en los diferentes ámbitos científicos, tecnológicos, industriales y  comerciales. También, algunos estudiantes pertenecientes al comité organizador del evento en calidad de ponentes darán a conocer los  resultados de proyectos formativos de investigación de financiación estatal enfocados en la implementación de termografía infrarroja en el área de la salud, detallando: los procedimientos, instrumentos, técnicas implementadas para llevar a cabo dichas investigaciones y conclusiones con el objetivo de mostrar sus resultados a un público experto o interesado en el área de termografía infrarroja para el debate y divulgación de nuevos conocimientos. En la conferencia. Además de mostrar las investigaciones en curso y avances científicos, se pretende brindar a las nuevas generaciones de ingenieros y científicos la oportunidad de adquirir conocimientos en el área de la termografía infrarroja y sus aplicaciones en el mundo académico e industrial. Usted y/o su organización podrán participar como ponente, asistente, o empresa.",
@@ -42,32 +92,18 @@
   "area_trabaja": "Área en la que trabaja",
   "ciudad": "Ciudad",
   "contactarte": "¿Como podemos contactarte?",
+  
   "Celular": "Celular",
   "telefono": "Teléfono fijo",
   "email": "Email",
   "enviar": "Enviar",
-  
-  "profe0": "Ph.D. En Física, Investigador Junior de Minciencias, docente de la Universidad Tecnológica de Pereira, director del grupo de Investigación en Electrofisiología reconocido en categoría b, co-director del Grupo de Investigación en propiedades Magnéticas y Magneto-ópticas de nuevos materiales (GIMM) reconocido en categoría b.",
-  "profe1": "Estudiante de Doctorado en Ciencias, Magister en Ingeniería Eléctrica, docente de la Universidad Tecnológica de Pereira, integrante del grupo de Investigación en Electrofisiología reconocido en categoría b.",
-  "profe2": "Magíster en Economía, Magíster en Ingeniería, Especializado en Gerencia Ambiental, Especialista en Gerencia y Gestión Cultural, Ingeniero en metalurgia, docente del Servicio Nacional de Aprendizaje SENA.",
-  "profe3": "El Dr. Jaime Andrés Pérez Taborda recibió el título de Ingeniero Físico (Hons.) de la Universidad Tecnológica de Pereira, Colombia, y el título de máster en radiación de sincrotrón y aceleradores de partículas de la Universidad Autónoma de Barcelona, así como su doctorado (Cum laude) del Instituto de Microelectrónica de Madrid, Universidad Complutense de Madrid.",
-  "profe4": "Doctora en filosofía de la Universidad de Cambridge, profesora asociada al departamento de Ingeniería Eléctrica y Electrónica de la Universidad de los Andes, Magíster en Ingeniería Eléctrica, profesional en Física y en Ingeniería Eléctrica.",
-  "profe5": "Doctor en ciencias de la Escuela Politécnica Federal de Lausanne, Magíster en Química y profesional en Química de la Universidad del Valle, Investigador asociado de Minciencias.",
-  "profe6": "Doctor en Robótica y Visión Artificial, Université d´Evry, Francia, Magíster en Automática e Ingeniero Electricista de la Universidad del Valle, integrante del grupo de investigación en Percepción y Sistemas Inteligentes, PSI e Investigador Senior de Minciencias.",
-  "profe7": "Doctor en Ingeniería, Magíster en Automática, e Ingeniero Electrónico de la Universidad del Valle, Integrante del grupo de investigación en Percepción y Sistemas Inteligentes, PSI e Investigador Senior de Minciencias.",
-  "profe8": "Doctora, Magíster y profesional de Ingeniería Civil de la Universidad Católica de Río de Janeiro, docente de ciencias de la computación en la Universidade Federal Fluminense-UFF.",
-  "profe9": "Doctor en Energética y Transferencia de Calor en el Instituto Nacional de Ciencias Aplicadas de Lyon, Especializado en Estudios a Profundidad en Energética en la Universidad de Niza, Licenciado en Física de la Universidad Nacional Autónoma de México.",
-  "profe10": "Doctor en Electrónica Industrial por la Universidad de Minho, Magíster en Automatización Industrial y Gestión de Procesos, Ingeniero Mecánico de la Universidad de Oporto, integrante del grupo de Automatización, Instrumentación y Control.",
 
-  "participar":"Pueden participar estudiantes, profesores y profesionales de todas las áreas, que estén interesados en aprender sobre la termografía infrarroja, o hacer difusión de los resultados de sus proyectos de investigación en los cuales implementan la técnica de termografía infrarroja. Este evento se realizará de manera completamente VIRTUAL y no tendrá NINGÚN COSTO para todos los asistentes. Se considerará la publicación de los mejores trabajos en revistas indexadas por el Ministerio de Ciencia Tecnología e Innovación. Es una gran oportunidad para aprender y conocer una técnica que está revolucionando el mundo en todas sus áreas, desde el deporte, la medicina, la ingeniería, entre otras.",
-  "participar_2":"¡ÚNASE A NUESTRO EVENTO Y ANÍMESE A PARTICIPAR!",
-  "registro":"Registrarse al evento",
-  "quienes_participar":"¿Quiénes pueden participar?",
-
+  "registro_evento":"Registrarse al evento",
   "inscripcion_evento":"Inscripción al evento",
   "pasos_inscripcion":"Para realizar la Inscripción al evento es necesario que llene la siguiente información, con la cual podremos contactarlo. Si va a participar en modalidad de Ponente su inscripción solo será efectiva cuando envíe el resumen, del trabajo a presentar durante el evento. El resumen es necesario enviarlo al correo mmedina@utp.edu.co. Al final del formulario se encuentra un link, en donde podrás descargar el formato de resumen para el evento. Si tienes alguna pregunta sobre el proceso de inscripción, contáctate con nosotros por medio del correo electrónico mmedina@utp.edu.co",
   "formato":"Para enviar el resumen es necesario tener en cuenta el formato básico del evento, el cual podrá encontrarlo dando click en el siguiente enlace. El enlace descarga el formato para el evento. Muchos éxitos en su participación y es un placer tenerle en cuenta para nuestro evento.  Att: equipo de trabajo de la primera conferencia Iberoamericana de termografía infrarroja",
   "link_formato":"Formato de resumen",
+
   "nombre":"Nombre",
   "apellido":"Apellido",
   "cedula":"Cedula",
@@ -92,45 +128,18 @@
   "usuario":"Usuario",
   "Contraseña":"Contraseña",
   "Ingresar":"Ingresar",
-  "Registrarte":"Registrarte",
-
-  "Topicos":"Tópicos",
-  "topico1":"Tópico 1",
-  "topico2":"Tópico 2",
-  "topico3":"Tópico 3",
-  "topico4":"Tópico 4",
-  "topico5":"Tópico 5",
-  "text_topico1":"Investigaciones enfocadas a la aplicación de la radiación infrarroja en ciencias humanas y sociales.",
-  "text_topico2":"Investigaciones relacionadas al uso de la radiación infrarroja en Ciencia e Ingeniería de Materiales.",
-  "text_topico3":"Investigaciones afines a las ciencias naturales (Biología, Física, Química, Matemáticas) y a las ciencias de la salud.",
-  "text_topico4":"Evolución y tendencias actuales de la investigación usando termografía infrarroja, adquisición y procesamiento de imágenes termográficas, procesos de calibración y caracterización de sensores infrarrojos, aplicación de la termografía en procesos industriales, agroindustriales y comerciales, industria 4.0.",
-  "text_topico5":"Investigaciones relacionadas con las ciencias de la computación, procesamiento y postprocesamiento de imágenes termográficas, big data (minería de datos, inteligencia artificial, etc).",
-
-  "footer":"Carrera 27 #10-02 Barrio Alamos - Pereira - Risaralda - Colombia - AA: 97 - Código postal: 660003 Bloque 1 laboratorio GIMM 1A-125 -contacto",
-
+  "Registrarte":"Registrarte",  
+  
   "inscrito":"Si aún no te has inscrito",
-  "registrate":"REGISTRATE",
-
-  "politica1":"POLÍTICA DE PRIVACIDAD",
-  "politica1_text":"La presente Política de Privacidad establece los términos en que Iberc Therm usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Este evento está comprometido con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo, esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.",
-  "politica2":"INFORMACIÓN QUE ES RECOGIDA",
-  "politica2_text":"Nuestro sitio web podrá recoger información personal por ejemplo: Nombre, información de contacto como su dirección de correo electrónica e información demográfica. ",
-  "politica3":"USO DE LA INFORMACIÓN RECOGIDA",
-  "politica3_text":"Nuestro sitio web emplea la información con el fin de proporcionar la inscripción al evento Es posible que sean enviados correos electrónicos, avisando las actividades propuestas durante el evento. Iberc Therm está altamente comprometido para cumplir con el compromiso de mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista ningún acceso no autorizado.",
-  "politica4":"COOKIES",
-  "politica4_text":"Una cookies se refiere a un fichero que es enviado con la finalidad de solicitar permiso para almacenarse en su ordenador, al aceptar dicho fichero se crea y la cookies sirve entonces para tener información respecto al tráfico web, y también facilita las futuras visitas a una web recurrente. Otra función que tienen las cookies es que con ellas las web pueden reconocerte individualmente y por tanto brindarte el mejor servicio personalizado de su web. Nuestro sitio web emplea las cookies para poder identificar las páginas que son visitadas y su frecuencia. Esta información es empleada únicamente para análisis estadístico y después la información se elimina de forma permanente. Usted puede eliminar las cookies en cualquier momento desde su ordenador. Sin embargo las cookies ayudan a proporcionar un mejor servicio de los sitios web, estás no dan acceso a información de su ordenador ni de usted, a menos de que usted así lo quiera y la proporcione directamente, visitas a una web . Usted puede aceptar o negar el uso de cookies, sin embargo la mayoría de navegadores aceptan cookies automáticamente pues sirve para tener un mejor servicio web. También usted puede cambiar la configuración de su ordenador para declinar las cookies. Si se declinan es posible que no pueda utilizar algunos de nuestros servicios.",
-  "politica5":"ENLACES A TERCEROS",
-  "politica5_text":"Este sitio web pudiera contener enlaces a otros sitios que pudieran ser de su interés. Una vez que usted de clic en estos enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que es redirigido y por lo tanto no somos responsables de los términos o privacidad ni de la protección de sus datos en esos otros sitios terceros. Dichos sitios están sujetos a sus propias políticas de privacidad por lo cual es recomendable que los consulte para confirmar que usted está de acuerdo con estas.",
-  "politica6":"CONTROL DE SU INFORMACIÓN PERSONAL",
-  "politica6_text":"En cualquier momento usted puede restringir la recopilación o el uso de la información personal que es proporcionada a nuestro sitio web. Iberc Therm  Se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento.",
-  "Registro":"Registro",
+  "registrate":"REGISTRATE", 
+  
 
   "animate":"Anímese a participar en el evento, hay muchos beneficios para su emprendimiento. Estaran disponibles salas virtuales donde se expondran los servicios o productos que brindan las empresas asociadas. Si estas interesado contáctate al correo: mmedina@utp.edu.co",
   "eventmail": "eventos@correo.com",
 
   "fechas":"Fechas Importantes",
   "cronograma":"Cronograma del evento",
- "perla":"La magia de la perla",
- "pereira_magia":"    Pereira es la ciudad capital del departamento de Risaralda, la ciudad más poblada del eje cafetero y la segunda ciudad más grande de la región Paisa Colombiana. Apodada “La querendona, trasnochadora y morena” o “La perla del otún”, Pereira cuenta con una agradable clima templado gracias a su ubicación geográfica entre el cálido valle del cauca y las frías zonas montañosas de la cordillera central de Colombia. La ciudad tiene todas las prestaciones que una ciudad moderna puede ofrecer como: hotelería, Diversos medios de transportes, infraestructura vial, hospitales y seguridad. La cultura pereirana tiene sus raíces en la cultura cafetera de la región, lo cual hace parte del atractivo turístico de la ciudad y de sus zonas rurales, donde pueden observarse hermosas residencias construidas con el característico estilo colonial cafetero. También, en el ámbito urbano, Pereira cuenta con múltiples espacios deportivos y de esparcimiento para deleitarse con los servicios que la ciudad puede ofrecer. Sin quedarse atrás en el desarrollo tecnológico y comercial que caracteriza al siglo XXI, Pereira ofrece a sus ciudadanos y visitantes una inmensa variedad de productos y servicios debido al carácter comercial de la ciudad, al ubicarse en el centro del triángulo de oro colombiano conformado por las ciudades de Bogotá, Medellín y Calí; La Perla del otún constituye un punto intermedio en las principales rutas comerciales del país, lo que le vale otro dos de sus apodos “La ciudad sin puertas” y “La capital del eje”. En Pereira, usted podrá disfrutar de una diversa gastronomía regional, platos como: La bandeja Paisa, El Mondongo, ajiaco, Sancocho, Tamales, Patacones, Arepas, buñuelos y Mazamorra. Le brindarán una experiencia inolvidable. Al igual que visitar el parque natural de la Laguna de Otún, las aguas termales o las diferentes zonas de camping, centros comerciales, parques acuáticos presentes a las afueras de la ciudad. La ciudad te recibe con los brazos abiertos",
- "ven_a_pereira":" Ven a nuestra ciudad. ¡Te esperamos con las manos abiertas! Enamorate de la querendona"
+  "perla":"La magia de la perla",
+  "pereira_magia":"    Pereira es la ciudad capital del departamento de Risaralda, la ciudad más poblada del eje cafetero y la segunda ciudad más grande de la región Paisa Colombiana. Apodada “La querendona, trasnochadora y morena” o “La perla del otún”, Pereira cuenta con una agradable clima templado gracias a su ubicación geográfica entre el cálido valle del cauca y las frías zonas montañosas de la cordillera central de Colombia. La ciudad tiene todas las prestaciones que una ciudad moderna puede ofrecer como: hotelería, Diversos medios de transportes, infraestructura vial, hospitales y seguridad. La cultura pereirana tiene sus raíces en la cultura cafetera de la región, lo cual hace parte del atractivo turístico de la ciudad y de sus zonas rurales, donde pueden observarse hermosas residencias construidas con el característico estilo colonial cafetero. También, en el ámbito urbano, Pereira cuenta con múltiples espacios deportivos y de esparcimiento para deleitarse con los servicios que la ciudad puede ofrecer. Sin quedarse atrás en el desarrollo tecnológico y comercial que caracteriza al siglo XXI, Pereira ofrece a sus ciudadanos y visitantes una inmensa variedad de productos y servicios debido al carácter comercial de la ciudad, al ubicarse en el centro del triángulo de oro colombiano conformado por las ciudades de Bogotá, Medellín y Calí; La Perla del otún constituye un punto intermedio en las principales rutas comerciales del país, lo que le vale otro dos de sus apodos “La ciudad sin puertas” y “La capital del eje”. En Pereira, usted podrá disfrutar de una diversa gastronomía regional, platos como: La bandeja Paisa, El Mondongo, ajiaco, Sancocho, Tamales, Patacones, Arepas, buñuelos y Mazamorra. Le brindarán una experiencia inolvidable. Al igual que visitar el parque natural de la Laguna de Otún, las aguas termales o las diferentes zonas de camping, centros comerciales, parques acuáticos presentes a las afueras de la ciudad. La ciudad te recibe con los brazos abiertos",
+  "ven_a_pereira":" Ven a nuestra ciudad. ¡Te esperamos con las manos abiertas! Enamorate de la querendona"
 }

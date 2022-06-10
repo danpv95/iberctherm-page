@@ -2,18 +2,20 @@
   <img src="assets/resource/banner2.jpeg" />
 </div>
 
+<!--Contenedor del evento-->
 <div class="container">
-
-  <!--Contenedor del evento-->
-  <h1>{{ 'home_page.evento.titulo' | translate }}</h1>
-  <p> {{ 'home_page.evento.home_saludo' | translate }} </p>
+  <h1>{{ "home_page.evento.titulo" | translate }}</h1>
+  <p>{{ "home_page.evento.home_saludo" | translate }}</p>
   <!--Contenedor de nota de los organizadores-->
-  <!--<h1>{{ 'nota_organizadores' | translate }}</h1>-->
-  <p> {{ 'home_page.evento.home_saludo2' | translate }} </p>
-  <p><strong>{{'home_page.evento.home_saludo3' | translate}}</strong>
-    <a href="../../../../assets/images/TEMPLATE_ABSTRACT_EXTEND.docx" download> {{'formato Resumen' | uppercase}} </a>
-  </p>
+  <!--<h1>{{ 'home_page.evento.nota_organizadores' | translate }}</h1>-->
+  <p>{{ "home_page.evento.home_saludo2" | translate }}</p>
 
+  <p>
+    <strong>{{ "home_page.evento.home_saludo3" | translate }} </strong>
+    <a href="../../../../assets/images/TEMPLATE_ABSTRACT_EXTEND.docx" download>
+      {{ "formato Resumen" | uppercase }}
+    </a>
+  </p>
 
   <!--Contenedor de los logos del congreso-->
   <div class="container-logos">
@@ -31,138 +33,82 @@
 
   <!--Contenedor del comite organizador-->
 
-  <div class="container-comite">
-    <h1>{{ "comite_organizador" | translate }}</h1>
-    <!-- ngFor del comite organizador-->
-
-    <div class="card">
-      <mat-card *ngFor="let organizador of organizadores">
-        <div class="card-img">
-          <img mat-card-image src="{{ 'assets/images/' + organizador.image }}" />
-        </div>
-
-        <mat-card-header>
-          <mat-card-title>{{ organizador.name }}</mat-card-title>
-          <mat-card-subtitle>{{ 'comite_organizador' | translate }}</mat-card-subtitle>
-        </mat-card-header>
-
-        <mat-card-content>
-          <h3> <strong>{{ 'Institucion' | translate }} </strong> {{ organizador.institucion }} </h3>
-          <h3> <strong>{{ 'contacto' | translate }} </strong> {{ organizador.contacto }} </h3>
-          <h4>{{ organizador.descripcion | translate }}</h4>
-        </mat-card-content>
-      </mat-card>
-    </div>
-  </div>
-
-  <div class="container-comite">
-    <h1>{{ 'comite_organizador_internacional' | translate }}</h1>
-    <!-- ngFor del comite organizador-->
-    <div class="card">
-      <mat-card *ngFor="let organizador of internacional">
-        <div class="card-img">
-          <img mat-card-image src="{{ 'assets/images/' + organizador.image }}" />
-        </div>
-
-        <mat-card-header>
-          <mat-card-title>{{ organizador.name }}</mat-card-title>
-          <mat-card-subtitle>{{ 'comite_organizador_internacional' | translate }}</mat-card-subtitle>
-        </mat-card-header>
-
-        <mat-card-content>
-          <h3> <strong>{{ 'Institucion' | translate }} </strong> {{ organizador.institucion }} </h3>
-          <h3> <strong>{{ 'contacto' | translate }} </strong> {{ organizador.contacto }} </h3>
-          <h4>{{ organizador.descripcion | translate}}</h4>
-        </mat-card-content>
-      </mat-card>
-    </div>
-  </div>
-
+  <!------------------------------------->
 
   <section class="topics">
-
-
     <div class="contenedor">
-      <h1 class="titulo"> {{ 'Topicos' | translate }} </h1>
-      <p>
-        De acuerdo con la base Scopus, si nos limitamos a la región iberoamericana el 20% de los documentos están
-        enfocados desde el área de ingeniería, el 12% en el área de Física y Astronomía el 10% son documentos
-        relacionados
-        con Ciencia de Materiales, y se tiene un 8% de temas relacionados con medicina y un 8% enfocado a ciencias de la
-        computación. El restante 42% está repartido en muy diversas áreas: Energía, Bioquímica, Agricultura y Ciencias
-        Biológicas, Química, Matemáticas, etc. Por lo tanto, es evidente que los temas considerados presentan una
-        multidisciplinariedad y versatilidad en cuanto a los temas considerados.
-      </p>
-      <div style="text-align: center;">
+      <h1 class="titulo">{{ "home_page.topicos.titulo" | translate }}</h1>
+      <p>{{ "home_page.topicos.descripcion" | translate }}</p>
+      <div style="text-align: center">
         <img src="assets/images/tortatopics.png" />
       </div>
 
       <div class="galeria-port">
         <div class="imagen-port">
-          <h2 for=""> {{ 'topico1' | translate }}</h2>
+          <h2 for="">{{ "home_page.topicos.topico1" | translate }}</h2>
           <div class="hover-galeria">
-            <p> {{ 'text_topico1' | translate }}
-            </p>
+            <p>{{ "home_page.topicos.text_topico1" | translate }}</p>
           </div>
         </div>
 
         <div class="imagen-port">
-          <h2 for=""> {{ 'topico2' | translate }} </h2>
+          <h2 for="">{{ "home_page.topicos.topico2" | translate }}</h2>
           <div class="hover-galeria">
-            <p> {{ 'text_topico2' | translate }} </p>
+            <p>{{ "home_page.topicos.text_topico2" | translate }}</p>
           </div>
         </div>
         <div class="imagen-port">
-          <h2 for=""> {{ 'topico3' | translate }} </h2>
+          <h2 for="">{{ "home_page.topicos.topico3" | translate }}</h2>
           <div class="hover-galeria">
-            <p> {{ 'text_topico3' | translate }}
-            </p>
+            <p>{{ "home_page.topicos.text_topico3" | translate }}</p>
           </div>
         </div>
         <div class="imagen-port">
-          <h2 for=""> {{ 'topico4' | translate }}</h2>
+          <h2 for="">{{ "home_page.topicos.topico4" | translate }}</h2>
           <div class="hover-galeria">
-            <p> {{ 'text_topico4' | translate }}</p>
+            <p>{{ "home_page.topicos.text_topico4" | translate }}</p>
           </div>
         </div>
         <div class="imagen-port">
-          <h2 for=""> {{ 'topico5' | translate }}</h2>
+          <h2 for="">{{ "home_page.topicos.topico5" | translate }}</h2>
           <div class="hover-galeria">
-            <p>{{ 'text_topico5' | translate }}</p>
+            <p>{{ "home_page.topicos.text_topico5" | translate }}</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
-</div>
 
-<div class="container">
-  <div class="contenedor">
-    <div style="margin-top: 2%">
-      <h1> {{ 'quienes_participar' | translate }} </h1>
+  <div class="container">
+    <div class="contenedor">
+      <div style="margin-top: 2%">
+        <h1>{{ "home_page.participacion.quienes_participar" | translate }}</h1>
+      </div>
+      <p>{{ "home_page.participacion.participar" | translate }}</p>
+      <h2 style="text-align: center">
+        <strong>
+          {{ "home_page.participacion.participar_2" | translate }}</strong
+        >
+      </h2>
+    </div>
+    <div style="text-align: center; margin-bottom: 10%">
+      <button routerLink="/registro" mat-raised-button color="warn">
+        {{ "comunes.registro" | translate }}
+      </button>
+    </div>
+  </div>
+
+  <div>
+    <div style="text-align: center">
+      <img src="assets/images/tesisDiana1.PNG" />
     </div>
 
-    <p> {{ 'participar' | translate }} </p>
-    <h2 style="text-align: center;"> <strong> {{'participar_2' | translate}}</strong></h2>
+    <div style="text-align: center">
+      <img src="assets/images/tesisDiana2.PNG" />
+    </div>
 
+    <div style="text-align: center">
+      <img src="assets/images/tesisDiana3.PNG" />
+    </div>
   </div>
-
-  <div style="text-align: center; margin-bottom: 10%;">
-    <button routerLink="/registro" mat-raised-button color="warn"> {{ 'registro' | translate }} </button>
-  </div>
-
-  <div style="text-align: center;">
-    <img src="assets/images/tesisDiana1.PNG" />
-  </div>
-
-  <div style="text-align: center;">
-    <img src="assets/images/tesisDiana2.PNG" />
-  </div>
-
-  <div style="text-align: center;">
-    <img src="assets/images/tesisDiana3.PNG" />
-  </div>
-
-
 </div>

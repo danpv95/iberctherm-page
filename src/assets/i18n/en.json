@@ -4,13 +4,40 @@
     "registro": "Registro",
     "evento": "Evento",
     "comercial": "Comercial",
-    "sesion": "Comercial"
+    "sesion": "Login"
   },
-  
-  "evento": "Event",
-  "evento-content": "From our GIMM (Magnetic and Magnet Properties Research Group) and GEF (Electrophysiology Group) research groups attached to the Faculty of Basic Sciences of the Technological University of Pereira, we have the pleasure of welcoming you and inviting you to the IBERO-AMERICAN CONFERENCE OF INFRARED THERMOGRAPHY that will take place from june 15 to 17, 2022, with the accompaniment of an international organizing committee. An influential conference for professionals, students and amateurs, providing them with an opportunity to acquire new knowledge, as well as exchange experiences and disseminate scientific information in relation to infrared thermography in Colombia and Latin America.",
-  "home_saludo": " From our GIMM (Magnetic and Magnet Properties Research Group) and GEF (Electrophysiology Group) research groups attached to the Faculty of Basic Sciences of the Technological University of Pereira, we have the pleasure of welcoming you and inviting you to the IBERO-AMERICAN CONFERENCE OF INFRARED THERMOGRAPHY that will take place from june 15 to 17, 2022, with the accompaniment of an international organizing committee. An influential conference for professionals, students and amateurs, providing them with an opportunity to acquire new knowledge, as well as exchange experiences and disseminate scientific information in relation to infrared thermography in Colombia and Latin America.",
-  "home_saludo2": "Infrared thermography and its versatility allows it to be applied in different areas such as: basic sciences, health sciences, engineering, industries, among others. Favoring attendance at the event by professionals, students and amateurs, making it possible to adapt this technique in different areas. An Ibero-American event that grants the promotion of technological and scientific developments of research groups, individuals and the construction of knowledge networks. The event called the Ibero-American Conference on Infrared Thermography, will be held in person - blended or (explanation) at the UTP facilities between june 15 and 17, 2022.",
+  "comunes":{
+
+  },
+  "home_page": {
+    "evento": {
+      "titulo": "Event",
+      "evento-content": "From our GIMM (Magnetic and Magnet Properties Research Group) and GEF (Electrophysiology Group) research groups attached to the Faculty of Basic Sciences of the Technological University of Pereira, we have the pleasure of welcoming you and inviting you to the IBERO-AMERICAN CONFERENCE OF INFRARED THERMOGRAPHY that will take place from june 15 to 17, 2022, with the accompaniment of an international organizing committee. An influential conference for professionals, students and amateurs, providing them with an opportunity to acquire new knowledge, as well as exchange experiences and disseminate scientific information in relation to infrared thermography in Colombia and Latin America.",
+      "home_saludo": " From our GIMM (Magnetic and Magnet Properties Research Group) and GEF (Electrophysiology Group) research groups attached to the Faculty of Basic Sciences of the Technological University of Pereira, we have the pleasure of welcoming you and inviting you to the IBERO-AMERICAN CONFERENCE OF INFRARED THERMOGRAPHY that will take place from june 15 to 17, 2022, with the accompaniment of an international organizing committee. An influential conference for professionals, students and amateurs, providing them with an opportunity to acquire new knowledge, as well as exchange experiences and disseminate scientific information in relation to infrared thermography in Colombia and Latin America.",
+      "home_saludo2": "Infrared thermography and its versatility allows it to be applied in different areas such as: basic sciences, health sciences, engineering, industries, among others. Favoring attendance at the event by professionals, students and amateurs, making it possible to adapt this technique in different areas. An Ibero-American event that grants the promotion of technological and scientific developments of research groups, individuals and the construction of knowledge networks. The event called the Ibero-American Conference on Infrared Thermography, will be held in person - blended or (explanation) at the UTP facilities between june 15 and 17, 2022.",
+      "home_saludo3": " The first IBERCTHERM will be held completely VIRTUALLY and will have NO COST for those attending the event. "
+    },
+    "organizadores": {
+      "nota_organizadores": "Nota de los Organizadores",
+      "comite_organizador": "Comité Organizador Nacional",
+      "Institucion": "Institución: ",
+      "contacto": "Contacto: ",
+      "comite_organizador_internacional": "Comité Organizador Internacional"
+    }
+  },
+  "profesor": {
+    "profe0": "Ph.D. In Physics, Junior Researcher of Minciencias, professor at the Technological University of Pereira, director of the Electrophysiology Research Group recognized in category b, co-director of the Research Group on Magnetic and Magneto-optical properties of new materials (GIMM) recognized in category b.",
+    "profe1": "Student of Doctorate in Sciences, Master in Electrical Engineering, professor at the Technological University of Pereira, member of the Electrophysiology Research group recognized in category b.",
+    "profe2": "Master's in Economics, Master's in Engineering, Specialized in Environmental Management, Specialist in Management and Cultural Management, Metallurgical Engineer, teacher at the SENA National Learning Service.",
+    "profe3": "Dr. Jaime Andrés Pérez Taborda received the degree of Physical Engineering (Hons.) from the Technological University of Pereira, Colombia, and the master's degree in synchrotron radiation and particle accelerators from the Autonomous University of Barcelona, as well as his doctorate (Cum laude) from the Institute of Microelectronics of Madrid, Complutense University of Madrid.",
+    "profe4": "Doctor of Philosophy from the University of Cambridge, associate professor in the Department of Electrical and Electronic Engineering of the Universidad de los Andes, Master in Electrical Engineering, professional in Physics and Electrical Engineering.",
+    "profe5": "Doctor of Science from the Federal Polytechnic School of Lausanne, Master in Chemistry and professional in Chemistry from the Universidad del Valle, Associate Researcher of Minciencias.",
+    "profe6": "Doctor in Robotics and Artificial Vision, Université d'Evry, France, Master in Automation and Electrical Engineering from the Universidad del Valle, member of the Perception and Intelligent Systems research group, PSI and Senior Researcher of Minciencias.",
+    "profe7": "Doctor in Engineering, Master in Automation, and Electronic Engineer from the Universidad del Valle, Member of the Perception and Intelligent Systems research group, PSI and Senior Researcher of Minciencias.",
+    "profe8": "Doctor, Master and professional in Civil Engineering from the Catholic University of Rio de Janeiro, professor of computer science at the Universidade Federal Fluminense-UFF.",
+    "profe9": "Doctor in Energetics and Heat Transfer at the National Institute of Applied Sciences of Lyon, Specialized in In-Depth Studies in Energetics at the University of Nice, Graduated in Physics from the National Autonomous University of Mexico.",
+    "profe10": "Doctor in Industrial Electronics from the University of Minho, Master in Industrial Automation and Process Management, Mechanical Engineer from the University of Porto, member of the Automation, Instrumentation and Control group."
+  },
   
   "nota_organizadores": "Note from the organizers",
   "comite_organizador": "National Organizing Committee",
@@ -18,14 +45,14 @@
   "contacto": "Contact: ",
   "comite_organizador_internacional": "International Organizing Committee",
   "tematicas": "Themes",
-  "inicio": "Home",
+  
   "autores": "Authors",
-  "Evento": "Event",
+  
   "Cronograma": "Schedule",
   "Comercial": "Commercial",
   "Inscripcion_empresas": "Registration for companies",
   "Salon_virtual": "virtual room",
-  "Inicio_sesion": "Login",
+  
   "universidad": "Technological University of Pereira",
   "termografia": "Infrared Thermography",
   "pagina_comercial": "Commercial page",
@@ -42,17 +69,7 @@
   "email": "Email",
   "enviar": "Send",
   
-  "profe0": "Ph.D. In Physics, Junior Researcher of Minciencias, professor at the Technological University of Pereira, director of the Electrophysiology Research Group recognized in category b, co-director of the Research Group on Magnetic and Magneto-optical properties of new materials (GIMM) recognized in category b.",
-  "profe1": "Student of Doctorate in Sciences, Master in Electrical Engineering, professor at the Technological University of Pereira, member of the Electrophysiology Research group recognized in category b.",
-  "profe2": "Master's in Economics, Master's in Engineering, Specialized in Environmental Management, Specialist in Management and Cultural Management, Metallurgical Engineer, teacher at the SENA National Learning Service.",
-  "profe3": "Dr. Jaime Andrés Pérez Taborda received the degree of Physical Engineering (Hons.) from the Technological University of Pereira, Colombia, and the master's degree in synchrotron radiation and particle accelerators from the Autonomous University of Barcelona, as well as his doctorate (Cum laude) from the Institute of Microelectronics of Madrid, Complutense University of Madrid.",
-  "profe4": "Doctor of Philosophy from the University of Cambridge, associate professor in the Department of Electrical and Electronic Engineering of the Universidad de los Andes, Master in Electrical Engineering, professional in Physics and Electrical Engineering.",
-  "profe5": "Doctor of Science from the Federal Polytechnic School of Lausanne, Master in Chemistry and professional in Chemistry from the Universidad del Valle, Associate Researcher of Minciencias.",
-  "profe6": "Doctor in Robotics and Artificial Vision, Université d'Evry, France, Master in Automation and Electrical Engineering from the Universidad del Valle, member of the Perception and Intelligent Systems research group, PSI and Senior Researcher of Minciencias.",
-  "profe7": "Doctor in Engineering, Master in Automation, and Electronic Engineer from the Universidad del Valle, Member of the Perception and Intelligent Systems research group, PSI and Senior Researcher of Minciencias.",
-  "profe8": "Doctor, Master and professional in Civil Engineering from the Catholic University of Rio de Janeiro, professor of computer science at the Universidade Federal Fluminense-UFF.",
-  "profe9": "Doctor in Energetics and Heat Transfer at the National Institute of Applied Sciences of Lyon, Specialized in In-Depth Studies in Energetics at the University of Nice, Graduated in Physics from the National Autonomous University of Mexico.",
-  "profe10": "Doctor in Industrial Electronics from the University of Minho, Master in Industrial Automation and Process Management, Mechanical Engineer from the University of Porto, member of the Automation, Instrumentation and Control group.",
+  
 
   "participar":"Students and professionals from all areas who are interested in learning about infrared thermography, or disseminating their research projects in which they implement the infrared thermography technique, can participate. This event is free for both students and professionals. It is a great opportunity to learn and get to know a technique that is revolutionizing the world in all its areas, from sports, medicine, mechanics, among others. Join our event, encourage yourself to participate!",
   "registro":"Register to the event",
